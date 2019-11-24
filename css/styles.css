@@ -1,6 +1,54 @@
-a:hover {
-    color:  rgb(219, 202, 179);
+a,
+a:hover ,
+a:visited,/*для стилизации только тех ссылок, на которые пользователь нажал.*/
+a:link{             /*для стилизации ссылок, на которые пользователь ещё не нажимал.*/
+    color:  rgb(20, 1, 1);  
+     text-decoration: none;/*убрать подчеркивание*/
+     background-color: rgba(245, 245, 18, 0.1);
 }
-a:active{
-   color: indigo; 
+
+h1,
+.footer{
+
+    text-align: center;/*vспользуется для выравнивания строки текста или строчных и строчно-блочных элементов внутри блочного элемента по ширине относительно его границ.*/
+}
+
+.footer-link {
+font-size: 30px;/*указывает размер шрифта*/
+font-weight: 700;/*указывает "вес" (жирность начертания) шрифта*/
+font-style: italic; /*указывает стиль начертания шрифта*/
+text-indent: 20px;/*указывает отступ первой строки в абзаце*/
+text-align: center;/* выравнивание текста*/
+line-height: 24px;/*управляет межстрочным интервалом*/
+font-family: serif;/*указывает семейство шрифтов*/
+padding: 0 ;/* делаем внутрений отступ*/
+margin: 1%;/* делаем внешний отступ*/
+text-decoration: none;/*указывает декорирование шрифта*/
+background-color:transparent;/*задает цвет фону*/
+}
+/*полностроничный фон*/
+body {
+    background-image: url(http://www.vokrugsveta.ru/img/bx/iblock/fde/fde97acbf87b85a9b1be6012ce1fe085.jpg);/*позволяет задать фону изображение по url*/
+    background-repeat: no-repeat;/*по умолчанию заполняет фон копиями no-repeat, repeat-x, repeat-y и repeat*/
+    background-size: cover;/*определяет размеры фонового изображения в контейнере, использует абсолютные(px), относительные единицы(%) и ключевые слова (cover, contain)*/
+    background-position: center;/*	задает положение изображения относительно границ блока*/
+    min-height: 100vh;/*Для того чтобы заполнить экран фоном полностью, и при этом не зависеть от количества контента*/
+    background-attachment:scroll;/*определяет поведение фонового изображения при прокрутке содержимого с помощью local, fixed и scroll  */
+    background-clip:1; /* обрезка фона Изменяет границу распространения фона для box-model. Обрезает фон до заданной области.
+     По умолчанию фон включает content-area, padding и border. Можно уменьшить, вплоть до content-area.*/
+    background-origin:2;/* границы фона Изменяет границу распространения фона для box-model. Изменяет размер фона до заданной области.
+     По умолчанию фон включает content-area, padding и border. Можно уменьшить, вплоть до content-area.*/
+}
+.border{
+    border-collapse:collapse;/* — слияние рамки*/
+    border-color:rgb(20, 1, 1); /*— цвет рамки*/
+    border-image:url();/* — графическая рамка*/
+    border-image-outset:1px;/* — выступ графической рамки*/
+    border-image-repeat:round;/* — повторение графической рамки*/
+    border-image-slice:2px;/* — разбивка графической рамки*/
+    border-image-source:none;/* — адрес изображения для графической рамки*/
+    border-image-width:2px;/* — толщина графической рамки*/
+    border-radius:2%;/* — скругление рамки*/
+    border-style:2%;/* — стиль рамки*/
+    border-width:2%;/* — ширина рамки*/
 }
