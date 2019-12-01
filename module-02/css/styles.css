@@ -1,0 +1,73 @@
+body{
+    
+}
+header{
+    font-family: "Playfair Display";
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.7;
+    
+}
+main{
+
+}
+
+  
+
+/*Start  classes header block */
+.header{
+
+}
+.header-nav{
+
+}
+.header-menu{
+
+}
+/*all that in menu ul */
+.header-menu li{
+
+}
+.header-menu a{
+    color: rgb(98, 98, 98);
+}
+
+.header-menu .life-header{
+    color: rgb(3, 169, 244);
+}
+
+
+
+/*Start classes main block */
+.main-content{
+
+  }
+ /*all that in main */ 
+.main-section{
+
+}
+.main-sectiom-article{
+
+}
+
+/*all that in article */
+.main-sectiom-article img{
+    
+}
+.lifestyle {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+.main-sectiom-article p{
+    
+}
+.main-sectiom-article h2{
+    
+}
+/*button in main */
+  .main-button {
+
+  }
