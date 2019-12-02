@@ -51,15 +51,22 @@ padding: 10px;
   }
  /*all that in main */ 
 .main-section{
-
+  display:inline-block;
+  box-sizing :border-box;
+  width: 49%;
+  height: 49%;
 }
-.main-sectiom-article{
+.article-left{
+  
+}
+.article-right{
 
 }
 
 /*all that in article */
 .main-sectiom-article img{
-    
+    width: 421px;
+    height: 281px;
 }
 .lifestyle {
     font-size: 14px;
