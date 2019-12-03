@@ -10,7 +10,7 @@ html{
 
 body{
     color: grey;
-    font-style: 14px;
+    font-size: 14px; /* размер шрифта*/
     line-height: 1.7;
 }
 /*Header bar*/
@@ -30,17 +30,23 @@ li {
     list-style-type: none;
 }
 
-
+/* Site navigation bar */
 .page-nav{
 background-color: grey;
 }
 
 .page-nav li{
-    display:inline-block;
-    margin:0 40px;
+    display:inline-block; /* выровнял сылки по горезонтале*/
+    
+}
+.page-nav li:not(:last-child){/*не добовлять для последнего ребёнка li даные */
+    margin-right: 76px;
 }
 .site-nav{
-
+    margin:0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none; 
 }
 .color-link{
 
