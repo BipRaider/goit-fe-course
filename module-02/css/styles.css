@@ -1,10 +1,32 @@
-*{
+html{
     box-sizing: border-box;
 }
 
+*,
+*::before,
+::after{    
+    box-sizing: inherit;
+}
 
 body{
     color: grey;
     font-style: 14px;
     line-height: 1.7;
 }
+/*Header bar*/
+.style-box{
+
+}
+
+.page-nav{
+
+}
+
+.site-nav{
+
+}
+.color-link{
+
+}
+
+/*Main bar*/
