@@ -14,14 +14,31 @@ body{
     line-height: 1.7;
 }
 /*Header bar*/
-.style-box{
+.conteiner{
+ width: 1170px;
+ margin: 0 auto;
+ background-color: #fff;
+ text-align: center;
 
 }
+
+a{
+    text-decoration: none;  
+}
+
+li {
+    list-style-type: none;
+}
+
 
 .page-nav{
-
+background-color: grey;
 }
 
+.page-nav li{
+    display:inline-block;
+    margin:0 40px;
+}
 .site-nav{
 
 }
