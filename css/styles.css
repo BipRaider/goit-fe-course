@@ -68,6 +68,8 @@ body {
 .border-box{
     box-sizing: border-box;/*Разсширение идёт в размера блока (задвар размер блока он не увеличиться)*/
     box-sizing: content-box;/*Разсширение идёт от размера блока */
+    box-sizing:padding-box;/*Свойства width и height включают в себя значения полей, но не отступов (margin) и границ (border).*/
+
 }
 /**/
 .display{

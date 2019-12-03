@@ -1,15 +1,15 @@
-body{
+.body1{
    position: absolute;
     width: 100%;
     height: 100%; 
     background-image: url(https://abc-decor.com/img/gallery/56/thumbs/thumb_l_25288.jpg); 
 }
-.header{
+.header1{
     font-family: "Playfair Display";
     font-size: 14px;
     line-height: 24px; 
 }
-.main-style{
+.main-style1{
   width: 1200px;
   display: block;
   margin: 0 15%;
@@ -19,34 +19,32 @@ body{
 }
 /*Start  classes header block */
 
-.header-nav{
+.header-nav1{
 text-align: center;
 padding: 10px;
 }
 
-.header-menu{
 
-}
 /*all that in menu ul */
-.header-menu li{
+.header-menu1 li1{
  display: inline-block;
  padding:60px 75px ;
 }
-.header-menu a{
+.header-menu1 a1{
   font-family: "Playfair Display";
   font-size: 14px;
   line-height: 24px;
   color: rgb(98, 98, 98);
 }
 
-.header-menu .life-header{
+.header-menu1 .life-header1{
     color: rgb(3, 169, 244);
 }
 
 
 
 /*Start classes main block */
-.main-content{
+.main-conten1t{
   
   }
  /*all that in main */ 
