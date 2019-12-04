@@ -28,6 +28,7 @@ a{
 li {
     list-style-type: none;
 }
+
 /*Header bar*/
 .conteiner{
  width: 1200px;
@@ -39,7 +40,7 @@ li {
 /* Site navigation bar */
 .page-nav{
 padding-top: 74px ;
-padding-bottom: 102px;
+padding-bottom: 42px;
 }
 .page-nav a{
 text-transform: uppercase;
@@ -50,10 +51,11 @@ text-transform: uppercase;
 }
 
 .page-nav li:not(:last-child){/*не добовлять для последнего ребёнка li даные */
-    margin-right: 76px;
+    margin-right: 80px;
 }
-.nav-a{/*не добовлять для последнего ребёнка li даные */
+.nav-a{/*для первого а в таблице навигатций */
     color: #03a9f4;
+    
 }
 
 .site-nav{
@@ -68,14 +70,14 @@ text-transform: uppercase;
 
  /*all that in main */ 
 .section-main{
-    margin: 0 auto;
-    width: 900px;
-
+    margin: 0  auto;
 }
 .section-article{
-    display: inline-block;
-    width: 421px;
-    height: auto;
+    display: inline-block;   
+    width: 422px;
+    margin: 60px 30px;
+    text-align: left; 
+     
 }
 
 
@@ -88,7 +90,8 @@ text-transform: uppercase;
 
 .main-button {
     display: inline-block;
-    padding:20px 33px ;
+    padding:20px 34px ;
+    margin-bottom: 70px;
 
     font-size: 20px;
     line-height: 1.2;
@@ -102,4 +105,4 @@ text-transform: uppercase;
     background-color: #fff;
 }
 
-/*Main bar*/
+
