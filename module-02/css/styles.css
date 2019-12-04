@@ -1,85 +1,81 @@
-.body1{
-   position: absolute;
-    width: 100%;
-    height: 100%; 
-    background-image: url(https://abc-decor.com/img/gallery/56/thumbs/thumb_l_25288.jpg); 
+
+
+html{
+    box-sizing: border-box;
+    
 }
-.header1{
+
+*,
+*::before,
+::after{    
+    box-sizing: inherit;
+}
+
+body{
+    
     font-family: "Playfair Display";
+    font-size: 14px; /* размер шрифта*/
+    line-height: 1.7;
+    color: rgb(98, 98, 98);
+
+    background-image: url(https://abc-decor.com/img/gallery/56/thumbs/thumb_l_25288.jpg);
+}
+
+a{
+    text-decoration: none;  
+}
+
+li {
+    list-style-type: none;
+}
+/*Header bar*/
+.conteiner{
+ width: 1200px;
+ margin: 0 auto;
+ background-color: #fff;
+ text-align: center;
+}
+
+/* Site navigation bar */
+.page-nav{
+
+}
+
+.page-nav li{
+    display:inline-block; /* выровнял сылки по горезонтале*/
+    
+}
+.page-nav li:not(:last-child){/*не добовлять для последнего ребёнка li даные */
+    margin-right: 76px;
+}
+.site-nav{
+    margin:0;
+    padding: 0;
     font-size: 14px;
-    line-height: 24px; 
+    list-style: none; 
 }
-.main-style1{
-  width: 1200px;
-  display: block;
-  margin: 0 15%;
-  background:#fff;
-  text-align: center;
-  
-}
-/*Start  classes header block */
-
-.header-nav1{
-text-align: center;
-padding: 10px;
-}
-
-
-/*all that in menu ul */
-.header-menu1 li1{
- display: inline-block;
- padding:60px 75px ;
-}
-.header-menu1 a1{
-  font-family: "Playfair Display";
-  font-size: 14px;
-  line-height: 24px;
-  color: rgb(98, 98, 98);
-}
-
-.header-menu1 .life-header1{
-    color: rgb(3, 169, 244);
-}
-
 
 
 /*Start classes main block */
-.main-conten1t{
-  
-  }
+
  /*all that in main */ 
-.main-section{
-  display:inline-block;
-  box-sizing :border-box;
-  width: 49%;
-  height: 49%;
-}
-.article-left{
-  
-}
-.article-right{
+.section-main{
+    margin: 0 auto;
+    width: 900px;
 
 }
+.section-article{
+    display: inline-block;
+    width: 421px;
+    height: auto;
+}
+
+
+
 
 /*all that in article */
-.main-sectiom-article img{
-    width: 421px;
-    height: 281px;
-}
-.lifestyle {
-    font-size: 14px;
-    font-family: "Ubuntu";
-    color: rgb(180, 173, 158);
-    text-transform: uppercase;
-    line-height: 1.2;
-  }
-.main-sectiom-article p{
-    
-}
-.main-sectiom-article h2{
-    
-}
-/*button in main */
+
+
 
 
 .main-button {
@@ -98,3 +94,4 @@ padding: 10px;
     background-color: #fff;
 }
 
+/*Main bar*/
