@@ -15,7 +15,7 @@ body{
     
     font-family: "Playfair Display";
     font-size: 14px; /* размер шрифта*/
-    line-height: 1.7;
+    line-height: 24px;
     color: rgb(98, 98, 98);
 
     background-image: url(https://abc-decor.com/img/gallery/56/thumbs/thumb_l_25288.jpg);
@@ -38,16 +38,24 @@ li {
 
 /* Site navigation bar */
 .page-nav{
-
+padding-top: 74px ;
+padding-bottom: 102px;
+}
+.page-nav a{
+text-transform: uppercase;
 }
 
 .page-nav li{
-    display:inline-block; /* выровнял сылки по горезонтале*/
-    
+    display:inline-block; /* выровнял сылки по горезонтале*/ 
 }
+
 .page-nav li:not(:last-child){/*не добовлять для последнего ребёнка li даные */
     margin-right: 76px;
 }
+.nav-a{/*не добовлять для последнего ребёнка li даные */
+    color: #03a9f4;
+}
+
 .site-nav{
     margin:0;
     padding: 0;
