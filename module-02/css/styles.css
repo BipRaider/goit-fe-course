@@ -23,6 +23,7 @@ body{
 
 a{
     text-decoration: none;  
+    color: rgb(98, 98, 98);
 }
 
 li {
@@ -44,6 +45,7 @@ padding-bottom: 42px;
 }
 .page-nav a{
 text-transform: uppercase;
+
 }
 
 .page-nav li{
@@ -78,6 +80,15 @@ text-transform: uppercase;
     margin: 60px 30px;
     text-align: left; 
      
+}
+
+.lifestyle{
+    font-size: 14px;
+    font-family: "Ubuntu Light";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+       
 }
 
 
