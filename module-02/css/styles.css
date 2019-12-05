@@ -22,14 +22,15 @@ body{
 }
 
 a{
-    text-decoration: none;  
-    color: rgb(98, 98, 98);
+    text-decoration: none;     
 }
 
 li {
     list-style-type: none;
 }
-
+li a{
+    color: rgb(98, 98, 98);
+}
 /*Header bar*/
 .conteiner{
  width: 1200px;
