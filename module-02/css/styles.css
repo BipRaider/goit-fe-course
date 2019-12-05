@@ -28,7 +28,7 @@ a{
 li {
     list-style-type: none;
 }
-li a{
+body a{
     color: rgb(98, 98, 98);
 }
 /*Header bar*/
