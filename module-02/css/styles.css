@@ -39,6 +39,7 @@ body a{
  margin: 0 auto;
  background-color: #fff;
  text-align: center;
+ 
 }
 
 /* Site navigation bar */
@@ -65,6 +66,7 @@ text-transform: uppercase;
     padding: 0;
     font-size: 14px;
     list-style: none; 
+    
 }
 
 
@@ -73,13 +75,24 @@ text-transform: uppercase;
  /*all that in main */ 
 .section-main{
     margin: 0  auto;
+    font-size: 0px;
 }
 .section-article{
-    display: inline-block;   
+    display: inline-block;
     width: 420px;
+
     margin-bottom: 60px;
     margin-right: 60px;
+   
+
     text-align: left; 
+}
+.section-article h2,
+.section-article p{
+    font-family: "Playfair Display";
+    font-size: 14px;
+    line-height: 1.7;
+    
 }
 /* убираем у каждого второго внешний отступ */
 .section-article:nth-child(2n){
@@ -96,17 +109,15 @@ text-transform: uppercase;
 }
 
 
-
-
-/*all that in article */
-
-
+main{
+    padding-bottom: 70px;
+}
 
 
 .main-button {
-    display: inline-block;
+    display: block;
     padding:20px 34px ;
-    margin-bottom: 70px;
+    margin: 0 auto;
 
     font-size: 20px;
     line-height: 1.2;
