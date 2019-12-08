@@ -1,6 +1,6 @@
 html{
     box-sizing: border-box;
-    
+    line-height: 1;
 }
 
 *,
@@ -10,50 +10,71 @@ html{
 }
 
 body{
-    font-family: "Playfair Display";
-    font-size: 14px; /* размер шрифта*/
-    line-height: 24px;
-    color: rgb(98, 98, 98);
 
+    color: rgb(98, 98, 98);
     background-image: url(https://abc-decor.com/img/gallery/56/thumbs/thumb_l_25288.jpg);
 }
-a{
-    text-decoration: none;
-    font-size: 14px;
+
+body a{
+    color: rgb(98, 98, 98);
+}
+/**/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+.container-two{
+    width: 900px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    background-color: #fff;
+   }
+
+/* Site navigation bar */
+
+
+.site-nav{
+    display: block;
+    margin:0;
+    padding: 0;
     
+    font-size: 0px;
+    list-style: 0;
 }
 
+
+.page-nav{
+    padding-top: 74px ;
+    padding-bottom: 102px;
+}
+a{
+    display: block;
+
+    font-family: "Playfair Display";
+    text-decoration: none;
+    font-size: 14px;
+}
 
 a:hover,
 a:focus     {
     text-decoration: none;   
-    color: #03a9f4;
-    
+    color: #03a9f4; 
+    padding: 0;
+}
+
+.page-nav a{
+    text-transform: uppercase;
+
 }
 
 li {
     list-style-type: none;
-}
-body a{
-    color: rgb(98, 98, 98);
-}
-/*Header bar*/
-.container{
- width: 1200px;
- margin: 0 auto;
- background-color: #fff;
- text-align: center;
- 
-}
-
-/* Site navigation bar */
-.page-nav{
-padding-top: 74px ;
-padding-bottom: 102px;
-}
-.page-nav a{
-text-transform: uppercase;
-
 }
 
 .page-nav li{
@@ -65,18 +86,15 @@ text-transform: uppercase;
 }
 
 
-.site-nav{
-    margin:0;
-    padding: 0;
-    font-size: 0px;
-    list-style: none; 
-    
-}
+
 
 
 /*Start classes main block */
 
- /*all that in main */ 
+ /*all that in main */
+ main{
+    padding-bottom: 70px;
+}
 .section-main{
     margin: 0  auto;
     font-size: 0px;
@@ -93,29 +111,48 @@ text-transform: uppercase;
 }
 .section-article h2,
 .section-article p{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
     font-family: "Playfair Display";
-    font-size: 14px;
-    line-height: 1.7;
-    
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.section-article img{
+    
+    margin: 0px;
+    margin-bottom: 26px;
+    padding: 0px;
+    font-size: 0px;
+}
+.section-article .lifestyle{
+    font-size: 14px;
+    font-family: "Ubuntu Light";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+}
+.section-article h2{
+    font-size: 30px;
+    line-height: 1.2;
+}
+.section-article p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
 /* убираем у каждого второго article внешний отступ */
 .section-article:nth-child(2n){
     margin-right: 0;
     }
 
-.lifestyle{
-    font-size: 14px;
-    font-family: "Ubuntu Light";
-    color: rgb(180, 173, 158);
-    text-transform: uppercase;
-    line-height: 1.2;
-       
-}
 
 
-main{
-    padding-bottom: 70px;
-}
+
+
+
 
 
 .main-button{
@@ -123,9 +160,9 @@ main{
     padding:20px 34px ;
     margin: 0 auto;
 
+    font-family: "Playfair Display";
     font-size: 20px;
     line-height: 1.2;
-    font-family: "Playfair Display";
     color: rgb(99, 98, 98);
 
     border-width: 1px;
