@@ -19,12 +19,16 @@ body{
 }
 a{
     text-decoration: none;
+    font-size: 14px;
+    
 }
+
 
 a:hover,
 a:focus     {
     text-decoration: none;   
     color: #03a9f4;
+    
 }
 
 li {
@@ -64,7 +68,7 @@ text-transform: uppercase;
 .site-nav{
     margin:0;
     padding: 0;
-    font-size: 14px;
+    font-size: 0px;
     list-style: none; 
     
 }
@@ -94,7 +98,7 @@ text-transform: uppercase;
     line-height: 1.7;
     
 }
-/* убираем у каждого второго внешний отступ */
+/* убираем у каждого второго article внешний отступ */
 .section-article:nth-child(2n){
     margin-right: 0;
     }
@@ -114,7 +118,7 @@ main{
 }
 
 
-.main-button {
+.main-button{
     display: block;
     padding:20px 34px ;
     margin: 0 auto;
@@ -132,3 +136,8 @@ main{
 }
 
 
+.main-button:hover,
+.main-button:focus{
+    color:#03a9f4; 
+    border-color: #03a9f4;
+}
