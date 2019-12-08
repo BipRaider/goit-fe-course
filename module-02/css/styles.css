@@ -65,7 +65,7 @@ a:hover,
 a:focus     {
     text-decoration: none;   
     color: #03a9f4; 
-    padding: 0;
+    outline: none;   /*убирает рамку на сылке*/
 }
 
 .page-nav a{
@@ -119,6 +119,7 @@ li {
 img{
     display: block;
     max-width: 100%;
+    width: 420px;
     height: auto;
 }
 .section-article img{
