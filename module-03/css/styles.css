@@ -10,14 +10,10 @@ html{
 }
 
 body{
-
-    color: rgb(98, 98, 98);
     background-image: url(https://abc-decor.com/img/gallery/56/thumbs/thumb_l_25288.jpg);
 }
 
-body a{
-    color: rgb(98, 98, 98);
-}
+
 /**/
 .container{
     width: 1200px;
