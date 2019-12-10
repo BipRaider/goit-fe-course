@@ -1,0 +1,183 @@
+html{
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+*,
+*::before,
+::after{    
+    box-sizing: inherit;
+}
+
+body{
+
+    color: rgb(98, 98, 98);
+    background-image: url(https://abc-decor.com/img/gallery/56/thumbs/thumb_l_25288.jpg);
+}
+
+body a{
+    color: rgb(98, 98, 98);
+}
+/**/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+.container-two{
+    width: 900px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    background-color: #fff;
+   }
+
+/* Site navigation bar */
+
+
+.site-nav{
+    display: block;
+    margin:0;
+    padding: 0;
+    
+    font-size: 0px;
+    list-style: 0;
+}
+
+
+.page-nav{
+    padding-top: 74px ;
+    padding-bottom: 102px;
+}
+a{
+    display: block;
+
+    font-family: "Playfair Display";
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover,
+a:focus     {
+    text-decoration: none;   
+    color: #03a9f4; 
+    outline: none;   /*убирает рамку на сылке*/
+}
+
+.page-nav a{
+    text-transform: uppercase; /*преобразованием текста элемента в заглавные или прописные символы*/
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.page-nav li{
+    display:inline-block; /* выровнял сылки по горезонтале*/ 
+}
+
+.page-nav li:not(:last-child){/*не добовлять для последнего ребёнка li даные */
+    margin-right: 80px;
+}
+
+
+
+
+
+/*Start classes main block */
+
+ /*all that in main */
+ main{
+    padding-bottom: 70px;
+}
+.section-main{
+    margin: 0  auto;
+    font-size: 0px;
+}
+.section-article{
+    display: inline-block;
+    width: 420px;
+
+    margin-bottom: 60px;
+    margin-right: 60px;
+   
+
+    text-align: left; 
+}
+.section-article h2,
+.section-article p{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+    font-family: "Playfair Display";
+}
+img{
+    display: block;
+    max-width: 100%;
+    width: 420px;
+    height: auto;
+}
+.section-article img{
+    
+    margin: 0px;
+    margin-bottom: 26px;
+    padding: 0px;
+    font-size: 0px;
+}
+.section-article .lifestyle{
+    font-size: 14px;
+    font-family: "Ubuntu Light";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+}
+.section-article h2{
+    font-size: 30px;
+    line-height: 1.2;
+}
+.section-article p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* убираем у каждого второго article внешний отступ */
+.section-article:nth-child(2n){
+    margin-right: 0;
+    }
+
+
+
+
+
+
+
+
+.main-button{
+    display: block;
+    padding:20px 34px ;
+    margin: 0 auto;
+
+    font-family: "Playfair Display";
+    font-size: 20px;
+    line-height: 1.2;
+    color: rgb(99, 98, 98);
+
+    border-width: 1px;
+    border-color: rgb(98, 98, 98);
+    border-style: solid;
+    
+    background-color: #fff;
+
+    cursor: pointer; /*Устанавливает форму курсора, когда он находится в пределах элемента */
+}
+
+
+.main-button:hover,
+.main-button:focus{
+    color:#03a9f4; 
+    border-color: #03a9f4;
+}
