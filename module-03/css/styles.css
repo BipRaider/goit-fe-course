@@ -10,29 +10,86 @@ html{
 }
 
 body{
-    font-family: 'Open Sans', sans-serif; 
-}
-
-
-
-.container{
-    width: 1300px;
+    width: 1650px;
     height: auto;
     margin: 0 auto;
 
-    text-align: center;
-
-    background-color:rgba(211, 211, 211, 0.788);
-}
-.nav-site {
+    font-family: 'Open Sans Bold', sans-serif; 
     font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(26, 188, 156);
+
+}
+
+.container{
+    width: 1110px;
+    height: auto;
+    margin: 0 auto;  /* отцентрировал блок*/
+    padding: 0;   
+    list-style: 0;
+
+    border: 1px solid red;
+}
+header{
+    height: 90px;
+}
+
+/*Header nav*/
+
+
+ul{
+float: right;
+margin-top: 40px;
+}
+
+ul li{
+    display: inline-block;
+    margin-right: 30px;
+    padding: 0;
+    line-height: 11px;
     font-weight: bold;
+}
+ul li:last-child{
+    margin-right: 0;
+}
+
+a{
+    text-decoration: none;
     text-transform: uppercase;
-    line-height: 0.786;
+    color: #000;
+
+    outline: none;   /*убирает рамку на сылке*/
+}
+
+.loge-mart{
+    
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 32px;
+    color: #000;
+}
+.loge-mart::first-letter{
+    font-family: "Roboto Black",sans-serif;
+    color: rgb(26, 188, 156);
+}
+
+.nav-site{
+    display: inline-block;
     text-align: right;
+}
+
+.nav-site a:hover,
+.nav-site a:focus{
+    color: rgb(26, 188, 156);
   }
+
+
+
+
+  /*main*/
   .Cool_lingerie {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
