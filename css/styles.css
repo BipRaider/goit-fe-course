@@ -80,6 +80,12 @@ body {
     display: block;/*элементы, которые форматируются визуально как блоки*/
 }
 
+.float{
+    float: left;
+    clear: both; /*убрать обтикание*/
+}
+
+
 
 .visualyy-hidden:not(:focus):not(:active),
 input[type="checkbox"].visualyy-hidden,
