@@ -15,6 +15,7 @@ h1,
 }
 li  {
     list-style-type: none;
+    
 }
 
 
@@ -66,6 +67,8 @@ body {
     border-radius:2%;/* — скругление рамки*/
     border-style:2%;/* — стиль рамки*/
     border-width:2%;/* — ширина рамки*/
+
+    outline: 1px solid black;   /* тоже самое чт ои border  но рамка идёт в нутрь*/
 }
 .border-box{
     box-sizing: border-box;/*Разсширение идёт в размера блока (задвар размер блока он не увеличиться)*/
@@ -87,6 +90,14 @@ body {
 
 
 
+
+/* для того чтобы теги чувствовали float*/
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+/* прячим отоброжение слов в иконках навигаций*/
 .visualyy-hidden:not(:focus):not(:active),
 input[type="checkbox"].visualyy-hidden,
 input[type="radio"].visualyy-hidden{

@@ -24,7 +24,7 @@ body{
     height: auto;
     margin: 0 auto;  /* отцентрировал блок*/
     padding: 0;   
-    list-style: 0;
+    list-style: none;
 }
 /*Header nav*/
 
@@ -38,9 +38,11 @@ padding: 0;
 ul li{
     display: inline-block;
     margin-right: 30px;
-
+    
+    list-style-type:none; /*убрали маркеры*/
     line-height: 11px;
     font-weight: bold;
+
 }
 ul li:last-child{
     margin-right: 0;
@@ -48,7 +50,7 @@ ul li:last-child{
 
 a{
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: uppercase; /*заглавные буквы*/
     color: #000;
 
     outline: none;   /*убирает рамку на сылке*/
@@ -71,21 +73,16 @@ a{
     color: rgb(26, 188, 156);
 }
 
-.nav-site{
-    display: inline-block;
-    text-align: right;
-}
-
 .nav-site a:hover,
 .nav-site a:focus{
     color: rgb(26, 188, 156);
   }
-
-
-.line{
-    clear: both;
-}
-
+/* для того чтобы теги чувствовали float*/
+.clearfix::after{
+      display: table;
+      content: "";
+      clear: both;
+  }
   /*main to do*/ 
 main {
       margin: 0;
@@ -118,7 +115,6 @@ section h2::after{
 
     margin: 0;
     padding: 0;
-    list-style: 0;
     margin-bottom: 30px;
     margin-right: 30px;
   }
@@ -127,7 +123,13 @@ section h2::after{
 .featured{
     width: 255px;
     height: 324px;
+    background: linear-gradient(to right ,#000 78%, #8c8c8c 22%);
 }
+.featured:hover,
+.featured:focus{
+    background: linear-gradient(to right ,#1abc9c 78%, #7fd9c7 22%);
+}
+
 .featured:nth-child(4n+1){
     margin-right: 0px;
 }
@@ -146,7 +148,7 @@ section h2::after{
 .featured a{
     padding:0;
     margin: 0; 
-    padding-left: 13px;
+    
     text-align: left;/* горизонтальное выравнивание текста  */
     line-height: 40px;/* горизонтальное выравнивание текста  */
     font-size: 18px;
@@ -156,9 +158,8 @@ section h2::after{
   }
 
 .featured a {
-    width:200px;
-    background-color: black;
     float: left;
+    margin-left: 13px;
 }
 
 .featured a:hover,
@@ -167,9 +168,8 @@ section h2::after{
 }
 
 .featured p{
-    width: 55px;
-    background-color: #8c8c8c;
-    float: right;  
+    float: right;
+    margin-right: 15px;
 }
 
 .featured p::before{
@@ -198,7 +198,7 @@ section h2::after{
 
 .latest-content{
     width: 350px;
-    height: 540px;
+    height: 580px;
 
     margin-right: 30px;
   }
