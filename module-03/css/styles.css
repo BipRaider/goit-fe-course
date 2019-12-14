@@ -204,6 +204,7 @@ section h2::after{
   }
 
 .latest-content img{
+    float: left;
     width: 350px;
     height: 264px;
   }
@@ -221,13 +222,14 @@ section h2::after{
 .latest-content h3{
     font-size: 18px;
     line-height: 30px;
+    margin-top: 11px;
   }
 
 .latest-content h3::after{
     display:block;
     content: "";
-
-    margin-left: 0;
+    
+    margin-top: 15px; 
     width: 134px;
     height: 4px;
     
