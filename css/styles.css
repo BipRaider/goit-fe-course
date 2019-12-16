@@ -17,6 +17,11 @@ li  {
     list-style-type: none;
     
 }
+a,h1,p,section,article,header,main,footer,h2,h3,h4,span,img,ul,ol,li{
+    padding: 0;
+    margin: 0;
+    list-style: 0;
+}
 
 
 .footer-link {
@@ -134,8 +139,9 @@ input[type="radio"].visualyy-hidden{
     hsla(0,0%,0%,0.9)),
       url(https://elle.ua/i/publications/48/355_200/vizov-prinyat-kak-ubrat-rasshirennie-kapillyari-na-lice-1838-27883.jpg);
     background-size: cover;
+
   }
   div:hover{
     background: url(https://images.weserv.nl/?q=85&url=https://nv.ua/system/Article/posters/002/122/838/600x300/67029f6374dfd4ca117f7310ee408b42.jpeg?stamp=20191212135025);
-   
+   transform: rotate(-11grad); /*https://developer.mozilla.org/en-US/docs/Web/CSS/angle*/
   }
