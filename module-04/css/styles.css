@@ -8,14 +8,17 @@ html{
 ::after{    
     box-sizing: inherit;
 }
-
-body{
-    height: auto;
-    margin: 0 auto;
-
-    font-family: 'Open Sans Bold', sans-serif; 
-    font-size: 14px;
-
+/* обьявление переменых*/
+:root {
+ 
+  }
+header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,div{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase; /*заглавные буквы*/
+    outline: none;   /*убирает рамку на сылке*/
 }
 
 .container{
@@ -25,45 +28,39 @@ body{
     padding: 0;   
     list-style: none;
 }
-/*Header nav*/
 
 .nav-site{
-float: right;
-margin-bottom:0;
-padding: 0;
-}
-
+    float: right;
+    margin-bottom:0px;
+    padding: 0;
+    }
+    
 .nav-site li{
     float: left;
     margin-right: 30px;
-    
     list-style-type:none; /*убрали маркеры*/
     line-height: 11px;
     font-weight: bold;
-
-}
+    
+    }
 .nav-site li:last-child{
-    margin-right: 0;
-}
-
+        margin-right: 0;
+    }
+    
 a{
-    text-decoration: none;
-    text-transform: uppercase; /*заглавные буквы*/
     color: #000;
-
-    outline: none;   /*убирает рамку на сылке*/
 }
 header{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
+    
 .loge-mart{
     float: left;
     margin-bottom: 0;
     padding: 0;
 
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 30px;
     line-height: 32px;
@@ -77,14 +74,15 @@ header{
 .nav-site a:hover,
 .nav-site a:focus{
     color: rgb(26, 188, 156);
-  }
-/* для того чтобы теги чувствовали float*/
+    }
 .clearfix::after{
-      display: table;
-      content: "";
-      clear: both;
-  }
-  /*main to do*/ 
+        display: table;
+        content: "";
+        clear: both;
+    }
+/*Main*/
+
+
 main ,
 h2,
 section{
@@ -93,8 +91,27 @@ section{
   }
 section{
     padding-bottom: 80px;
-}  
+}
 
+/*banner*/
+.banner{
+    min-height: 600px;  /*минимальный размер*/
+    margin-bottom: 50px;
+
+    background-image:linear-gradient(
+        to right ,
+      rgba(0, 0, 0, 0.2),
+      rgba(3, 3, 3, 0.2)
+    ),
+        url("../img/brd.jpg");
+        
+    background-repeat: no-repeat; /* не повторять*/
+    background-size: cover;/*определяем размер залили полностью всё */
+    background-position: center;/*от центрировали*/
+
+}
+
+/*new collection*/
 section h2 {
     margin-bottom:80px;
     font-size: 48px;
@@ -176,74 +193,23 @@ section h2::after{
     content:"\0024";
 }
 
-/*latest news*/
-.latest-content,
-.latest-content p,
-.latest-content h3,
-.read-more{
-    float: left;
+/*footer*/
 
-    margin: 0;
-    padding: 0;
-
-    font-family: "OpenSans",sans-serif;
-    color: rgb(85, 82, 82);
-    line-height: 26px;
-  }
-
-.latest-content{
-    width: 350px;
-    margin-right: 30px;
-  }
-
-.latest-content img{
-    float: left;
-    width: 350px;
-    height: 264px;
-    margin-bottom: 11px;
-  }
-
-.latest-content:last-child {
-    margin-right: 0px;
-  }
-
-.latest-content p {
-    margin-bottom: 18px;
-    font-size: 14px;
-  }
-/*latest news h3*/
-.latest-content h3{
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 24px;
-  }
-
-.latest-content h3::after{
-    display:block;
-    content: "";
-    
-    margin-top: 15px; 
-    width: 134px;
-    height: 4px;
-    
-    background-color:#4ec6ab; 
+footer{
+    background-color: rgb(50, 50, 50);
 }
-/*latest news bottom*/
-.read-more{
-    width: 160px;
-    height: 50px;
+.footer-bar {
+    padding-top:36px ;
+    padding-bottom:32px; 
 
-    font-size: 20px;
-    color: #fff;
+    font-size: 16px;
+    font-family: "OpenSans Regular", sans-serif;
+    color: rgb(254, 254, 254);
+    line-height: 28px;
+    text-transform: capitalize;
     text-align: center;
-    line-height: 50px;/* горизонтальное выравнивание текста  */
-
-    outline: none;   /*убирает рамку на сылке*/
-    border-radius: 5px;
-    background: #000;
   }
-
-  .read-more:hover,
-  .read-more:focus{
-    background: #4ec6ab;
-  }
+.address-span{
+    color: rgb(26, 188, 156);
+    text-transform: capitalize;
+}
