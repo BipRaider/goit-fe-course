@@ -92,6 +92,7 @@ body {
     background-origin:2;/* границы фона Изменяет границу распространения фона для box-model. Изменяет размер фона до заданной области.
      По умолчанию фон включает content-area, padding и border. Можно уменьшить, вплоть до content-area.*/
      background-color: rgba(245, 245, 18, 0.3);
+     background-color: transparent;/* делает просразчный фон*/
 }
 .border{
     border-collapse:collapse;/* — слияние рамки*/
@@ -125,16 +126,20 @@ body {
     float: left;
     clear: both; /*убрать обтикание*/
 }
-
+/*применяеться для всего css*/
+:root{
+--w:200px;
+}
 .calc{
     display:inline-block;
     width: calc(var(--w) - 30px);  /*calc  используеться для вычеслений*/
     height: 1px;
     background-color: black;
 }
-/*применяеться для всего css*/
-:root{
---w:200px;
+.input-buttom{
+    position: absolute;
+    cursor: pointer;/*показывает что на кнопк можно жмакать*/
+    background-color: transparent;/* делает просразчный фон*/
 }
 /* для того чтобы теги чувствовали float*/
 .clearfix::after{
