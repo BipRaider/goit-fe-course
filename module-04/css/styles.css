@@ -17,8 +17,6 @@ body{
 } 
 /*общие*/
 body,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,div,input{
-    
-    padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
@@ -31,12 +29,12 @@ body,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,div,in
     height: auto;
     margin: 0 auto;  /* отцентрировал блок*/
     padding: 0;   
-    list-style: none;
 }
 /*Header nav*/
 
 .nav-site{
 float: right;
+
 }
 
 .nav-site li{
@@ -44,7 +42,8 @@ float: right;
     margin-right: 30px;
 
     list-style-type:none; /*убрали маркеры*/
-    line-height: 11px;
+    font-size: 14px;
+    line-height: 32px;
     font-weight: bold;
 
 }
@@ -108,14 +107,8 @@ main{
 /*banner*/
 .slider{
     position: relative;
-    left: 0;
-    width: 100%;
-    max-width: 1680px;
     min-height: 600px;
-    
-
     overflow: hidden;
-    outline: 1px solid black;
     background-image:url("../img/brd.jpg");
     background-repeat: no-repeat; /* не повторять*/
     background-size: cover;/*определяем размер залили полностью всё */
@@ -132,11 +125,13 @@ main{
         url("../img/brd.jpg"); 
 }
 /*------------ to do*/
+.pr{
+    position: relative;
+}
+
 .slider-link{
     position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(0,-50%);
+    top: 226px;
 
     width: 100%;
     margin: 0 auto;
@@ -144,35 +139,59 @@ main{
     height: 100px;
     
 }
-    .slider-arrow{
-    float: left;
- 
+/*left slider*/
+.slider-arrow{
+   float: left; 
+}
+
+.slider-arrow2{
+    float: right;
+}
+
+.slider-arrow,
+.slider-arrow2{
     width: 100px;
     height: 100px;
-    
-    background-color:#4ec6ab;
-    
 }
+
+.slider-arrow::before {
+ content: "\003C";   
+}
+
+.slider-arrow2::before{
+content: "\003E";
+}
+.slider-arrow::before,
+.slider-arrow2::before {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    line-height: 0.11;
+    float: left;
+    margin-left: 25px;
+    margin-top: 45px;
+}
+
+.slider-arrow:hover,
+.slider-arrow2:hover{
+    background-color:#4ec6ab;
+}
+/* canter  slider*/
     .slider-arrow1{
     position: absolute;
-    left: 160px;
-    top: -30px;
+    left: 180px;
+    top: -26px;
     float: left;
     width: 784px;
-
-}
-    .slider-arrow2{
-    float: right;
-    width: 100px;
-    height: 100px;
-    background-color:#4ec6ab;
-    
 }
         .slider-arrow1 a{
          color: #fff;
 }
             .slider-arrow1 a:hover{
                 color:#ff7200 ;
+             }
+             .slider-arrow-center a:not(:last-child):after{
+                content: "\2044";
+                color: #fff;
              }
 
         .slider-arrow-a{
@@ -189,7 +208,6 @@ main{
         font-family: "Roboto Light";
 }
 
-  
 /*new collection*/
 
 section h2 {
@@ -298,3 +316,5 @@ footer{
     color: rgb(26, 188, 156);
     text-transform: capitalize;
 }
+
+
