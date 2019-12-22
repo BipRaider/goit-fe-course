@@ -231,6 +231,7 @@ section h2::after{
 }
 
 .featured{
+    position: relative;
     float: left; 
 
     margin: 0;
@@ -287,9 +288,96 @@ section h2::after{
 .featured p::before{
     content:"\0024";
 }
+/*featured input*/
+.featured-input{
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    width: 234px;
+    height: 264px;
+    z-index: 15;
+    background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+}
+.featured:hover .featured-input{
+    border: 10px solid rgba(255, 255, 255, 0.808);
+    z-index: 15;
+}
 
+.input1,.input2, .input3, .input4{
+    position: absolute;
+    background-color: transparent;
+    outline: 1px solid #fff;
+}
+.input1,.input2, .input3{
+    width: 50px;
+    height: 50px;
+    bottom: 132px;
+    background-position: center;/*от центрировали*/ 
+}
+.input1{
+    left: 30px;
+       
+}
+    .input1::before{
+        background-image:url(../img/hover/live.png);
+        width: 30px;
+        height: 25px; 
+}
+
+.input2{
+    left: 89px;
+    
+}
+    .input2::before{
+        background-image:url(../img/hover/arow.png);
+        width: 26px;
+        height: 25px;
+}
+.input3{
+    left: 147px;
+    
+}
+    .input3::before{
+        background-image:url(../img/hover/time.png);
+        width: 24px;
+        height: 25px;
+    }
+.input4{
+    font-size: 14px;
+    font-family: "OpenSans";
+    text-align: right;
+    line-height: 2.286;
+    text-align: center;
+    margin-left: 50px;
+    bottom: 75px;
+    left: 30px;
+    width: 168px;
+    height: 50px;
+    
+}
+  
+.input1::before,
+.input2::before,
+.input3::before,
+.input4::before{
+content: "";
+display: block;
+z-index: 40;
+margin: 13px auto;
+background-repeat: no-repeat; /* не повторять*/
+background-size: cover;/*определяем размер залили полностью всё */
+background-position: center;/*от центрировали*/ 
+}
+    .input4::before{
+        background-image:url(../img/hover/telega.png);
+        margin: 0;
+        margin-top: 13px;
+        width: 28px;
+        height: 27px;
+        background-position: left;/*от центрировали*/ 
+}
 /*footer*/
-
 footer{
     position: relative;
     bottom: 0;
