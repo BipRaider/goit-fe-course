@@ -183,3 +183,6 @@ input[type="radio"].visualyy-hidden{
     background: url(https://images.weserv.nl/?q=85&url=https://nv.ua/system/Article/posters/002/122/838/600x300/67029f6374dfd4ca117f7310ee408b42.jpeg?stamp=20191212135025);
     transform: translateX(380px) rotate(3deg); /*https://developer.mozilla.org/en-US/docs/Web/CSS/angle*/
   }
+.opacity{
+    opacity: 0.1; /* данные будут становиться прозрачными*/
+}

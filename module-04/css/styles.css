@@ -16,7 +16,7 @@ body{
     background-color: #e9f0fd;
 } 
 /*общие*/
-body,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,div,input{
+body,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,div,input,span{
     margin: 0;
     list-style: none;
     text-decoration: none;
@@ -26,7 +26,6 @@ body,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,div,in
 
 .container{
     width: 1110px;
-    height: auto;
     margin: 0 auto;  /* отцентрировал блок*/
     padding: 0;   
 }
@@ -155,20 +154,34 @@ main{
 }
 
 .slider-arrow::before {
- content: "\003C";   
+ content: "";
+ position: absolute;
+ left: 42px;
+ top: 30px;
+
+ background-image: url(../img/hover/icon-arrow-left.png);  
+ width: 22px;
+ height: 38px;
+ 
 }
 
 .slider-arrow2::before{
-content: "\003E";
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 42px;
+
+    background-image: url(../img/hover/icon-arrow-right.png);
+    width: 22px;
+    height: 38px;
+
 }
 .slider-arrow::before,
 .slider-arrow2::before {
+    position: absolute;
     font-size: 100px;
     color: rgb(255, 255, 255);
     line-height: 0.11;
-    float: left;
-    margin-left: 25px;
-    margin-top: 45px;
 }
 
 .slider-arrow:hover,
@@ -281,8 +294,8 @@ section h2::after{
 }
 
 .featured p{
-    float: right;
-    margin-right: 15px;
+    position: absolute;
+    right: 15px;
 }
 
 .featured p::before{
@@ -294,13 +307,16 @@ section h2::after{
     float: left;
     top: 0;
     left: 0;
-    width: 234px;
+    width: 235px;
     height: 264px;
-    z-index: 15;
+    z-index: -1;
+    border: 10px solid rgba(255, 255, 255, 0.808);
     background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
 }
+.featured-input a{
+    margin-left: 0;
+}
 .featured:hover .featured-input{
-    border: 10px solid rgba(255, 255, 255, 0.808);
     z-index: 15;
 }
 
@@ -308,6 +324,10 @@ section h2::after{
     position: absolute;
     background-color: transparent;
     outline: 1px solid #fff;
+    
+}
+.input1:hover,.input2:hover, .input3:hover, .input4:hover{
+    background-color: rgb(26, 188, 156);
 }
 .input1,.input2, .input3{
     width: 50px;
@@ -316,7 +336,7 @@ section h2::after{
     background-position: center;/*от центрировали*/ 
 }
 .input1{
-    left: 30px;
+    left: 35px;
        
 }
     .input1::before{
@@ -326,7 +346,7 @@ section h2::after{
 }
 
 .input2{
-    left: 89px;
+    left: 94px;
     
 }
     .input2::before{
@@ -335,7 +355,7 @@ section h2::after{
         height: 25px;
 }
 .input3{
-    left: 147px;
+    left: 152px;
     
 }
     .input3::before{
@@ -349,33 +369,44 @@ section h2::after{
     text-align: right;
     line-height: 2.286;
     text-align: center;
-    margin-left: 50px;
+    
     bottom: 75px;
-    left: 30px;
+    left: 35px;
     width: 168px;
     height: 50px;
-    
+    padding-left: 50px;
+}
+.input-span-a{
+    position: absolute;
+    top: 7px;
+    left: 50px;
+    width: 115px;
 }
   
 .input1::before,
 .input2::before,
 .input3::before,
 .input4::before{
+position: absolute;
 content: "";
 display: block;
 z-index: 40;
-margin: 13px auto;
+left: 12px;
+top: 12px;
 background-repeat: no-repeat; /* не повторять*/
 background-size: cover;/*определяем размер залили полностью всё */
 background-position: center;/*от центрировали*/ 
 }
     .input4::before{
+        position: absolute;
         background-image:url(../img/hover/telega.png);
         margin: 0;
-        margin-top: 13px;
+        padding: 0;
+        left: 12px;
+        top: 12px;
         width: 28px;
         height: 27px;
-        background-position: left;/*от центрировали*/ 
+        
 }
 /*footer*/
 footer{
