@@ -17,6 +17,7 @@ body{
 } 
 /*общие*/
 body,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,div,input,span{
+    padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
@@ -27,7 +28,7 @@ body,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,div,in
 .container{
     width: 1110px;
     margin: 0 auto;  /* отцентрировал блок*/
-    padding: 0;   
+    padding: 0;
 }
 /*Header nav*/
 
@@ -40,12 +41,16 @@ padding: 0;
     float: left;
     margin-right: 30px;
 
+    font-family: "Open Sans";
+    font-weight: bold;
     list-style-type:none; /*убрали маркеры*/
     font-size: 14px;
     line-height: 32px;
     font-weight: bold;
 
 }
+
+  
 .nav-site li:last-child{
     margin-right: 0;
 }
@@ -68,7 +73,7 @@ header{
     margin-bottom: 0;
     padding: 0;
 
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto Light",sans-serif;
     font-weight: 300;
     font-size: 30px;
     line-height: 32px;
@@ -95,13 +100,12 @@ main{
     width: 100%;
     min-width: 1100px;
     max-width: 100%;
-    z-index: 100;
-
-    margin-bottom: 100px;
 }
 
 .section-color{
     background-color: #e9f0fd;
+    height: 614px;
+    padding-top: 64px;  /* ---не уверен что правельное решение*/
 }
 /*banner*/
 .slider{
@@ -152,6 +156,7 @@ main{
     position: absolute;
     width: 100px;
     height: 100px;
+    padding: 0;
     border: none;
 }
 
@@ -239,6 +244,10 @@ section h2::after{
     background-color:#4ec6ab; 
 }
 
+
+
+/*featured products */
+
 .featured{
     position: relative;
     float: left; 
@@ -246,10 +255,7 @@ section h2::after{
     margin: 0;
     padding: 0;
     margin-right: 30px;
-  }
 
-/*featured products */
-.featured{
     width: 255px;
     height: auto;
     background: linear-gradient(to right ,#000 78%, #8c8c8c 22%);
@@ -300,7 +306,7 @@ section h2::after{
 /*featured input*/
 .featured-input{
     position: absolute;
-    float: left;
+    display: block;
     top: 0;
     left: 0;
     width: 235px;
@@ -320,7 +326,13 @@ section h2::after{
     position: absolute;
     background-color: transparent;
     outline: 1px solid #fff;
-    
+    border: none;
+
+    font-size: 18px;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
 }
 .input1:hover,.input2:hover, .input3:hover, .input4:hover{
     background-color: rgb(26, 188, 156);
@@ -329,96 +341,45 @@ section h2::after{
     width: 50px;
     height: 50px;
     bottom: 132px;
-    background-position: center;/*от центрировали*/ 
 }
 .input1{
     left: 35px;
-       
-}
-    .input1::before{
-        background-image:url(../img/hover/live.png);
-        width: 30px;
-        height: 25px; 
+    background: url(../img/hover/live.png) no-repeat center;
 }
 
 .input2{
     left: 94px;
-    
+    background: url(../img/hover/arow.png) no-repeat center;
 }
-    .input2::before{
-        background-image:url(../img/hover/arow.png);
-        width: 26px;
-        height: 25px;
-}
+
 .input3{
     left: 152px;
-    
+    background: url(../img/hover/time.png) no-repeat center;
 }
-    .input3::before{
-        background-image:url(../img/hover/time.png);
-        width: 24px;
-        height: 25px;
-    }
+
 .input4{
     font-size: 14px;
     font-family: "OpenSans";
-    text-align: right;
-    line-height: 2.286;
+    line-height:   32px;
     text-align: center;
-    
+    background: url(../img/hover/telega.png) no-repeat  12px 10px ;
+
     bottom: 75px;
     left: 35px;
     width: 168px;
     height: 50px;
+    
     padding-left: 50px;
 }
-.input-span-a{
-    position: absolute;
-    top: 7px;
-    left: 50px;
-    width: 115px;
-}
-  
-.input1::before,
-.input2::before,
-.input3::before,
-.input4::before{
-position: absolute;
-content: "";
-display: block;
-z-index: 40;
-left: 12px;
-top: 12px;
-background-repeat: no-repeat; /* не повторять*/
-background-size: cover;/*определяем размер залили полностью всё */
-background-position: center;/*от центрировали*/ 
-}
-    .input4::before{
-        position: absolute;
-        background-image:url(../img/hover/telega.png);
-        margin: 0;
-        padding: 0;
-        left: 12px;
-        top: 12px;
-        width: 28px;
-        height: 27px;
-        
-}
+ 
 /*footer*/
 footer{
-    position: relative;
-    bottom: 0;
-    left: 0;
     width: 100%;
     height: 90px;
-    z-index:500;
     background-color: rgb(50, 50, 50);
 }
 .footer-bar {
-    
-    padding-top:36px ;
-    padding-bottom:32px; 
-
+    padding-top: 36.5px;
     font-size: 16px;
     font-family: "OpenSans Regular", sans-serif;
     color: rgb(254, 254, 254);
