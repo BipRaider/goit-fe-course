@@ -104,8 +104,9 @@ main{
 
 .section-color{
     background-color: #e9f0fd;
-    height: 614px;
-    padding-top: 64px;  /* ---не уверен что правельное решение*/
+
+    padding-top: 64px;
+    padding-bottom: 100px;
 }
 /*banner*/
 .slider{
