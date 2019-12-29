@@ -186,31 +186,32 @@ input[type="radio"].visualyy-hidden{
   }
 
 .transform{
+    transform:matrix();/*Задаёт матрицу преобразований. http://htmlbook.ru/blog/matritsa-preobrazovanii*/
 
-    transform-origin: center;/* здвигает точки отсчета оси X and Y*/
+    transform-origin: center;/* cдвигает точки отсчета оси X and Y*/
 
-    transform: translateX(380px);/*здвиг по аси Х*/
-    transform: translateY(380px);/*здвиг по аси Y*/
-    transform: translateZ(380px);/*здвиг по аси Z*/
-    transform: translate(50% ,50%);/*здвиг по аси X и Y*/
-    transform: translate3d(50% ,50% ,50%);/*здвиг по аси X и Y и Z*/
+    transform: translateX(380px);/*Сдвигает элемент по горизонтали на указанное значение. Положительное значение сдвигает вправо, отрицательное влево.*/
+    transform: translateY(380px);/*Сдвигает элемент по вертикали на указанное значение. Положительное значение сдвигает вниз, отрицательное вверх.*/
+    transform: translateZ(380px);/*cдвиг по аси Z*/
+    transform: translate(50% ,50%);/*Сдвигает элемент на заданное значение по горизонтали и вертикали.*/
+    transform: translate3d(50% ,50% ,50%);/*cдвиг по аси X и Y и Z*/
 
     transform: rotateX(3deg);/*Поворот по вертекали*/
     transform: rotateY(3deg);/*Поворот по горезонтале*/
     transform: rotateZ(3deg);/*Поворот*/
-    transform: rotate(3deg); /* Поворот блока  по кругу ,точка отсчёта в центре блока на лево*/
+    transform: rotate(3deg); /*Поворот элемента на заданный угол относительно точки трансформации, задаваемой свойством transform-origin.*/
     transform: rotate3d(3deg,3deg,3deg);/*поворот по аси X и Y и Z*/
     
     
-    transform: skewX(60deg);
-    transform: skewY(60deg);
-    transform: skew(60deg ,360deg);
+    transform: skewX(60deg);/*Наклоняет элемент на заданный угол по вертикали.*/
+    transform: skewY(60deg);/*Наклоняет элемент на заданный угол по горизонтали.*/
+    transform: skew(60deg ,360deg);/**/
     
-    transform: scale(1.1); /*Маштабирование*/
-    transform: scale3d(1,1,1);
-    transform: scaleX(1);
-    transform: scaleY(1);
-    transform: scaleZ(1);
+    transform: scale(1.1,-1.5); /*Масштаб элемента по горизонтали и вертикали.*/
+    transform: scale3d(1,1,1);/**/
+    transform: scaleX(1);/*Масштабирует элемент по горизонтали.*/
+    transform: scaleY(1);/*Масштабирует элемент по вертикали.*/
+    transform: scaleZ(1);/**/
 
     /*Короткая запись . Выполняются действия с лева на права по очереди !*/
     transform: translateX(380px) rotate(3deg) skewX(60deg);
