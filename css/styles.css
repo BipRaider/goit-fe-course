@@ -182,36 +182,83 @@ input[type="radio"].visualyy-hidden{
 .div:hover{
     background: url(https://images.weserv.nl/?q=85&url=https://nv.ua/system/Article/posters/002/122/838/600x300/67029f6374dfd4ca117f7310ee408b42.jpeg?stamp=20191212135025);
     transform: translateX(380px) rotate(3deg); /*https://developer.mozilla.org/en-US/docs/Web/CSS/angle*/
+    
   }
+
+.transform{
+
+    transform-origin: center;/* здвигает точки отсчета оси X and Y*/
+
+    transform: translateX(380px);/*здвиг по аси Х*/
+    transform: translateY(380px);/*здвиг по аси Y*/
+    transform: translateZ(380px);/*здвиг по аси Z*/
+    transform: translate(50% ,50%);/*здвиг по аси X и Y*/
+    transform: translate3d(50% ,50% ,50%);/*здвиг по аси X и Y и Z*/
+
+    transform: rotateX(3deg);/*Поворот по вертекали*/
+    transform: rotateY(3deg);/*Поворот по горезонтале*/
+    transform: rotateZ(3deg);/*Поворот*/
+    transform: rotate(3deg); /* Поворот блока  по кругу ,точка отсчёта в центре блока на лево*/
+    transform: rotate3d(3deg,3deg,3deg);/*поворот по аси X и Y и Z*/
+    
+    
+    transform: skewX(60deg);
+    transform: skewY(60deg);
+    transform: skew(60deg ,360deg);
+    
+    transform: scale(1.1); /*Маштабирование*/
+    transform: scale3d(1,1,1);
+    transform: scaleX(1);
+    transform: scaleY(1);
+    transform: scaleZ(1);
+
+    /*Короткая запись . Выполняются действия с лева на права по очереди !*/
+    transform: translateX(380px) rotate(3deg) skewX(60deg);
+
+}
+.transition{
+    transition-duration: 3s; /* задержки для аннимай*/
+}
 .opacity{
     opacity: 0.1; /* данные будут становиться прозрачными*/
 }
+
 .display-flex{
     display: flex;/* задает flex-контейнер c элементами block  */
     display:	inline-flex;/*	задает flex-контейнер c элементами inline-block*/
      
     order: 6;  /*ззадаём номер одельному элементу и упровляем пложением */
 
-    flex-basis:20px;/*Определяет ширину элемента до применения flex-grow и flex-shrink*/
-
     flex-grow: 3;/*Определят пропорцию значения width элемента flex контейнера,
     которая будет рассчитана за счет удаления свободного пространства*/
 
-    flex-shrink:2;/*Определят пропорцию значения width элемента flex контейнера,
+    flex-shrink:0;/*Определят пропорцию значения width элемента flex контейнера,
      которая будет рассчитана за счет ширины других элементов 
      чем выше значение flex-shrink - тем меньше ширина элемента.*/
 
+    flex-basis:20px;/*Определяет ширину элемента до применения flex-grow и flex-shrink*/
 
-    flex-wrap:	none;/* (default)	запрещает перенос элементов из основной оси*/
-    flex-wrap:	wrap;	/*разрешает перенос элементов из основной оси на новую строку*/
-    flex-wrap:	wrap-reverse;	/*разрешает перенос элементов из основной оси на новую строку (обратный порядок строк)*/
+    /*удобное сокращение для flex-grow + flex-shrink +flex-basis */
+
+        flex: 3 0 20px;
+ 
+    /*определяет старт отоброжения элементов*/
 
     flex-direction:	row ;/*(default)	задает горизонтальный порядок элементов слева направо*/
     flex-direction:row-reverse;/*	задает горизонтальный порядок элементов справа налево*/
     flex-direction:	column;/*	задает вертикальный порядок элементов сверху вниз*/
     flex-direction:	column-reverse;/*	задает вертикальный порядок элементов снизу вверх*/
 
+    /*запрещает перенос элементов*/
+    flex-wrap:	nowrap;/* (default)	запрещает перенос элементов из основной оси*/
+    flex-wrap:	wrap;	/*разрешает перенос элементов из основной оси на новую строку*/
+    flex-wrap:	wrap-reverse;	/*разрешает перенос элементов из основной оси на новую строку (обратный порядок строк)*/
+
+    /*удобное сокращение для flex-direction + flex-wrap*/
+
     flex-flow: column wrap;/*удобное сокращение для flex-direction + flex-wrap*/
+
+    /* для выравнивания по main*/
 
     justify-content:	flex-start;/* (default)	элементы выравниваются от начала главной оси*/
     justify-content:	flex-end;/*	элементы выравниваются от конца главной оси*/
@@ -220,14 +267,18 @@ input[type="radio"].visualyy-hidden{
     justify-content:	space-around;/*	элементы выравниваются по главной оси, расстояние между каждой парой смежных элементов одинаково. Отступ по краям равен половине интервала между каждой парой смежных элементов.*/
     justify-content:	space-evenly;/*	элементы выравниваются по главной оси, c равным интервалом, расстояние между каждой парой смежных элементов и краями одинаково.*/
 
+    /* для выравнивания по cross*/
+
     align-items:	stretch;/*	Значение по умолчанию. Элементы растягиваются так, чтобы занять всю высоту строки*/
     align-items:	flex-start;/*	элементы выравниваются от начала cross axis*/
     align-items:	flex-end;/*	элементы выравниваются от конца cross axis*/
     align-items:	center;/*	элементы выравниваются по центру cross axis*/
     align-items:	baseline;/*	элементы выравниваются по baseline текста, расположенного в элементах*/
-    /*Свойство, позволяющее изменить правило align-items для отдельного элемента.*/
+    /*Свойство, позволяющее изменить правило align-items для отдельного элемента.Выравнивает по поперечной оси cross*/
     align-self:flex-end;
     align-self:flex-start;
+    align-self:center;
+
 
     /*Это свойство работает только если главная ось состоит из более чем одной строки. 
     Другими словами, если flex-wrap: wrap или flex-wrap: wrap-reverse привели к переносу строк.
@@ -239,6 +290,6 @@ input[type="radio"].visualyy-hidden{
     align-content:	center;/*	строки выравниваются по центру cross axis*/
     align-content:	space-between;/*	строки выравниваются вдоль cross axis так, чтобы крайние строки прижимались к краям, а свободное место распределялось равными частями между собой.*/
     align-content:	space-around;/*	строки выравниваются вдоль cross axis так, чтобы свободное место распределялось равными частями между собой, а крайние строки имели расстояние к краям равным половине от межстрочного расстояния.*/
-
+    
     
 }
