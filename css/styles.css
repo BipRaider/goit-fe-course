@@ -218,7 +218,17 @@ input[type="radio"].visualyy-hidden{
 
 }
 .transition{
-    transition-duration: 3s; /* задержки для аннимай*/
+    transition-property: all;/* Задаётся название СSS-свойств к которым будет применяться эфект перехода Может содержать список свойств через запятую */
+    transition-duration: 3s; /* время для аннимцией*/
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);/*https://cubic-bezier.com*/
+    transition-timing-function:steps(60, end);
+    transition-delay: 0ms;/*задержка перед началом анимаций*/
+}
+.animation{
+    animation-name: run;
+    animation-duration: 60s;/* время для аннимцией*/
+    animation-timing-function:steps(60, end);
+    animation-iteration-count: infinite;/*задержка перед началом анимаций*/
 }
 .opacity{
     opacity: 0.1; /* данные будут становиться прозрачными*/
