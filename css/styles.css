@@ -221,15 +221,34 @@ input[type="radio"].visualyy-hidden{
     transition-property: all;/* Задаётся название СSS-свойств к которым будет применяться эфект перехода Может содержать список свойств через запятую */
     transition-duration: 3s; /* время для аннимцией*/
     transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);/*https://cubic-bezier.com*/
-    transition-timing-function:steps(60, end);
+    transition-timing-function:steps(60, end);/*Свойство задаёт временную функцию, которая описывает скорость перехода объекта от одного значения к другому. Задается функцией Безье.*/
     transition-delay: 0ms;/*задержка перед началом анимаций*/
+    border-color: black;
 }
+
+/*Animation  https://webref.ru/css/keyframes*/
+@keyframes anim {  /*Уникальная переменная, которая связывает @keyframes с animation, через это свойство настраивается время анимации и другие её параметры */
+/*Вместо ключевых слов from и to можно использовать, соответственно, 0% и 100%*/
+    from{} /*Первый ключевой кадр, аналогичен 0%.*/
+    50%{}
+    to{} /*Последний ключевой кадр, аналогичен 100%. */
+}
+
 .animation{
-    animation-name: run;
+    animation-name: anim;
     animation-duration: 60s;/* время для аннимцией*/
-    animation-timing-function:steps(60, end);
-    animation-iteration-count: infinite;/*задержка перед началом анимаций*/
+    animation-timing-function:steps(60, end);/*определяет изменение скорости от начала до конца анимации с помощью временных функций. https://webref.ru/css/animation-timing-function */
+    animation-delay:2s;/* задает задержку анимации.*/
+    animation-iteration-count: infinite;/*задержка перед началом анимаций (безконечный повтор)*/
+    animation-direction:alternate;/*задает направление повтора анимации*/
+    animation-fill-mode:forwards; /*определяет порядок применения определенных в @keyframes стилей к объекту.*/
+    animation: anim 2s ease-in-out 2 alternate 5s forwards; /*Краткая запись*/
 }
+.animation:hover{
+    animation-play-state: paused; /*Пауза анимации*/
+}
+
+/*--------------*/
 .opacity{
     opacity: 0.1; /* данные будут становиться прозрачными*/
 }

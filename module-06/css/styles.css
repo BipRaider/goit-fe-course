@@ -1,0 +1,48 @@
+html{
+    box-sizing: border-box;
+    line-height: 1;
+}
+p
+*,
+*::before,
+::after{    
+    box-sizing: inherit;
+}
+/* обьявление переменых*/
+:root{
+    --hover_time: 200ms;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+} 
+/*общие*/
+body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,input,span{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;   /*убирает рамки*/
+}
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto;  /* отцентрировал блок*/
+    padding: 0;
+}
+.box{
+background-color: rgb(210, 221, 241);
+outline: 1px solid black;
+margin-bottom: 10px;
+}
+/*header*/
+.logo-mogo{
+
+}
+.nav-site{
+display: flex;
+}
+
+
