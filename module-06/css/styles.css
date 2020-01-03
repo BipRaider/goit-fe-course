@@ -15,10 +15,11 @@ p
 
     --color_main:rgb(148, 225, 211); /*Основной цвет*/
     --color_lg:rgb(252, 227, 138);
+    --color_h2p:rgb(51, 51, 51);
  
     --ffmb:  "Montserrat";/*"Montserrat Bold" должен быть такой , ток чегото он у меня не фурычит */
     --ffmr:  "Montserrat Regular";
-    --ffks:  "Kaushan Script";
+    --ffks:  "Kaushan Script Regular";
     --ffrr:  "Roboto Regular";
     --ffrli: "Roboto Light Italic";
     --ffss:   sans-serif;
@@ -97,97 +98,107 @@ body{
     transition: opacity var(--hover_time) linear 0ms;
 }
 
-/*main*/ 
-
-    /*Heading  названия оглавлений*/
+                                            /*main*/ 
+/*Heading  названия оглавлений*/
 .headings{
 display: flex;
 flex-direction:	column;/* изменили главную ось*/
 align-items: center; /* отцентрировалаи*/
-justify-content: flex-start; /**/
-min-height: 160px;
+justify-content: space-between; /**/
+min-height: 77px;
+margin-bottom: 102px;
 }
 .headings h2{
-    font-size: 32px;
+    font-size: 30px;
     font-family: var(--ffmb);
-    color: rgb(51, 51, 51);
+    color: var(--color_h2p);
     font-weight: bold;
-    line-height: 80px;
     text-transform: uppercase;
+    line-height: 1.2;
 }
+ 
 .headings h2::after{
+    content: "";
     display:block;
     margin: 0 auto;
+    transform: translateY(40px);
     width: 60px;
     height: 3px;
-    content: "";
-    background-color:#4ec6ab; 
+    background-color:var(--color_hover); 
 }
 .headings p{
     font-size: 24px;
-    font-family: "Kaushan Script Regular";
-    color: rgb(51, 51, 51);
     line-height: 1.2;
+    font-family: var(--ffks);
+    color: var(--color_h2p);
+    
 }
 .headings p::first-letter{
     text-transform: uppercase;
 }
 
-    /*amazing sevices*/
+/*amazing sevices*/
 .amazing{
     display: flex;
     flex-direction:	column;
     justify-content: flex-end;
-    background-color: rgb(210, 221, 241);
 }
 .content-amazing{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     min-height: 330px;
+    background-color: rgb(210, 221, 241);
 }
 .content-amazing .box{
     flex: 0 0 380px;
     
 }
-.box h3{
+.box a{
+    display: block;
     margin-left: 82px;    
     font-size: 14px;
     font-family: var(--ffmr);
-    color: rgb(51, 51, 51);
+    color:var(--color_h2p);
     text-transform: uppercase;
     line-height: 1.2; 
+    margin-bottom: 12px;
 }
 .box p{
     margin-left: 82px;
     font-size: 15px;
+    line-height: 1.6;
     font-family: var(--ffrr);
     color: rgb(153, 153, 153);
-    line-height: 1.6;
+    
 }
-.icon-cre, .icon-pho, .icon-web, .icon-seo, .icon-ch, .icon-dig{
+.icon-cre::before, .icon-pho::before, .icon-web::before, .icon-seo::before, .icon-ch::before, .icon-dig::before{
+    content: "";
+    display: block;
+    float: left;
     height: 34px;
     width: 34px;
     background-repeat: no-repeat;
-    background-position: 30px;
+    background-position: center;
+    transform: translateX(20px);
 }
 
-.icon-pho{
+.icon-pho::before{
     background-image: url(../img/labe/ALARM.png);
 }
-.icon-cre{
+.icon-cre::before{
     background-image: url(../img/labe/COMPUTER\ _\ OK.png);
 }
-.icon-web{
+.icon-web::before{
     background-image: url(../img/labe/LINE\ GRAPH.png);
 }
-.icon-dig{
+.icon-dig::before{
     background-image: url(../img/labe/digital.png);
 }
-.icon-seo{
+.icon-seo::before{
     background-image: url(../img/labe/BOOK\ 2.png);
 }
-.icon-ch{
+.icon-ch::before{
     background-image: url(../img/labe/HOME.png);
 }
 
