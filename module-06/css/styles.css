@@ -210,8 +210,9 @@ margin-bottom: 102px;
     background-image: url(../img/labe/HOME.png);
 }
 
-                        /*meet our team*/
+                        /*meet our team*/  
 
+                        /* To Do */
 
 
 .meet{
@@ -230,6 +231,28 @@ margin-bottom: 102px;
     margin-bottom: 60px;
 }
 
+.soc_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 470px;
+    background:linear-gradient(
+        to top,
+        var(--color_lg),
+        var(--color_hover));
+}
+.icon-f,.icon-i,.icon-p,.icon-t{
+    width: 56px;
+    height: 56px;
+    margin-left: 1px;
+    box-shadow:1px 0 1px 0 rgba(252, 227, 138 ,0.5);
+    background-color: var(--color_lg);
+}
+.icon-f:hover,.icon-i:hover,.icon-p:hover,.icon-t:hover{
+    box-shadow:1px 0 1px 0 rgba(148, 225, 211 ,0.5);
+    background-color: var(--color_main);
+}
 .list-team{
     display: flex;
     justify-content: space-between;
