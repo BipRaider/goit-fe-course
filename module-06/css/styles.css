@@ -148,11 +148,14 @@ margin-bottom: 102px;
     flex-wrap: wrap;
     justify-content: space-between;
     min-height: 330px;
-    background-color: rgb(210, 221, 241);
 }
 .content-amazing .box{
     flex: 0 0 380px;
     
+}
+.box {
+    min-height: 70px;
+    margin-bottom: 94px;
 }
 .box a{
     display: block;
