@@ -223,7 +223,6 @@ input[type="radio"].visualyy-hidden{
     transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);/*https://cubic-bezier.com*/
     transition-timing-function:steps(60, end);/*Свойство задаёт временную функцию, которая описывает скорость перехода объекта от одного значения к другому. Задается функцией Безье.*/
     transition-delay: 0ms;/*задержка перед началом анимаций*/
-    border-color: black;
 }
 
 /*Animation  https://webref.ru/css/keyframes*/
@@ -254,8 +253,8 @@ input[type="radio"].visualyy-hidden{
 }
 
 .display-flex{
-    display: flex;/* задает flex-контейнер c элементами block  */
-    display:	inline-flex;/*	задает flex-контейнер c элементами inline-block*/
+    display:flex;/* задает flex-контейнер c элементами block  */
+    display:inline-flex;/*	задает flex-контейнер c элементами inline-block*/
      
     order: 6;  /*ззадаём номер одельному элементу и упровляем пложением */
 

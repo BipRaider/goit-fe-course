@@ -11,14 +11,21 @@ p
 /* обьявление переменых*/
 :root{
     --hover_time: 200ms;
+    --color_hover:rgb(243, 129, 129);/*Цвет для ховеров*/
+
+    --color_main:rgb(148, 225, 211); /*Основной цвет*/
+    --color_lg:rgb(252, 227, 138);
+ 
+    --ffmb:  "Montserrat";/*"Montserrat Bold" должен быть такой , ток чегото он у меня не фурычит */
+    --ffmr:  "Montserrat Regular";
+    --ffks:  "Kaushan Script";
+    --ffrr:  "Roboto Regular";
+    --ffrli: "Roboto Light Italic";
+    --ffss:   sans-serif;
 }
 
-body{
-    width: 100%;
-    height: 100%;
-} 
 /*общие*/
-body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,input,span{
+body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,input,span,figure,figcaption,cite{
     padding: 0;
     margin: 0;
     list-style: none;
@@ -27,22 +34,185 @@ body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,in
 }
 
 
+body{
+    width: 100%;
+    height: 100%;
+} 
+
 .container{
     width: 1200px;
     margin: 0 auto;  /* отцентрировал блок*/
     padding: 0;
-}
-.box{
-background-color: rgb(210, 221, 241);
-outline: 1px solid black;
-margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
 }
 /*header*/
+.nav-bar{
+    display: flex;
+    align-items: flex-end; /* отцентрировалаи по второстепеной оси*/
+    justify-content:space-between; /*растянули по сторона*/
+    min-height: 53px;
+    margin-bottom: 126px;
+}
+
 .logo-mogo{
-
+    display: block;
+    font-size: 30px;
+    font-family: var(--ffmb , --ffss);
+    color:var(--color_main);
+    line-height: 1.2;
+    text-transform:uppercase;
+    font-weight: bold;
 }
-.nav-site{
+
+.nav-link{
+  display: flex;
+  justify-content:	space-between;
+  min-width: 490px;
+  
+}
+
+.nav-link a{
+    display: block;
+    font-size: 14px;
+    font-family: var(--ffmr , --ffss);
+    color: var(--color_main);
+    line-height: 1.2;
+    text-transform: uppercase;
+    
+}
+.nav-link a:hover{
+    transition: color var(--hover_time) linear 0ms;
+    color: var(--color_hover);
+}
+.nav-link a::after{
+        content: "";
+        display:block;
+        transform: translateY(13px);
+        height: 3px;
+        background-color:var(--color_hover);
+        opacity: 0;
+}
+.nav-link a:hover::after{
+    opacity: 1;
+    transition: opacity var(--hover_time) linear 0ms;
+}
+
+/*main*/ 
+
+    /*Heading  названия оглавлений*/
+.headings{
 display: flex;
+flex-direction:	column;/* изменили главную ось*/
+align-items: center; /* отцентрировалаи*/
+justify-content: flex-start; /**/
+min-height: 160px;
+}
+.headings h2{
+    font-size: 32px;
+    font-family: var(--ffmb);
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+.headings h2::after{
+    display:block;
+    margin: 0 auto;
+    width: 60px;
+    height: 3px;
+    content: "";
+    background-color:#4ec6ab; 
+}
+.headings p{
+    font-size: 24px;
+    font-family: "Kaushan Script Regular";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+}
+.headings p::first-letter{
+    text-transform: uppercase;
 }
 
+    /*amazing sevices*/
+.amazing{
+    display: flex;
+    flex-direction:	column;
+    justify-content: flex-end;
+    background-color: rgb(210, 221, 241);
+}
+.content-amazing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 330px;
+}
+.content-amazing .box{
+    flex: 0 0 380px;
+    
+}
+.box h3{
+    margin-left: 82px;    
+    font-size: 14px;
+    font-family: var(--ffmr);
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2; 
+}
+.box p{
+    margin-left: 82px;
+    font-size: 15px;
+    font-family: var(--ffrr);
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+}
+.icon-cre, .icon-pho, .icon-web, .icon-seo, .icon-ch, .icon-dig{
+    height: 34px;
+    width: 34px;
+    background-repeat: no-repeat;
+    background-position: 30px;
+}
+
+.icon-pho{
+    background-image: url(../img/labe/ALARM.png);
+}
+.icon-cre{
+    background-image: url(../img/labe/COMPUTER\ _\ OK.png);
+}
+.icon-web{
+    background-image: url(../img/labe/LINE\ GRAPH.png);
+}
+.icon-dig{
+    background-image: url(../img/labe/digital.png);
+}
+.icon-seo{
+    background-image: url(../img/labe/BOOK\ 2.png);
+}
+.icon-ch{
+    background-image: url(../img/labe/HOME.png);
+}
+
+    /*meet our team*/
+.meet{
+}
+
+.list-team{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 62px;
+}
+
+.footer-text{}
+.laaqiq{}
+
+footer form
+.footer-form{}
+.footer-email{}
+.footer-botton{}
 
