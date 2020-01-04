@@ -231,6 +231,36 @@ margin-bottom: 102px;
     margin-bottom: 60px;
 }
 
+.list-team{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    min-height: 625px; 
+}
+
+.list-team li{
+    min-height: 470px;
+    background:linear-gradient(to bottom ,var(--color_main) 470px, #fff 0);
+}
+.wrapper-meet{
+    margin-bottom: 30px;
+}
+.wrapper-meet:hover{
+    transition:transform  var(--hover_time) linear 0ms;
+    transform: translate(-10px , -10px);
+}
+.list-team img{
+    display: block;
+    position: absolute;
+    width: 380px;
+    height: 470px;
+}
+
+.wrapper-meet:hover img{
+    transition: opacity  var(--hover_time) linear 0ms;
+    opacity: 0.1;
+}
+
 .soc_link{
     display: flex;
     justify-content: center;
@@ -242,30 +272,55 @@ margin-bottom: 102px;
         var(--color_lg),
         var(--color_hover));
 }
+.wrapper-meet:hover a{
+    transition: z-index  var(--hover_time) linear 200ms;
+    z-index: 11;
+}
 .icon-f,.icon-i,.icon-p,.icon-t{
+    display: block;
     width: 56px;
     height: 56px;
-    margin-left: 1px;
-    box-shadow:1px 0 1px 0 rgba(252, 227, 138 ,0.5);
+    margin-right: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow:1px 0 0 0 rgba(252, 227, 138 ,0.6);
     background-color: var(--color_lg);
 }
 .icon-f:hover,.icon-i:hover,.icon-p:hover,.icon-t:hover{
-    box-shadow:1px 0 1px 0 rgba(148, 225, 211 ,0.5);
+    box-shadow:1px 0 1px 0 rgba(148, 225, 211 ,0.6);
     background-color: var(--color_main);
+    
 }
-.list-team{
-    display: flex;
-    justify-content: space-between;
+.icon-f{
+    background-image: url(../img/icon/facebook.png);
+}
+.icon-i{
+    background-image: url(../img/icon/instagram.png);
+}
+.icon-p{
+    background-image: url(../img/icon/pinterest.png);
 }
 
+.icon-t{
+    background-image: url(../img/icon/twitter.png);
+}
+
+figcaption{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:	center;
+    align-items:	center;
+}
 /*footer*/
 footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 62px;
+    border-top: 1px solid rgb(204, 204, 204);
 }
 
+  
 .footer-text{}
 .laaqiq{}
 
