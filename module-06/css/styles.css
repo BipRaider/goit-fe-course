@@ -19,7 +19,7 @@ p
     --color_p:rgb(153, 153, 153);
     --color_email:rgb(204, 204, 204);
  
-    --ffmb:  "Montserrat";/*"Montserrat Bold" должен быть такой , ток чегото он у меня не фурычит */
+    --ffmb:  "Montserrat";
     --ffmr:  "Montserrat Regular";
     --ffks:  "Kaushan Script Regular";
     --ffrr:  "Roboto Regular";
@@ -71,18 +71,21 @@ body{
     background-color: rgb(255, 255, 255);
 }
                                                             /*header*/
+header{
+    min-height: 180px;
+}
 .nav-bar{
     display: flex;
     align-items: flex-end; /* отцентрировалаи по второстепеной оси*/
     justify-content:space-between; /*растянули по сторона*/
     min-height: 53px;
-    margin-bottom: 126px;
 }
 
+  
 .logo-mogo{
     display: block;
     font-size: var(--fs30);
-    font-family: var(--ffmb , --ffss);
+    font-family: var(--ffmb );
     color:var(--color_main);
     line-height: var(--lh16);
     font-weight: bold;
@@ -127,19 +130,21 @@ body{
 /*Heading  названия оглавлений*/
 .headings{
 display: flex;
-flex-direction:	column;/* изменили главную ось*/
-align-items: center; /* отцентрировалаи*/
-justify-content: space-between; /**/
-min-height: 77px;
-margin-bottom: 102px;
+justify-content:	center;
+min-height: 180px;
 }
 .headings h2{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content:	center;
     font-size: var(--fs30);
     font-family: var(--ffmb, --ffss);
     color: var(--color_h2p);
     font-weight: bold;
     text-transform: uppercase;
     line-height: var(--lh12);
+
 }
  
 .headings h2::after{
@@ -151,14 +156,16 @@ margin-bottom: 102px;
     height: var(--w);
     background-color:var(--color_hover); 
 }
-.headings p{
+.headings span{
+    text-transform: lowercase;
+    font-weight: 400;
     font-size: var(--fs24);
     line-height: var(--lh12);
     font-family: var(--ffks, --ffss);
     color: var(--color_h2p);
-    
+    margin-bottom: 16px;
 }
-.headings p::first-letter{
+.headings span::first-letter{
     text-transform: uppercase;
 }
 
@@ -182,7 +189,7 @@ margin-bottom: 102px;
     min-height: 70px;
     margin-bottom: 94px;
 }
-.box a{
+.box h3{
     display: block;
     margin-left: 82px;    
     font-size: var(--fs14);
@@ -191,11 +198,6 @@ margin-bottom: 102px;
     text-transform: uppercase;
     line-height: var(--lh12); 
     margin-bottom: 12px;
-    
-}
-.box a:hover{
-    transition: color var(--hover_time) linear 0ms;
-    color: var(--color_hover);
 }
 
 .box p{
@@ -255,25 +257,29 @@ margin-bottom: 102px;
     display: flex;
     position: relative;
     justify-content: space-between;
+    align-items:	flex-start;
     min-height: 625px; 
+    
 }
-figure{
+
+.list-team li{
     display: flex;
     flex-flow: column wrap;
     justify-content:	center;
     align-items:	center;
-}
-.list-team li{
     min-height: var(--h_img);
     background:linear-gradient(to bottom ,var(--color_main) 470px, #fff 0);
 }
+
 .wrapper-meet{
     margin-bottom: 30px;
+    transition:transform  var(--hover_time) linear 0ms; /* Получаеться это можно и указывать в класе не обезательно в hover*/
 }
+
 .wrapper-meet:hover{
-    transition:transform  var(--hover_time) linear 0ms;
     transform: translate(-10px , -10px);
 }
+
 .list-team img{
     display: block;
     position: absolute;
@@ -352,7 +358,6 @@ figcaption{
     color: var(--color_p);
     font-style: italic;
     line-height: var(--lh16);
-    margin-bottom: 76px;
 }
 .list-team-city::first-letter{
     text-transform: uppercase;
