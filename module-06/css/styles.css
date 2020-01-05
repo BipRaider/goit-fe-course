@@ -11,11 +11,12 @@ p
 /* обьявление переменых*/
 :root{
     --hover_time: 200ms;
-    --color_hover:rgb(243, 129, 129);/*Цвет для ховеров*/
 
+    --color_hover:rgb(243, 129, 129);/*Цвет для ховеров*/
     --color_main:rgb(148, 225, 211); /*Основной цвет*/
-    --color_lg:rgb(252, 227, 138);
-    --color_h2p:rgb(51, 51, 51);
+    --color_lg:rgb(252, 227, 138); /*background-color icon*/
+    --color_h2p:rgb(51, 51, 51);/*цвет текста h2 p*/
+    --color_p:rgb(153, 153, 153);
  
     --ffmb:  "Montserrat";/*"Montserrat Bold" должен быть такой , ток чегото он у меня не фурычит */
     --ffmr:  "Montserrat Regular";
@@ -23,6 +24,27 @@ p
     --ffrr:  "Roboto Regular";
     --ffrli: "Roboto Light Italic";
     --ffss:   sans-serif;
+
+    /* line-height */
+    --lh16: 1.6; 
+    --lh12: 1.2; 
+
+    /* font-size*/
+    --fs14: 14px;
+    --fs15: 15px; 
+    --fs24: 24px;
+    --fs30: 30px;
+
+    /* Ширина полоски подчеркивания */
+     --w:3px; /*width  */
+
+     /* размеры img and icon*/
+    --w_img: 380px;
+    --h_img: 470px;
+    --w_labe: 34px;
+    --h_labe: 34px;
+    --w_icon: 54px;
+    --h_icon: 54px;
 }
 
 /*общие*/
@@ -57,10 +79,10 @@ body{
 
 .logo-mogo{
     display: block;
-    font-size: 30px;
+    font-size: var(--fs30);
     font-family: var(--ffmb , --ffss);
     color:var(--color_main);
-    line-height: 1.2;
+    line-height: var(--lh16);
     text-transform:uppercase;
     font-weight: bold;
 }
@@ -74,10 +96,10 @@ body{
 
 .nav-link a{
     display: block;
-    font-size: 14px;
+    font-size: var(--fs14);
     font-family: var(--ffmr , --ffss);
     color: var(--color_main);
-    line-height: 1.2;
+    line-height:    var(--lh12);
     text-transform: uppercase;
 }
 .nav-link a:hover{
@@ -88,7 +110,7 @@ body{
         content: "";
         display:block;
         transform: translateY(13px);
-        height: 3px;
+        height: var(--w);
         background-color:var(--color_hover);
         opacity: 0;
 }
@@ -108,12 +130,12 @@ min-height: 77px;
 margin-bottom: 102px;
 }
 .headings h2{
-    font-size: 30px;
+    font-size: var(--fs30);
     font-family: var(--ffmb);
     color: var(--color_h2p);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.2;
+    line-height: var(--lh12);
 }
  
 .headings h2::after{
@@ -122,12 +144,12 @@ margin-bottom: 102px;
     margin: 0 auto;
     transform: translateY(40px);
     width: 60px;
-    height: 3px;
+    height: var(--w);
     background-color:var(--color_hover); 
 }
 .headings p{
-    font-size: 24px;
-    line-height: 1.2;
+    font-size: var(--fs24);
+    line-height: var(--lh12);
     font-family: var(--ffks);
     color: var(--color_h2p);
     
@@ -159,11 +181,11 @@ margin-bottom: 102px;
 .box a{
     display: block;
     margin-left: 82px;    
-    font-size: 14px;
+    font-size: var(--fs14);
     font-family: var(--ffmr);
     color:var(--color_h2p);
     text-transform: uppercase;
-    line-height: 1.2; 
+    line-height: var(--lh12); 
     margin-bottom: 12px;
     
 }
@@ -174,18 +196,18 @@ margin-bottom: 102px;
 
 .box p{
     margin-left: 82px;
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: var(--fs15);
+    line-height:var(--lh16);
     font-family: var(--ffrr);
-    color: rgb(153, 153, 153);
+    color: var(--color_p);
     
 }
 .icon-cre::before, .icon-pho::before, .icon-web::before, .icon-seo::before, .icon-ch::before, .icon-dig::before{
     content: "";
     display: block;
     float: left;
-    height: 34px;
-    width: 34px;
+    height: var(--h_labe);
+    width: var(--w_labe);
     background-repeat: no-repeat;
     background-position: center;
     transform: translateX(20px);
@@ -212,19 +234,13 @@ margin-bottom: 102px;
 
                         /*meet our team*/  
 
-                        /* To Do */
-
-
-.meet{
-}
-
 .about-ous{
     display: flex;
     justify-content:center;
-    font-size: 15px;
-    font-family: "Roboto";
-    color: rgb(153, 153, 153);
-    line-height: 1.6;
+    font-size: var(--fs15);
+    font-family: var(--ffrr);
+    color: var(--color_p);
+    line-height: var(--lh16);
     text-align: center;
     margin: 0 auto;
     width: 980px;
@@ -237,9 +253,14 @@ margin-bottom: 102px;
     justify-content: space-between;
     min-height: 625px; 
 }
-
+figure{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:	center;
+    align-items:	center;
+}
 .list-team li{
-    min-height: 470px;
+    min-height: var(--h_img);
     background:linear-gradient(to bottom ,var(--color_main) 470px, #fff 0);
 }
 .wrapper-meet{
@@ -252,8 +273,8 @@ margin-bottom: 102px;
 .list-team img{
     display: block;
     position: absolute;
-    width: 380px;
-    height: 470px;
+    width: var(--w_img);
+    height: var(--h_img);
 }
 
 .wrapper-meet:hover img{
@@ -265,8 +286,8 @@ margin-bottom: 102px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 380px;
-    height: 470px;
+    width: var(--w_img);
+    height: var(--h_img);
     background:linear-gradient(
         to top,
         var(--color_lg),
@@ -278,8 +299,8 @@ margin-bottom: 102px;
 }
 .icon-f,.icon-i,.icon-p,.icon-t{
     display: block;
-    width: 56px;
-    height: 56px;
+    width: var(--w_icon);
+    height: var(--h_icon);
     margin-right: 1px;
     background-repeat: no-repeat;
     background-position: center;
@@ -310,6 +331,27 @@ figcaption{
     flex-flow: column wrap;
     justify-content:	center;
     align-items:	center;
+    width: var(--w_img);
+}
+.list-team-figcaption{
+        font-size: var(--fs14);
+        font-family: var(--ffmr);
+        color: var(--color_h2p);
+        text-transform: uppercase;
+        
+        line-height: var(--lh12);
+        margin-bottom: 10px;
+}
+.list-team-city{
+    font-size: var(--fs15);
+    font-family: var(--ffrli);
+    color: var(--color_p);
+    font-style: italic;
+    line-height: var(--lh16);
+    margin-bottom: 76px;
+}
+.list-team-city::first-letter{
+    text-transform: uppercase;
 }
 /*footer*/
 footer{
@@ -321,8 +363,19 @@ footer{
 }
 
   
-.footer-text{}
-.laaqiq{}
+.footer-text , .laaqiq{
+        font-size: var(--fs14);
+        font-family: var(--ffmr);
+        color: var(--color_h2p);
+        line-height: var(--lh12);
+}
+.footer-text::before{
+    content: "\00A9";
+    margin-right: 5px;
+}
+.laaqiq{
+    color: var(--color_hover);
+}
 
 footer form
 .footer-form{}
