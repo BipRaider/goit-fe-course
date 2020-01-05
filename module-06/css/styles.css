@@ -135,7 +135,7 @@ margin-bottom: 102px;
 }
 .headings h2{
     font-size: var(--fs30);
-    font-family: var(--ffmb);
+    font-family: var(--ffmb, --ffss);
     color: var(--color_h2p);
     font-weight: bold;
     text-transform: uppercase;
@@ -154,7 +154,7 @@ margin-bottom: 102px;
 .headings p{
     font-size: var(--fs24);
     line-height: var(--lh12);
-    font-family: var(--ffks);
+    font-family: var(--ffks, --ffss);
     color: var(--color_h2p);
     
 }
@@ -186,7 +186,7 @@ margin-bottom: 102px;
     display: block;
     margin-left: 82px;    
     font-size: var(--fs14);
-    font-family: var(--ffmr);
+    font-family: var(--ffmr, --ffss);
     color:var(--color_h2p);
     text-transform: uppercase;
     line-height: var(--lh12); 
@@ -202,7 +202,7 @@ margin-bottom: 102px;
     margin-left: 82px;
     font-size: var(--fs15);
     line-height:var(--lh16);
-    font-family: var(--ffrr);
+    font-family: var(--ffrr, --ffss);
     color: var(--color_p);
     
 }
@@ -242,7 +242,7 @@ margin-bottom: 102px;
     display: flex;
     justify-content:center;
     font-size: var(--fs15);
-    font-family: var(--ffrr);
+    font-family: var(--ffrr, --ffss);
     color: var(--color_p);
     line-height: var(--lh16);
     text-align: center;
@@ -339,7 +339,7 @@ figcaption{
 }
 .list-team-figcaption{
         font-size: var(--fs14);
-        font-family: var(--ffmr);
+        font-family: var(--ffmr, --ffss);
         color: var(--color_h2p);
         text-transform: uppercase;
         
@@ -348,7 +348,7 @@ figcaption{
 }
 .list-team-city{
     font-size: var(--fs15);
-    font-family: var(--ffrli);
+    font-family: var(--ffrli, --ffss);
     color: var(--color_p);
     font-style: italic;
     line-height: var(--lh16);
@@ -369,7 +369,7 @@ footer{
   
 .footer-text , .laaqiq{
         font-size: var(--fs14);
-        font-family: var(--ffmr);
+        font-family: var(--ffmr, --ffss);
         color: var(--color_h2p);
         line-height: var(--lh12);
 }
@@ -390,7 +390,7 @@ footer{
 }
 input[type="email"]::placeholder , .footer-email{
    font-size: var(--fs15);
-   font-family:  var(--ffrli);
+   font-family:  var(--ffrli, --ffss);
    color: var(--color_email);
    font-style: italic;
    line-height: var(--lh16);
@@ -411,7 +411,7 @@ input[type="email"]::placeholder , .footer-email{
     background-color: var(--color_main);
 
     font-size:var(--fs14);
-    font-family: var(--ffmb);
+    font-family: var(--ffmb, --ffss);
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
