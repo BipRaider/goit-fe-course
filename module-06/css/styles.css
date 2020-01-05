@@ -85,8 +85,10 @@ body{
     font-family: var(--ffmb , --ffss);
     color:var(--color_main);
     line-height: var(--lh16);
-    text-transform:uppercase;
     font-weight: bold;
+}
+.span{
+    text-transform:uppercase; /*Не очень как-то*/
 }
 
 .nav-link{
