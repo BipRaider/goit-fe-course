@@ -144,7 +144,6 @@ min-height: 180px;
     font-weight: bold;
     text-transform: uppercase;
     line-height: var(--lh12);
-
 }
  
 .headings h2::after{

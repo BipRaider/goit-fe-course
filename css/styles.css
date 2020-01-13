@@ -138,7 +138,7 @@ body {
 }
 .input-buttom{
     position: absolute;
-    cursor: pointer;/*показывает что на кнопк можно жмакать*/
+    cursor: pointer;/*показывает что на кнопк можно жмакать по всему блоку  (например lebal */
     background-color: transparent;/* делает просразчный фон*/
 }
 /* для того чтобы теги чувствовали float*/
@@ -322,3 +322,6 @@ input[type="radio"].visualyy-hidden{
     
     
 }
+.filter:checked + .nextFilter { /*+   говорит чтобы выбрали следующий илемент за ним nexfileter*/}
+.filter:checked > .nextFilter { /*>  говорит чтобы выбрали следующий первый элемент  nexfileter */}
+/* atribut  fill="#fff"    - в svg документе поминяет цвет иконки*/
