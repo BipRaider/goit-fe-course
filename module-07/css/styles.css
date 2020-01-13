@@ -8,36 +8,7 @@ p
 ::after{    
     box-sizing: inherit;
 }
-/* обьявление переменых*/
-:root{
-    --hover_time: 200ms;
 
-    --color_main:rgb(254, 209, 54); /*Основной цвет*/
-    --color_s: rgb(34, 34, 34);
-    --color_s_s:rgb(119, 119, 119);
-
-    --ffmb:  "Montserrat";
-    --ffmr:  "Montserrat Regular";
-
-    /* line-height */
-    --lh29: 2.929; 
-    --lh15: 1.577; 
-    --lh18: 1.875;
-    --lh12: 1.2;
-    --lh41: 4.167;
-
-    /* font-size*/
-    --fs14: 14px;
-    --fs16: 16px;
-    --fs18: 18px;
-    --fs26: 26px;
-    --fs40: 40px;
-
-     /*размеры icon*/
-    --h_input:40px;
-    --w_icon: 74px;
-    --h_icon: 74px;
-}
 /* montserrat-regular - latin */
 @font-face {
   font-family: 'Montserrat';
@@ -86,6 +57,36 @@ p
          url('../fonts/roboto-slab-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/roboto-slab-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
+  /* обьявление переменых*/
+:root{
+    --hover_time: 200ms;
+
+    --color_main:rgb(254, 209, 54); /*Основной цвет*/
+    --color_s: rgb(34, 34, 34);
+    --color_s_s:rgb(119, 119, 119);
+
+    --ffmb:  "Montserrat";
+    --ffmr:  "Montserrat Regular";
+
+    /* line-height */
+    --lh29: 2.929; 
+    --lh15: 1.577; 
+    --lh18: 1.875;
+    --lh12: 1.2;
+    --lh41: 4.167;
+
+    /* font-size*/
+    --fs14: 14px;
+    --fs16: 16px;
+    --fs18: 18px;
+    --fs26: 26px;
+    --fs40: 40px;
+
+     /*размеры icon*/
+    --h_input:40px;
+    --w_icon: 74px;
+    --h_icon: 74px;
+}
 /*общие*/
 body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,li,form,input,span,textarea{
     padding: 0;
@@ -225,19 +226,136 @@ border-radius: 50%;
         font-size: var(--fs18);
         font-family: var(--ffmb);
         color: var(--color_s);
-        font-weight: bold;
+        font-weight: 700;
         line-height: var(--lh41);
+        text-transform:capitalize;
 }
-.content p{
-    
-        font-size: var(--fs14);
-        font-family: 'Roboto Slab';
-        color: rgb(119, 119, 119);
-        line-height: var(--lh12);
-        text-align: center;
 
+.content p{
+    font-size: var(--fs14);
+    font-family: 'Roboto Slab';
+    color: rgb(119, 119, 119);
+    line-height: var(--lh12);
+    text-align: center;
 }
-.content p,
-.content h3{
+.content p::first-letter{
     text-transform:capitalize;
 }
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/footer_back.jpg);
+    min-height: 675px;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    justify-content:	space-between;
+    min-height: 452px;
+}
+
+.contact{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content:	center;
+
+    min-height: 146px;
+
+    font-size: var(--fs40);
+    font-family: var(--ffmb);
+    line-height: var(--lh18);
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#ffffff;
+}
+.contact-s{
+    font-size: var(--fs16);
+    font-family: 'Arvo';
+    font-style: italic;
+    font-weight: 400;
+    line-height: var(--lh12);
+    text-transform: lowercase;
+    color:var(--color_s_s);
+}
+.contact-s::first-letter{
+    text-transform:capitalize;
+}
+/* forma */
+.contact-user{
+    display: flex;
+    justify-content: space-between; /* прижал по бокам */
+    align-items:flex-start;/* прижал к верху*/
+    flex-wrap: wrap;/* сделал переносимые строки*/
+    min-width: 940px;
+    min-height:306px ;
+}
+
+.user-date{
+    display: flex;
+    flex-direction: column;
+    justify-content:	space-between;
+    width: 456px;
+    height: 210px;
+}
+
+.user-date input{
+    min-height: 54px;
+    border: none;
+    border-radius: 3px;
+
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.contact-user textarea{
+    min-width: 456px;
+    min-height: 210px;
+    border: none;
+    border-radius: 3px;
+
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+::placeholder{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.contact-user button{
+    min-width: 240px;
+    min-height: 65px;
+    margin: 0 auto;
+    margin-top: auto;
+
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+
+    border: none;
+    border-radius: 3px;
+    background-color: var(--color_main);
+}
+
+
+  

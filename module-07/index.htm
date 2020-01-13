@@ -10,8 +10,8 @@
     <title>Module 7</title>
 </head>
 <body>
-    <div class="container">
-       <header>
+
+       <header class="container">
            <nav class="nav-bar">
                 <a  class="nav-logo" href="#">golden</a>
                 <ul class="nav-link">
@@ -23,7 +23,7 @@
                 </ul>
            </nav>
        </header>
-        <main>
+        <main class="container">
             <section>
                 <h2 class="services">services<span class="services-s">proin iaculis purus consequat sem cure.</span> </h2>
                 <ul class="content">
@@ -42,18 +42,20 @@
                 </ul>
             </section>
         </main>
-        <footer>
-            <section>
-                <h2 class="contact">conatct us<span>Lorem ipsum dolor sit amet consectetur.</span>.</h2>
+        <footer class="footer">
+            <section class="container footer-box">
+                <h2 class="contact">conatct us<span class="contact-s">Lorem ipsum dolor sit amet consectetur.</span></h2>
                 <form class="contact-user" action="#" >
-                    <input type="text" name="username" id="username" placeholder="yout name *">
-                    <input type="email" name="email" id="email" placeholder="your name *">
-                    <input type="text" name="subject" id="subject" placeholder="subject">
-                    <textarea name = "comments"  placeholder="your message *"></textarea>
+                    <div class="user-date"> 
+                        <input type="text" name="username" id="username" placeholder="yout name *" required>
+                        <input type="email" name="email" id="email" placeholder="your name *" required>
+                        <input type="text" name="subject" id="subject" placeholder="subject"> 
+                    </div>
+                    <textarea name = "comments"  placeholder="your message *" required ></textarea>
                     <button type="submit"> send message</button>
                 </form>
             </section>
         </footer>
-    </div>
+
 </body>
 </html>
