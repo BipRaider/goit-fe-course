@@ -324,4 +324,7 @@ input[type="radio"].visualyy-hidden{
 }
 .filter:checked + .nextFilter { /*+   говорит чтобы выбрали следующий илемент за ним nexfileter*/}
 .filter:checked > .nextFilter { /*>  говорит чтобы выбрали следующий первый элемент  nexfileter */}
+.profile-form input[type="email"]:valid{/* valid  прошёл валидацию */}
+.profile-form input[type="email"]:invalid{ /*invalid  не прошел валидацию*/}
+.profile-form input[type="email"]::placeholder{}
 /* atribut  fill="#fff"    - в svg документе поминяет цвет иконки*/
