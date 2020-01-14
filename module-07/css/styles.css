@@ -287,17 +287,21 @@ border-radius: 50%;
 /* forma */
 .contact-user{
     display: flex;
+    flex-direction: column;
     justify-content: space-between; /* прижал по бокам */
-    align-items:flex-start;/* прижал к верху*/
+    align-items:	center;
     flex-wrap: wrap;/* сделал переносимые строки*/
     min-width: 940px;
     min-height:306px ;
 }
-
+.form-send{
+    display: flex;
+}
 .user-date{
     display: flex;
     flex-direction: column;
     justify-content:	space-between;
+    align-items:	baseline;
     width: 456px;
     height: 210px;
 }
@@ -315,12 +319,11 @@ border-radius: 50%;
     line-height: 1.2;
 }
 
-.contact-user textarea{
+.contact-user .textarea{
     min-width: 456px;
     min-height: 210px;
     border: none;
     border-radius: 3px;
-
     font-size: 14px;
     font-family: "Montserrat";
     color: rgb(187, 187, 187);
