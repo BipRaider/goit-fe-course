@@ -117,16 +117,21 @@ header{
     justify-content: space-between;
     padding-top: 44px;
 }
+
 .nav-logo{
         font-size: var(--fs26);
         font-family: 'Great Vibes';
         font-weight: bold;
         line-height: var(--lh15);
         text-transform:capitalize;/* первая заглавная*/
-        color: var(--color_main);
+        color:var(--color_main);
 
         min-width: 90px;
         margin-left: 6px;
+}
+.nav-link a{
+    display: block;
+    color: var(--color_s);
 }
 .nav-link{
     display: flex;
@@ -143,10 +148,7 @@ header{
     font-weight: bold;
     
 }
-.nav-bar a{
-    display: block;
-    color: var(--color_s);
-}
+
 
 .nav-link a:hover{
     transition: color var(--hover_time) linear 0ms;
@@ -251,16 +253,25 @@ border-radius: 50%;
     background-image: url(../img/footer_back.jpg);
     min-height: 675px;
 }
+/* forma */
+.contact-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* прижал по бокам */
+    align-items:	baseline;
+    min-width: 940px;
+    height:456px ;
+}
 
-
-.contact{
+.contact_us{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     align-content:	center;
-
+    margin: 0 auto;
+    
     min-height: 146px;
-
+    
     font-size: var(--fs40);
     font-family: var(--ffmb);
     line-height: var(--lh18);
@@ -268,7 +279,7 @@ border-radius: 50%;
     text-transform: uppercase;
     color:#ffffff;
 }
-.contact-s{
+.contact_us_s{
     font-size: var(--fs16);
     font-family: 'Arvo';
     font-style: italic;
@@ -277,24 +288,16 @@ border-radius: 50%;
     text-transform: lowercase;
     color:var(--color_s_s);
 }
-.contact-s::first-letter{
+.contact_us_s::first-letter{
     text-transform:capitalize;
 }
-/* forma */
-.contact-user{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* прижал по бокам */
-    align-items:	center;
-    flex-wrap: wrap;/* сделал переносимые строки*/
-    min-width: 940px;
-    min-height:456px ;
-}
+/* input */
 .form-send{
     display: flex;
     justify-content:	space-between;
     min-width: 940px;
     margin-bottom: 35px;
+    height: 210px;
 }
 .user-date{
     display: flex;
@@ -306,11 +309,11 @@ border-radius: 50%;
 }
 
 .user-date input{
-    min-width: 456px;
-    min-height: 54px;
+    width: 456px;
+    height: 54px;
     border: none;
     border-radius: 3px;
-
+   
     font-size: 14px;
     font-family: "Montserrat";
     color: rgb(187, 187, 187);
@@ -321,10 +324,10 @@ border-radius: 50%;
 }
 
 .textarea{
-    display: block;
-    min-width: 456px;
-    min-height: 210px;
-    text-indent:20px;
+    display:inline-block;
+    width: 456px;
+    height: 210px;
+    border: none;
     
     resize: none; /* Запрещаем изменять размер */
     overflow: auto;
@@ -340,20 +343,24 @@ border-radius: 50%;
 }
 
 .form-send ::placeholder{
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 20px;
     font-size: 14px;
     font-family: "Montserrat";
     color: rgb(187, 187, 187);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
-    text-indent:20px;
 }
 
+/* button */
 .contact-user button{
     min-width: 240px;
     min-height: 65px;
     margin: 0 auto;
     padding: 0;
+    
     font-size: 18px;
     font-family: "Montserrat";
     color: rgb(255, 255, 255);
@@ -366,6 +373,24 @@ border-radius: 50%;
     border-radius: 3px;
     background-color: var(--color_main);
 }
+:focus{
+    outline-offset:0;
+}
+/* outline  не красиво както */
+.form-send input[required]:valid,
+.form-send input[required]:valid,
+.form-send textarea[required]:valid{
+    /* valid  прошёл валидацию */
+    transition: outline var(--hover_time) linear 0ms;
+    outline: 2px solid rgb(2, 136, 2);
 
+}
 
-  
+.form-send input[required]:invalid,
+.form-send input[required]:invalid,
+.form-send textarea[required]:invalid{
+    /* valid  прошёл валидацию */
+    transition: outline var(--hover_time) linear 0ms;
+    outline: 2px solid rgb(254, 54, 54);
+
+}
