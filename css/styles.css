@@ -327,7 +327,7 @@ input[type="radio"].visualyy-hidden{
 .profile-form input[type="checkbox"]:checked{/* valid  прошёл валидацию */}
 .profile-form input[type="email"]:valid{/* valid  прошёл валидацию */}
 .profile-form input[type="email"]:invalid{ /*invalid  не прошел валидацию*/}
-<<<<<<< HEAD
+
 .profile-form input[type="email"]::placeholder{ /*placeholder */}
 /* atribut  fill="#fff"    - в svg документе поминяет цвет иконки*/
 
