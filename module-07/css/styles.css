@@ -254,6 +254,7 @@ border-radius: 50%;
     min-height: 675px;
 }
 /* forma */
+
 .contact-user{
     display: flex;
     flex-direction: column;

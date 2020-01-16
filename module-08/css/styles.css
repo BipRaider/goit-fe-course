@@ -1,0 +1,71 @@
+html{
+    box-sizing: border-box;
+    line-height: 1;
+}
+p
+*,
+*::before,
+::after{    
+    box-sizing: inherit;
+}
+
+/* montserrat-regular - latin */
+
+  /* обьявление переменых*/
+:root{
+    --hover_time: 200ms;
+
+    --color_main:rgb(254, 209, 54); /*Основной цвет*/
+
+    /* line-height */
+    --lh29: 2.929; 
+    --lh15: 1.577; 
+    --lh18: 1.875;
+    --lh12: 1.2;
+    --lh41: 4.167;
+
+    /* font-size*/
+    --fs14: 14px;
+    --fs16: 16px;
+    --fs18: 18px;
+    --fs26: 26px;
+    --fs40: 40px;
+
+     /*размеры icon*/
+    --h_input:40px;
+    --w_icon: 74px;
+    --h_icon: 74px;
+}
+/*общие*/
+body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,li,form,input,span,textarea{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;   /*убирает рамки*/
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+} 
+
+.container{
+    width: 940px;
+    margin: 0 auto;  /* отцентрировал блок*/
+    padding: 0;
+}
+@media screen and (min-width: 400px) and (max-width: 800px){
+
+    .container{
+        width: 100%;
+        margin: 0 auto;  /* отцентрировал блок*/
+        padding: 0;
+    }
+
+
+
+}
+
+
