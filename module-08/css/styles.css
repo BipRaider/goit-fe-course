@@ -2,70 +2,133 @@ html{
     box-sizing: border-box;
     line-height: 1;
 }
-p
+
 *,
 *::before,
 ::after{    
     box-sizing: inherit;
+    padding: 0;
+    margin: 0;
 }
 
 /* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
   /* обьявление переменых*/
 :root{
     --hover_time: 200ms;
-
-    --color_main:rgb(254, 209, 54); /*Основной цвет*/
-
+    --color_main:rgb(255, 255, 255);
+    --color_bottom: rgb(255, 78, 80); /*Основной цвет*/
+    
     /* line-height */
-    --lh29: 2.929; 
-    --lh15: 1.577; 
-    --lh18: 1.875;
-    --lh12: 1.2;
-    --lh41: 4.167;
-
     /* font-size*/
-    --fs14: 14px;
-    --fs16: 16px;
-    --fs18: 18px;
-    --fs26: 26px;
-    --fs40: 40px;
-
      /*размеры icon*/
-    --h_input:40px;
-    --w_icon: 74px;
-    --h_icon: 74px;
+ 
+     /* Mobile */
+    --bim:url(../img/Mobile.jpg);
+
+    /* Tablet */
+    --bit:url(../img/Tablet.jpg);
+
+    /* Desktop */
+    --bid:url(../img/Desktop.jpg);
+
 }
+
+    
+
 /*общие*/
 body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,li,form,input,span,textarea{
-    padding: 0;
-    margin: 0;
     list-style: none;
     text-decoration: none;
     outline: none;   /*убирает рамки*/
 }
-
+a,input,button{
+    display: block;
+}
 
 body{
-    width: 100%;
-    height: 100%;
+    min-width: 320px;
+    max-width: 480px;
 } 
 
 .container{
-    width: 940px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;  /* отцентрировал блок*/
-    padding: 0;
 }
-@media screen and (min-width: 400px) and (max-width: 800px){
+/* header */
+.header{
+    background-image:var(--bim);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-    .container{
-        width: 100%;
-        margin: 0 auto;  /* отцентрировал блок*/
-        padding: 0;
+/* nav */
+.nav-bar{}
+.logo{}
+.nav-connection{}
+
+/* find partner */
+.find_partner{}
+.dream{}
+.dream_span{}
+.button_seek{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 960px){
+.header{
+    background-image:var(--bit);
+}
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px){
+    .header{
+        background-image: var(--bid);
     }
 
-
-
 }
-
-

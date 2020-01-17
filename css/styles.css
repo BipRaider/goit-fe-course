@@ -327,7 +327,6 @@ input[type="radio"].visualyy-hidden{
 .profile-form input[type="checkbox"]:checked{/* valid  прошёл валидацию */}
 .profile-form input[type="email"]:valid{/* valid  прошёл валидацию */}
 .profile-form input[type="email"]:invalid{ /*invalid  не прошел валидацию*/}
-
 .profile-form input[type="email"]::placeholder{ /*placeholder */}
 /* atribut  fill="#fff"    - в svg документе поминяет цвет иконки*/
 
@@ -344,7 +343,7 @@ input[type="radio"].visualyy-hidden{
     line-height: 1.3 ;/* размер берется font-size (лучше записывать 1.2  а не px ,% ,rem) */
     font-family: monospace; /* шрифт для  отоброжения кодов на страницк*/
 }
-.profile-form input[type="email"]::placeholder{}
+
 
 /* --------------------------       atribut  fill="#fff"    - в svg документе поминяет цвет иконки*/
 
