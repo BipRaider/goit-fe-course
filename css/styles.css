@@ -176,7 +176,7 @@ input[type="radio"].visualyy-hidden{
     hsla(0,0%,0%,0.5) 30%,
     hsla(0,0%,0%,0.9)),
       url(https://elle.ua/i/publications/48/355_200/vizov-prinyat-kak-ubrat-rasshirennie-kapillyari-na-lice-1838-27883.jpg);
-    background-size: cover;
+    background-size: cover; /*растягивать*/
 
   }
 .div:hover{
