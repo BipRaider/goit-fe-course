@@ -157,7 +157,7 @@ a,input,button{
     min-width: 84px;
     height: 32px;
     
-    border-radius: 10px;
+    border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0);
 }
 .nav_joining a::first-letter {
@@ -252,18 +252,16 @@ a,input,button{
     text-align: center;
     margin-bottom: 15px;
 }
-
 /* list partner */
-.partner1,.partner2,.partner3,.partner4{
+.partner_link li{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 220px;
-}
-.partner_link li{
     margin-bottom: 30px;
 }
+
 .partner1 img,
 .partner2 img,
 .partner3 img,
