@@ -350,9 +350,7 @@ a,input,button{
     border-radius: 20px;
     border: 2px solid var(--color_bottom);
     background-color: var(--color_main);
-
-    margin-top:20px;
-    margin-bottom: 40px;
+    margin-bottom: 58px;
 }
 
 /* ----------------------------------Tablet */
