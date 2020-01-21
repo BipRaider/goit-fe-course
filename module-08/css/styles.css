@@ -261,6 +261,9 @@ a,input,button{
     align-items: center;
     width: 220px;
 }
+.partner_link li{
+    margin-bottom: 30px;
+}
 .partner1 img,
 .partner2 img,
 .partner3 img,
