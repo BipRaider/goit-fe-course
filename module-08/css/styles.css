@@ -92,20 +92,11 @@ a,input,button{
 
 
 .container{
-    width: 100%;
+    min-width: 320px;
     height: auto;
     margin: 0 auto;  /* отцентрировал блок*/
 }
-/* header */
-
-.header{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    min-width: 320px;
-    min-height: 540px;
-
+.baner{
     background: 
       linear-gradient(100deg,
     rgba(26, 25, 21, 0.05),
@@ -114,8 +105,18 @@ a,input,button{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
 
-    margin-bottom: 70px;
+/* header */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 300px;
+    min-height: 540px;
+    margin: 0 auto;
 }
 
 /* nav */
@@ -174,13 +175,11 @@ a,input,button{
 
 /* find partner */
 .find_partner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     color: var(--color_main);
     text-align: center;
-    width: 292px;
+    width: 300px;
     
 }
   
@@ -222,8 +221,11 @@ a,input,button{
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
+
+    margin: 0 auto;
     width: 280px;
     height: 40px;
+
     border: none;
     cursor: pointer;
     outline: none;
@@ -241,6 +243,7 @@ a,input,button{
     justify-content: center;
     align-items: center;
     min-width: 320px;
+    padding-top: 70px;
 }
 /*meeting title name*/
 .meet_for{
@@ -258,7 +261,7 @@ a,input,button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 220px;
+    flex:0 0 220px;
     margin-bottom: 30px;
 }
 
@@ -320,6 +323,7 @@ a,input,button{
     line-height: 1.2;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 15px;
 }
 .about_partner{
     font-size: var(--fs14);
@@ -328,7 +332,6 @@ a,input,button{
     line-height: 1.2;
     text-align: center;
     font-weight: 300;
-    margin-top: 15px;
     width: 220px;
     text-transform: none;
 }
@@ -354,12 +357,10 @@ a,input,button{
 /* ----------------------------------Tablet */
 
 @media screen and (min-width: 768px){
-
-/* header */
-.header{
-    min-height: 700px;
+.container{
     min-width: 748px;
-
+}
+.baner{
     background: 
       linear-gradient(100deg,
     rgba(26, 25, 21, 0.05),
@@ -368,9 +369,16 @@ a,input,button{
      background-size: cover;
      background-position: center;
     background-repeat: no-repeat;
-    }
+}
+
+/* header */
+.header{
+    min-height: 700px;
+    width: 748px;
+ }
      
 .find_partner{
+    width: 530px;
     padding: 0;
 }
 /* nav */
@@ -379,13 +387,10 @@ a,input,button{
     flex-direction: row;
     justify-content:space-between;
     align-items:	baseline;
-    margin-left: 45px;
-    margin-right: 45px;
-    width: 678px;
+    width: 658px;
     min-height: 225px;
-
-    
 }
+
 .nav_joining{
     flex-direction: row;
 }
@@ -394,10 +399,12 @@ a,input,button{
     width: 530px;
 }
 .dream_span{
+    font-size: var(--fs24);
     width: 400px;
 }
 .button_seek{
-   width: 225px; 
+    margin: 0 auto;
+    width: 225px; 
 }
 .meet_for{
     margin-bottom: 26px;
@@ -430,10 +437,11 @@ a,input,button{
 }
 /*----------------------------------- Desktop */
 @media screen  and (min-width: 960px){
-/* header */
-.header{
-    min-height: 700px;
+.container{
     min-width: 940px;
+    }
+
+.baner{
     background: 
       linear-gradient(100deg,
     rgba(26, 25, 21, 0.05),
@@ -443,12 +451,19 @@ a,input,button{
      background-position: center;
     background-repeat: no-repeat;
 }
+/* header */
+.header{
+    min-height: 700px;
+    width: 940px;
+}
 .nav-bar{
-    
     width: 940px;
 }
 .your_partner{
     width: 940px;
+}
+.partner_link{
+    justify-content: space-between;
 }
 
 }
