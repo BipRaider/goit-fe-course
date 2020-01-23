@@ -120,6 +120,7 @@ a,input,button{
 .logo{
         display: flex;
         justify-content: center;
+        align-items: center;
         font-size: var(--fs20);
         font-family: var(--ffm);
         font-weight: bold;
@@ -416,5 +417,8 @@ a,input,button{
 .header{
     min-height: 700px;
 }
-
+.nav_joining {
+    flex-direction: row;
+    justify-content: flex-end;
+}
 }
