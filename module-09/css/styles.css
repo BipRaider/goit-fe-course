@@ -417,6 +417,17 @@ a,input,button{
 .header{
     min-height: 700px;
 }
+.dream{ 
+    font-size: var(--fs52);
+    width: 530px;
+}
+.dream_span{
+    font-size: var(--fs24);
+    width: 400px;
+}
+.button_seek{
+    width: 225px; 
+}
 .nav_joining {
     flex-direction: row;
     justify-content: flex-end;
