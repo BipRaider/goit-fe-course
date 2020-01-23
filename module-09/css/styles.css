@@ -345,9 +345,11 @@ a,input,button{
 }
 
 /* ----------------------------------Tablet */
+@media screen and (min-width: 768px) and (max-width:991.98px){
 
-@media screen and (min-width: 768px){
-
+.container-t{
+    max-width: 530px;
+}
 .baner{
     background: 
       linear-gradient(100deg,
