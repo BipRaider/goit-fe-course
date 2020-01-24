@@ -82,6 +82,8 @@ html{
 
 /*общие*/
 body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,li,form,input,span,textarea{
+    margin: 0;
+    padding: 0;
     list-style: none;
     text-decoration: none;
     outline: none;   /*убирает рамки*/
@@ -118,6 +120,7 @@ a,input,button{
 .logo{
         display: flex;
         justify-content: center;
+        align-items: center;
         font-size: var(--fs20);
         font-family: var(--ffm);
         font-weight: bold;
@@ -343,9 +346,11 @@ a,input,button{
 }
 
 /* ----------------------------------Tablet */
+@media screen and (min-width: 768px) and (max-width:991.98px){
 
-@media screen and (min-width: 768px){
-
+.container-t{
+    max-width: 530px;
+}
 .baner{
     background: 
       linear-gradient(100deg,
@@ -383,7 +388,7 @@ a,input,button{
     width: 225px; 
 }
 .meet_for{
-    margin-bottom: 26px;
+    margin-bottom: 32px;
 }
 .partner_link{
     width: 512px;
@@ -422,4 +427,22 @@ a,input,button{
     margin-right: auto;
 }
 
+.dream{ 
+    font-size: var(--fs52);
+    width: 530px;
+}
+.dream_span{
+    font-size: var(--fs24);
+    width: 400px;
+}
+.button_seek{
+    width: 225px; 
+}
+.meet_for{
+    margin-bottom: 32px;
+}
+.nav_joining {
+    flex-direction: row;
+    justify-content: flex-end;
+}
 }
