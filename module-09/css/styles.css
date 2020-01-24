@@ -385,7 +385,11 @@ a,input,button{
 .meet_for{
     margin-bottom: 26px;
 }
-
+.partner_link{
+    width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .partner_link li{
     margin-top: 14px;
     margin-bottom: 40px;
@@ -411,6 +415,11 @@ a,input,button{
 /* header */
 .header{
     min-height: 700px;
+}
+.partner_link{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 }
