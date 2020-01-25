@@ -302,7 +302,7 @@ min-height: 180px;
         var(--color_lg),
         var(--color_hover));
 }
-.wrapper-meet:hover a{
+.wrapper-meet:hover .soc_link{
     transition: z-index  var(--hover_time) linear 200ms;
     z-index: 11;
 }
