@@ -13,11 +13,10 @@ html{
 }
 
 body{
-    height: 100%;
-    margin: 0 auto;
-  
-    font-family: 'Open Sans Bold', sans-serif; 
-    font-size: 14px;
+   height: 100%;
+   margin: 0 auto;
+   font-family: 'Open Sans Bold', sans-serif;
+   font-size: 14px;
    
 }
 

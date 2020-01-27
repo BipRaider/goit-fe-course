@@ -438,7 +438,8 @@ body{
 
 .wrapper-meet:hover{
     -webkit-transform: translate(-10px , -10px);
-            transform: translate(-10px , -10px);
+    -ms-transform: translate(-10px , -10px);
+        transform: translate(-10px , -10px);
 }
 
 .wrapper-meet-img{
@@ -639,10 +640,20 @@ input[type="email"]::placeholder , .footer-email{
    /* при увеличение экрана свыше 1920px-192dpi или увелечение плотности пикселей на 2   картинка поменяется */
 @media (min-device-pixel-ratio: 2),(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
     .wrapper{
-        background-image: url(../img/x2/bird@2x.png);
+        background:-webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(rgba(243, 129, 129, 0.9)),
+        to(rgba(252, 227, 138, 0.9))),
+        url(../img/x2/bird@2x.png);
+    background:linear-gradient(
+        to bottom,
+        rgba(243, 129, 129, 0.9),
+        rgba(252, 227, 138, 0.9)),
+        url(../img/x2/bird@2x.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
+    margin-bottom: 46px;
     }
 }
