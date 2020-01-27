@@ -173,7 +173,7 @@ body{
     line-height: var(--lh16);
     font-weight: bold;
 }
-.span{
+.logo-span{
     text-transform:uppercase; /*Не очень как-то*/
 }
 
@@ -284,13 +284,7 @@ body{
                                             /*main*/ 
 
 /*Heading  названия оглавлений*/
-.headings{
-display: -webkit-box;
-display: flex;
--webkit-box-pack:	center;
-        justify-content:	center;
-min-height: 180px;
-}
+
 .headings-h2{
     display: -webkit-box;
     display: flex;
@@ -306,6 +300,7 @@ min-height: 180px;
     font-weight: bold;
     text-transform: uppercase;
     line-height: var(--lh12);
+    min-height: 180px;
 }
  
 .headings-h2::after{
