@@ -1,0 +1,61 @@
+.bazavoe{}/*базовое оформление -одно имя  которое описывает много элементов */
+
+.image{} /*обозначение главный-блока*/
+.image-img{}/* -  обозначает имя в блоке-элемента  */
+.image-img__title{}/*классу элемента добавляем класс блока*/
+.image__icon{}/*__ обозначает блок в блоке-элемента или в блоке*/
+.image__icon--tooles{} /* --    обозначает модифекаторы */
+
+/* ----------------------------------------------------------------------------------------------------- */
+.link{}/* Используем для общей характеристики сылок  */
+.list{}
+
+.page-header{}
+
+.page-nav{}
+
+.page-nav__site-navigation{} /*миксы можно использовать для задавания размеров */
+
+.container{}
+
+.site-logo{}
+  .site-logo__img{}
+
+.site-navigation{}
+  .site-navigation__item{}
+    .site-navigation__link{}
+
+.banner{}/* для банеров*/
+
+  .slider{} /*применяем  для слайдеров*/
+    .slider__list{}/* для списка внуткри слайдэра */
+    .slider__control{}  /* обвёртка для  кнопок действий какихто элементов*/
+      .slider__next{}/* стрелка,прокрутка в лево */
+      .slider__prev{}/* стрелка,прокрутка в право */
+
+.section{} /* можно использовать бля общих,базовых  запесей для секций если есть сходство*/
+  .section__title{} /*могут послужить заменой .features__titel{}*/
+  .section__list{}/*могут послужить заменой .features__list{}*/
+
+.features{}/* блок картинок*/
+  .features__titel{} /* названия блока*/
+  .features__list{} /*список чегото*/
+    .features__item{}
+    .features__icon{}/*__ обозначает элемент в нутри блока*/
+    .features__icon--tools{}/* --    обозначает модифекаторы*/
+.features-card{}/* -  обозначает имя блока в блоке  */
+     .features__item-title{}/* можно записывать также*/
+     .features__item-text{}
+
+.teem{}
+  .teem__list{}
+  .teem__item{}
+  .teem__item-img{}
+  .teem__item-name{}
+  .teem__item-occupation{}
+  .teem__item-about{}
+
+.socials{}
+  .socials__item{}
+  .socials__link{}
+  .socials__icon{}
