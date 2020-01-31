@@ -97,11 +97,13 @@ html{
 }
 
 /*общие*/
-body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,form,input,span,figure,figcaption,cite{
+body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,form,input,aside,span{
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
+    font-size: 100%;
+    vertical-align: baseline;
     outline: none;   /*убирает рамки*/
 }
 a,
@@ -178,7 +180,7 @@ body{
 }
 
   
-.nav__logo{
+.nav-page__logo{
     display: block;
     font-size: var(--fs30);
     font-family: var(--ffmb );
@@ -186,11 +188,11 @@ body{
     line-height: var(--lh16);
     font-weight: bold;
 }
-.nav__logo--letter{
+.nav-page__logo--letter{
     text-transform:uppercase; /*Не очень как-то*/
 }
 
-.nav__list{
+.nav-page__list{
   display: -webkit-box;
   display: flex;
   -webkit-box-pack:	justify;
@@ -199,7 +201,7 @@ body{
   
 }
 
-.nav__link{
+.nav-page__link{
     display: block;
     font-size: var(--fs14);
     font-family: var(--ffmr);
@@ -207,12 +209,12 @@ body{
     line-height:    var(--lh12);
     text-transform: uppercase;
 }
-.nav__link:hover{
+.nav-page__link:hover{
     -webkit-transition: color var(--hover_time) linear 0ms;
     transition: color var(--hover_time) linear 0ms;
     color: var(--color_lg);
 }
-.nav__link::after{
+.nav-page__link::after{
         content: "";
         display:block;
         -webkit-transform: translateY(13px);
@@ -221,18 +223,18 @@ body{
         background-color:var(--color_lg);
         opacity: 0;
 }
-.nav__link:hover::after{
+.nav-page__link:hover::after{
     opacity: 1;
     -webkit-transition: opacity var(--hover_time) linear 0ms;
     transition: opacity var(--hover_time) linear 0ms;
 }
 
-.nav__icon{
+.nav-page__icon{
     width: 20px;
     height: 18px;
     fill: var(--color_white);
 }
-.nav__icon:hover{
+.nav-page__icon:hover{
     -webkit-transition: fill var(--hover_time) linear 0ms;
     transition: fill var(--hover_time) linear 0ms;
     fill: var(--color_lg);
@@ -273,7 +275,7 @@ body{
     text-align: center;
 }
 
-.title--text{
+.title__text{
     font-family: var(--ffks);
     font-weight: 400;
     line-height: var(--lh12);
@@ -512,7 +514,7 @@ body{
     fill:var(--color_hover);
     cursor: pointer;
 }
-.pl-20{
+.pl--20{
     padding-left: 20px;
 }
 
@@ -635,7 +637,10 @@ footer{
 }
 
    /* при увеличение экрана свыше 1920px-192dpi или увелечение плотности пикселей на 2+   картинка поменяется */
-@media (min-device-pixel-ratio: 2),(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+@media 
+(min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
     .wrapper{
         background:-webkit-gradient(
         linear,
