@@ -19,7 +19,19 @@ body{
    font-size: 14px;
    
 }
-
+.list{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center
+}
+.box{
+  min-width: 100px;
+  min-height: 30px;
+  text-align: center;
+}
 a,
 a:hover ,/*для стилизации только тех ссылок, на которые пользователь навёл.*/
 a:visited,/*для стилизации только тех ссылок, на которые пользователь нажал.*/
@@ -52,6 +64,7 @@ a,h1,p,section,article,header,main,footer,h2,h3,h4,span,img,ul,ol,li,div{
 }
 /* прижали footer  к низу http://dimox.name/press_footer_bottom_with_css/*/
 .content {
+  width: 100%;
 	min-height: calc(100vh - 80px);
 }
 
@@ -164,6 +177,28 @@ input[type="radio"].visualyy-hidden{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+/*чем можно прятать отображения
+При добавлении к элементу атрибута aria-hidden="true этот элемент удаляется из дерева доступности.
+aria-hidden="false" показуеться
+focusable="false"
+
+<embed hidden="true | false">    http://htmlbook.ru/html/embed/hidden
+
+<embed contenteditable="true | false"> http://htmlbook.ru/html/attr/contenteditable
+
+https://developer.mozilla.org/ru/docs/Web/CSS/clip-path
+*/
+.vosual{
+  display: none; /*скрывает*/
+  visibility: hidden; /*скрывает*/
+  visibility: visible; /* показует*/
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);  /* скрывает квадратом */
+  clip-path: circle(0 at 50% 50%); /*скрывает   кругом*/
+  color: transparent;  /* делает прозрачный текст*/
+  font-size: 0; /*скрывает текс*/
+  opacity: 0.1; /* данные будут становиться прозрачными*/
+}
 .div{
     width:399px;
     height:200px;
@@ -249,9 +284,7 @@ input[type="radio"].visualyy-hidden{
 }
 
 /*--------------*/
-.opacity{
-    opacity: 0.1; /* данные будут становиться прозрачными*/
-}
+
 
 .display-flex{
     display:flex;/* задает flex-контейнер c элементами block  */
