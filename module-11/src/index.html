@@ -9,5 +9,9 @@
 </head>
 <body>
     <h1 class="color-red"> start</h1>
-</body>
+    <p>
+        "scss:start":"node-sass  module-11/src/scss/styles.scss -o module-11/src/css",
+        "scss:watch": "node-sass --watch module-11/src/scss/styles.scss -o module-11/src/css",
+        "build":"npm run scss:start && npm run scss:watch"
+    </p>
 </html>
