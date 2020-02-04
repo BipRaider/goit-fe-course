@@ -4,9 +4,9 @@
   "description": "www.bipgo.pw",
   "main": "index.js",
   "scripts": {
-    "scss:start":"node-sass  module-11/src/scss/styles.scss -o module-11/src/css",
+    "scss:start": "node-sass  module-11/src/scss/styles.scss -o module-11/src/css",
     "scss:watch": "node-sass --watch module-11/src/scss/styles.scss -o module-11/src/css",
-    "build":"npm run scss:start && npm run scss:watch"
+    "build": "npm run scss:start && npm run scss:watch"
   },
   "repository": {
     "type": "git",

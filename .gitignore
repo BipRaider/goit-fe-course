@@ -53,8 +53,8 @@ builds/**/images/*
 # security / ssl
 *.pem
 *.xxjson
-
-
+package-lock.json
+package.json
 
 # Anything under a tmp folder
 **/tmp/*
@@ -66,4 +66,3 @@ scripts/**
 notes/**
 .vscode/**
 test/**
-*.json
