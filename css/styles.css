@@ -19,13 +19,19 @@ body{
    font-size: 14px;
    
 }
-.list{
+.list-c{
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   text-align: center
+}
+.list-r{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .box{
   min-width: 100px;
@@ -33,48 +39,40 @@ body{
   text-align: center;
 }
 a,
-a:hover ,/*для стилизации только тех ссылок, на которые пользователь навёл.*/
 a:visited,/*для стилизации только тех ссылок, на которые пользователь нажал.*/
 a:link{             /*для стилизации ссылок, на которые пользователь ещё не нажимал.*/
     color:  rgb(20, 1, 1);
-    width: 10px;
+    min-width: 100px;
     line-height: 24px;
+    padding: 5px;
     margin-right: 10px; 
     margin-bottom: 10px;
      text-decoration: none;/*убрать подчеркивание*/    
      outline: none;   /*убирает рамку на сылке*/
      cursor: pointer;/*появляеться рука при наведений на кнопку http://htmlbook.ru/css/cursor*/
      outline: 1px solid rgb(240, 171, 21);
-    
+}
+a:hover{/*для стилизации только тех ссылок, на которые пользователь навёл.*/
+  color: rgb(240, 171, 21);
+  background-color: grey;
 }
 
-h1,
-.footer,
-.link-modules{
-     text-align: center;/*vспользуется для выравнивания строки текста или строчных и строчно-блочных элементов внутри блочного элемента по ширине относительно его границ.*/
-}
-li  {
-    display: inline-block;
-    list-style-type: none;
-}
-a,h1,p,section,article,header,main,footer,h2,h3,h4,span,img,ul,ol,li,div{
-    padding: 0;
-    margin: 0;
-    outline: none;
-}
+
 /* прижали footer  к низу http://dimox.name/press_footer_bottom_with_css/*/
 .content {
   width: 100%;
 	min-height: calc(100vh - 80px);
 }
-
+.footer{
+  justify-content: center;
+}
 
 .footer-link {
-margin: 0 auto;
+display: block;
 font-size: 30px;/*указывает размер шрифта*/
 font-weight: 700;/*указывает "вес" (жирность начертания) шрифта*/
 font-style: italic; /*указывает стиль начертания шрифта*/
-text-indent: 20px;/*указывает отступ первой строки в абзаце*/
+text-indent: 1px;/*указывает отступ первой строки в абзаце*/
 text-align: center;/* выравнивание текста*/
 line-height: 24px;/*управляет межстрочным интервалом*/
 font-family: serif;/*указывает семейство шрифтов*/
@@ -435,56 +433,14 @@ not - позволяет сработать медиазапросу в прот
 .image__icon--tooles{} /* --    обозначает модифекаторы */
 
 /* ----------------------------------------------------------------------------------------------------- */
-.link{}/* Используем для общей характеристики сылок  */
-.list{}
+/* SCSS and Sass */
 
-.page-header{}
+[hidden] {
+  display: none;
+}
 
-.page-nav{}
-
-.page-nav__site-navigation{} /*миксы можно использовать для задавания размеров */
-
-.container{}
-
-.site-logo{}
-  .site-logo__img{}
-
-.site-navigation{}
-  .site-navigation__item{}
-    .site-navigation__link{}
-
-.banner{}/* для банеров*/
-
-  .slider{} /*применяем  для слайдеров*/
-    .slider__list{}/* для списка внуткри слайдэра */
-    .slider__control{}  /* обвёртка для  кнопок действий какихто элементов*/
-      .slider__next{}/* стрелка,прокрутка в лево */
-      .slider__prev{}/* стрелка,прокрутка в право */
-
-.section{} /* можно использовать бля общих,базовых  запесей для секций если есть сходство*/
-  .section__title{} /*могут послужить заменой .features__titel{}*/
-  .section__list{}/*могут послужить заменой .features__list{}*/
-
-.features{}/* блок картинок*/
-  .features__titel{} /* названия блока*/
-  .features__list{} /*список чегото*/
-    .features__item{}
-    .features__icon{}/*__ обозначает элемент в нутри блока*/
-    .features__icon--tools{}/* --    обозначает модифекаторы*/
-.features-card{}/* -  обозначает имя блока в блоке  */
-     .features__item-title{}/* можно записывать также*/
-     .features__item-text{}
-
-.teem{}
-  .teem__list{}
-  .teem__item{}
-  .teem__item-img{}
-  .teem__item-name{}
-  .teem__item-occupation{}
-  .teem__item-about{}
-
-.socials{}
-  .socials__item{}
-  .socials__link{}
-  .socials__icon{}
-
+/* -------------1 vw   nad vh  = 24 / ( 3 / 100 ) = 800px*/
+:root{
+  --font-size: 24px;
+  --vh:calc(var(--font-size) / (3 / 100))
+}

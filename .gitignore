@@ -59,7 +59,7 @@ builds/**/images/*
 **/tmp/*
 
 # Don't include our binary
-images/**
+
 scripts/**
 .config
 notes/**

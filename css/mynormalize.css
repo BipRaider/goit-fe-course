@@ -37,9 +37,9 @@ body {
  * Render the element consistently.
  */
 
-/* main,a,input,img {
+main,a,input,img {
   display: block;
-} */
+}
 
 /**
  * Correct the  elements within `section` and
