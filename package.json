@@ -1,0 +1,24 @@
+{
+  "name": "module-11",
+  "version": "1.0.0",
+  "description": "www.bipgo.pw",
+  "main": "index.js",
+  "scripts": {
+    "scss:start": "node-sass  module-11/src/scss/styles.scss -o module-11/src/css",
+    "scss:watch": "node-sass --watch module-11/src/scss/styles.scss -o module-11/src/css",
+    "build": "npm run scss:start && npm run scss:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BipRaider/goit-fe-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BipRaider/goit-fe-course/issues"
+  },
+  "homepage": "https://github.com/BipRaider/goit-fe-course#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
