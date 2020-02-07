@@ -21,7 +21,18 @@
   }
 
 }
+//add color to hover
+@mixin hover-color($selector, $color) {
+  #{$selector}:hover {
+    -webkit-transition: color $hover_time linear 0ms;
+    transition: color $hover_time linear 0ms;
+   color:$color;
+   
+ }
+}
 // $opacity0: 0 ;
 // $opacity1: 1 ;
-@include line-below(".nav-page__link",$opacity0);
-@include load-time-hover(".nav-page__link",$opacity1);
+
+// @include line-below(".nav-page__link",$opacity0);
+// @include load-time-hover(".nav-page__link",$opacity1);
+// @include hover-color(".nav-page__link" , $color_lg);

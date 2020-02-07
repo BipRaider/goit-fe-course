@@ -1,27 +1,31 @@
+
 .title__text{
-  font-family: var(--ffks);
+  font-family: $ffks;
   font-weight: 400;
-  line-height: var(--lh12);
+  line-height: $lh12;
   text-align: center;
 }
 
-.creative__title--text{
-  font-size: var(--fs72);
-  color: var(--color_white);
-  text-transform: capitalize;
-}
+
+
 .creative__title{
-  font-size: var(--fs150);
-  color: var(--color_white);
+  font-size: $fs150;
+  color: $color_white;
   padding-top: 40px;
   min-height: 660px;
+
+  &--text{
+  font-size: $fs72;
+  color: $color_white;
+  text-transform: capitalize;
+  }
 }
 
 .main__title{
   justify-content: flex-start;
 
-  font-size: var(--fs30);
-  color: var(--color_h2p);
+  font-size: $fs30;
+  color: $color_h2p;
   min-height: 180px;
 }
 
@@ -32,15 +36,15 @@
   -webkit-transform: translateY(40px);
           transform: translateY(40px);
   width: 60px;
-  height: var(--w);
-  background-color:var(--color_hover);
+  height: $w;
+  background-color:$color_hover;
 }
 
 .main__title--text{
   text-transform: lowercase;
   font-weight: 400;
-  font-size: var(--fs24);
-  color: var(--color_h2p);
+  font-size: $fs24;
+  color: $color_h2p;
   margin-bottom: 16px;
 }
 
@@ -78,34 +82,34 @@
 .amazing__title{
   display: block;
   margin-left: 82px;
-  font-size: var(--fs14);
-  font-family: var(--ffmr);
-  color:var(--color_h2p);
+  font-size: $fs14;
+  font-family: $ffmr;
+  color: $color_h2p;
   text-transform: uppercase;
-  line-height: var(--lh12);
+  line-height: $lh12;
   margin-bottom: 12px;
 }
 
 .amazing__text{
   margin-left: 82px;
-  font-size: var(--fs15);
-  line-height:var(--lh16);
-  font-family: var(--ffrr);
-  color: var(--color_p);
+  font-size: $fs15;
+  line-height:$lh16;
+  font-family: $ffrr;
+  color: $color_p;
 
 }
 .amazing__icon{
   display: block;
   float: left;
-  height: var(--h_labe);
-  width: var(--w_labe);
+  height: $h_labe;
+  width: $w_labe;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
 
-  fill: var(--color_main);
+  fill: $color_main;
 }
 .amazing__icon:hover{
-  fill: var(--color_lg);
+  fill: $color_lg;
 }
                       /*meet our team*/
 
@@ -114,10 +118,10 @@
   display: flex;
   -webkit-box-pack:center;
           justify-content:center;
-  font-size: var(--fs15);
-  font-family: var(--ffrr);
-  color: var(--color_p);
-  line-height: var(--lh16);
+  font-size: $fs15;
+  font-family: $ffrr;
+  color: $color_p;
+  line-height: $lh16;
   text-align: center;
   margin: 0 auto;
   width: 980px;
@@ -146,16 +150,16 @@
           justify-content:	center;
   -webkit-box-align:	center;
           align-items:	center;
-  min-height: var(--h_img);
-  background:linear-gradient(to bottom ,var(--color_main) 470px, var(--color_white) 0);
+  min-height: $h_img;
+  background:linear-gradient(to bottom ,$color_main 470px, $color_white 0);
 }
 
 .team__wrapper{
   margin-bottom: 30px;
-  -webkit-transition:-webkit-transform  var(--hover_time) linear 0ms;
-  transition:-webkit-transform  var(--hover_time) linear 0ms;
-  transition:transform  var(--hover_time) linear 0ms;
-  transition:transform  var(--hover_time) linear 0ms, -webkit-transform  var(--hover_time) linear 0ms; /* Получаеться это можно и указывать в класе не обезательно в hover*/
+  -webkit-transition:-webkit-transform  $hover_time linear 0ms;
+  transition:-webkit-transform  $hover_time linear 0ms;
+  transition:transform  $hover_time linear 0ms;
+  transition:transform  $hover_time linear 0ms, -webkit-transform  $hover_time linear 0ms; /* Получаеться это можно и указывать в класе не обезательно в hover*/
 }
 
 .team__wrapper:hover{
@@ -167,9 +171,9 @@
 .picture__source,
 .team__picture{
   position: absolute;
-  min-width: var(--w_img);
+  min-width: $w_img;
   max-width: 760px;
-  min-height: var(--h_img);
+  min-height: $h_img;
   max-height: 940px;
 }
 
@@ -180,28 +184,28 @@
 }
 
 .team__wrapper:hover .team__img{
-  -webkit-transition: opacity  var(--hover_time) linear 0ms;
-  transition: opacity  var(--hover_time) linear 0ms;
+  -webkit-transition: opacity  $hover_time linear 0ms;
+  transition: opacity $hover_time linear 0ms;
   opacity: 0.1;
 }
 
 .soc__wrapper{
-  width: var(--w_img);
-  height: var(--h_img);
+  width: $w_img;
+  height: $h_img;
   background:-webkit-gradient(
       linear,
       left bottom, left top,
-      from(var(--color_lg)),
-      to(var(--color_hover)));
+      from($color_lg),
+      to($color_hover));
   background:linear-gradient(
       to top,
-      var(--color_lg),
-      var(--color_hover));
+      $color_lg,
+      $color_hover);
 }
 /* подняли сылки над всеми картинками */
 .team__wrapper:hover .soc__link{
-  -webkit-transition: z-index  var(--hover_time) linear 200ms;
-  transition: z-index  var(--hover_time) linear 200ms;
+  -webkit-transition: z-index  $hover_time linear 200ms;
+  transition: z-index  $hover_time linear 200ms;
   z-index: 11;
 }
 
@@ -217,24 +221,24 @@
 
 .soc__link{
   display: block;
-  background-color: var(--color_lg);
+  background-color: $color_lg;
 
-  width: var(--w_icon);
-  height: var(--h_icon);
+  width: $w_icon;
+  height: $h_icon;
 }
 
 .soc__icon:hover{
-  background-color: var(--color_hover);
+  background-color: $color_hover;
 
-  fill: var(--color_white);
+  fill: $color_white;
 }
 
 .soc__icon{
-  width: var(--w_icon);
-  height: var(--h_icon);
+  width: $w_icon;
+  height: $h_icon;
   padding-top: 15px;
   padding-left: 15px;
-  fill:var(--color_hover);
+  fill:$color_hover;
   cursor: pointer;
 }
 .pl--20{
@@ -244,20 +248,20 @@
 
 /* --------------- */
 .team__name{
-      font-size: var(--fs14);
-      font-family: var(--ffmr);
-      color: var(--color_h2p);
+      font-size: $fs14;
+      font-family: $ffmr;
+      color: $color_h2p;
       text-transform: uppercase;
 
-      line-height: var(--lh12);
+      line-height: $lh12;
       margin-bottom: 10px;
 }
 .team__profile{
-  font-size: var(--fs15);
-  font-family: var(--ffrli);
-  color: var(--color_p);
+  font-size: $fs15;
+  font-family: $ffrli;
+  color: $color_p;
   font-style: italic;
-  line-height: var(--lh16);
+  line-height: $lh16;
 }
 .team__profile::first-letter{
   text-transform: uppercase;

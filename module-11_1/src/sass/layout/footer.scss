@@ -7,22 +7,23 @@ footer{
   -webkit-box-align: center;
           align-items: center;
   min-height: 62px;
-  border-top: 1px solid var(--color_email);
+  border-top: 1px solid $color_email;
 }
 
 
 .footer__text , .footer__text--color{
-      font-size: var(--fs14);
-      font-family: var(--ffmr);
-      color: var(--color_h2p);
-      line-height: var(--lh12);
+      font-size: $fs14;
+      font-family: $ffmr;
+      color: $color_h2p;
+      line-height: $lh12;
 }
 .footer__text::before{
   content: "\00A9";
+  display: inline;
   margin-right: 5px;
 }
 .footer__text--color{
-  color: var(--color_hover);
+  color: $color_hover;
 }
 
 .footer-form{
@@ -32,65 +33,65 @@ footer{
           justify-content: flex-end;
   -webkit-box-align:	stretch;
           align-items:	stretch;
-  width: var(--w_img);
-  min-height: var(--h_input);
+  width: $w_img;
+  min-height: $h_input;
 }
 .footer-form input[type="email"]::-webkit-input-placeholder{
- font-size: var(--fs15);
- font-family:  var(--ffrli);
- color: var(--color_email);
+ font-size: $fs15;
+ font-family:  $ffrli;
+ color: $color_email;
  font-style: italic;
- line-height: var(--lh16);
+ line-height: $lh16;
  text-align: left;
 }
 .footer-form input[type="email"]::-moz-placeholder{
- font-size: var(--fs15);
- font-family:  var(--ffrli);
- color: var(--color_email);
+ font-size: $fs15;
+ font-family:  $ffrli;
+ color: $color_email;
  font-style: italic;
- line-height: var(--lh16);
+ line-height: $lh16;
  text-align: left;
 }
 .footer-form input[type="email"]:-ms-input-placeholder{
- font-size: var(--fs15);
- font-family:  var(--ffrli);
- color: var(--color_email);
+ font-size: $fs15;
+ font-family:  $ffrli;
+ color: $color_email;
  font-style: italic;
- line-height: var(--lh16);
+ line-height: $lh16;
  text-align: left;
 }
 .footer-form input[type="email"]::-ms-input-placeholder{
- font-size: var(--fs15);
- font-family:  var(--ffrli);
- color: var(--color_email);
+ font-size: $fs15;
+ font-family:  $ffrli;
+ color: $color_email;
  font-style: italic;
- line-height: var(--lh16);
+ line-height: $lh16;
  text-align: left;
 }
 .footer-form input[type="email"]::placeholder , .footer-email{
- font-size: var(--fs15);
- font-family:  var(--ffrli);
- color: var(--color_email);
+ font-size: $fs15;
+ font-family:  $ffrli;
+ color: $color_email;
  font-style: italic;
- line-height: var(--lh16);
+ line-height: $lh16;
  text-align: left;
 }
 .footer__email{
  -webkit-box-flex: 3;
          flex-grow: 3;
 
- border: 1px solid var(--color_email);
+ border: 1px solid $color_email;
  border-right: none;
- color: var(--color_p);
+ color: $color_p;
  padding-left: 12px;
 }
 .footer__button{
   -webkit-box-flex: 2;
           flex-grow: 2;
-  height: var(--h_input);
-  border: 1px solid var(--color_main);
-  background-color: var(--color_main);
+  height: $h_input;
+  border: 1px solid $color_main;
+  background-color: $color_main;
 
-  color: var(--color_white);
+  color: $color_white;
 
 }

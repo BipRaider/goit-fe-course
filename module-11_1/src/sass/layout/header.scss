@@ -14,6 +14,7 @@
       background-repeat: no-repeat;
       background-size: cover;
   margin-bottom: 46px;
+  width: 100%;
 }
 
 
@@ -21,6 +22,7 @@
 .container-header{
   min-height: 1000px;
 }
+
 .nav-page{
   display: -webkit-box;
   display: flex;
@@ -39,10 +41,12 @@
   color:$color_white;
   line-height: $lh16;
   font-weight: bold;
+
+  &--letter{
+   text-transform:uppercase; /*Не очень как-то*/
+  }
 }
-.nav-page__logo--letter{
-  text-transform:uppercase; /*Не очень как-то*/
-}
+
 
 .nav-page__list{
 display: -webkit-box;
@@ -61,36 +65,33 @@ min-width: 620px;
   line-height:    $lh12;
   text-transform: uppercase;
 }
-.nav-page__link:hover{
-  -webkit-transition: color $hover_time linear 0ms;
-  transition: color $hover_time linear 0ms;
-  color: $color_lg;
-}
-.nav-page__link::after{
-      content: "";
-      display:block;
-      -webkit-transform: translateY(13px);
-              transform: translateY(13px);
-      height: $w;
-      background-color:$color_lg;
-      opacity: 0;
-}
-.nav-page__link:hover::after{
-  opacity: 1;
-  -webkit-transition: opacity $hover_time linear 0ms;
-  transition: opacity $hover_time linear 0ms;
-}
+
+@include hover-color(".nav-page__link" , $color_lg);
+// $opacity0: 0 ;
+// $opacity1: 1 ;
+@include line-below(".nav-page__link",$opacity0);
+@include load-time-hover(".nav-page__link",$opacity1);
 
 .nav-page__icon{
   width: 20px;
   height: 18px;
   fill: $color_white;
-}
-.nav-page__icon:hover{
-  -webkit-transition: fill $hover_time linear 0ms;
+
+  &:hover{
+    -webkit-transition: fill $hover_time linear 0ms;
   transition: fill $hover_time linear 0ms;
   fill: $color_lg;
+  }
 }
+
+
+.title__text{
+  font-family: $ffks;
+  font-weight: 400;
+  line-height: $lh12;
+  text-align: center;
+}
+
 .creative{
   width: 900px;
   margin: 0 auto;
@@ -105,26 +106,16 @@ min-width: 620px;
    color: $color_white;
 }
 
-  /* при увеличение экрана свыше 1920px-192dpi или увелечение плотности пикселей на 2+   картинка поменяется */
-  @media
-  (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-      .wrapper{
-          background:-webkit-gradient(
-          linear,
-          left top, left bottom,
-          from(rgba(243, 129, 129, 0.9)),
-          to(rgba(252, 227, 138, 0.9))),
-          url(../img/x2/bird@2x.png);
-      background:linear-gradient(
-          to bottom,
-          rgba(243, 129, 129, 0.9),
-          rgba(252, 227, 138, 0.9)),
-          url(../img/x2/bird@2x.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-      margin-bottom: 46px;
-      }
+
+.creative__title{
+  font-size: $fs150;
+  color: $color_white;
+  min-height: 660px;
+
+  &--text{
+    font-size: $fs72;
+    color: $color_white;
+    text-transform: capitalize;
   }
+}
+
