@@ -1,56 +1,40 @@
 
-.title__text{
-  font-family: $ffks;
-  font-weight: 400;
-  line-height: $lh12;
-  text-align: center;
-}
-
-
-
-.creative__title{
-  font-size: $fs150;
-  color: $color_white;
-  padding-top: 40px;
-  min-height: 660px;
-
-  &--text{
-  font-size: $fs72;
-  color: $color_white;
-  text-transform: capitalize;
-  }
-}
-
 .main__title{
   justify-content: flex-start;
 
   font-size: $fs30;
   color: $color_h2p;
   min-height: 180px;
+    &--text{
+      
+      text-transform: lowercase;
+      font-weight: 400;
+      font-size: $fs24;
+      color: $color_h2p;
+      margin-bottom: 16px;
+
+        &::first-letter{
+          text-transform: uppercase;
+        }
+    }
+
+    &::after{
+    content: "";
+    display:block;
+    margin: 0 auto;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    width: 60px;
+    height: $w;
+    background-color:$color_hover;
+   }
 }
 
-.main__title::after{
-  content: "";
-  display:block;
-  margin: 0 auto;
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-  width: 60px;
-  height: $w;
-  background-color:$color_hover;
-}
 
-.main__title--text{
-  text-transform: lowercase;
-  font-weight: 400;
-  font-size: $fs24;
-  color: $color_h2p;
-  margin-bottom: 16px;
-}
 
-.main__title--text::first-letter{
-  text-transform: uppercase;
-}
+
+
+
 
 /*amazing sevices*/
 .amazing{

@@ -37,12 +37,21 @@ display: block;
   text-align: center;
 }
 
+%text{
+  font-family: $ffks;
+  font-weight: 400;
+  line-height: $lh12;
+  text-align: center;
+}
+
 %button{
   font-size:$fs14;
   cursor: pointer;
 }
 
-
+ .title--text{
+  @extend %text;
+ }
 
 .list{
   @extend %list;

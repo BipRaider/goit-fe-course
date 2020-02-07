@@ -12,6 +12,8 @@
     opacity: $opacity;
   }
 }
+
+
 //add load time to item on hover and item transparency
 @mixin load-time-hover($selector, $opacity) {
   #{$selector}:hover::after{

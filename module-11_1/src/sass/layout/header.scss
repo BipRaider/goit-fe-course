@@ -85,12 +85,7 @@ min-width: 620px;
 }
 
 
-.title__text{
-  font-family: $ffks;
-  font-weight: 400;
-  line-height: $lh12;
-  text-align: center;
-}
+
 
 .creative{
   width: 900px;
@@ -113,6 +108,7 @@ min-width: 620px;
   min-height: 660px;
 
   &--text{
+    @extend %text;
     font-size: $fs72;
     color: $color_white;
     text-transform: capitalize;
