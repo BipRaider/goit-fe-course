@@ -1,0 +1,27 @@
+
+
+
+//add line below element and item transparency
+@mixin line-below($selector, $opacity) {
+   #{$selector}::after {
+    content: "";
+    -webkit-transform: translateY(13px);
+            transform: translateY(13px);
+    height: $w;
+    background-color:$color_lg;
+    opacity: $opacity;
+  }
+}
+//add load time to item on hover and item transparency
+@mixin load-time-hover($selector, $opacity) {
+  #{$selector}:hover::after{
+    opacity: $opacity;
+    -webkit-transition: opacity $hover_time linear 0ms;
+    transition: opacity $hover_time linear 0ms;
+  }
+
+}
+// $opacity0: 0 ;
+// $opacity1: 1 ;
+@include line-below(".nav-page__link",$opacity0);
+@include load-time-hover(".nav-page__link",$opacity1);

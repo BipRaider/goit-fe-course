@@ -1,0 +1,60 @@
+
+// @extend %list;
+// template  for list  - aligns the elements in the center and direction from top to bottom
+%zero {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+}
+//it makes block elements
+%disb {
+display: block;
+}
+
+%list{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+
+}
+// template for title text
+
+%title{
+  font-family: $ffmb;
+  font-weight: bold;
+  line-height: $lh12;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%button{
+  font-size:$fs14;
+  cursor: pointer;
+}
+
+
+
+.list{
+  @extend %list;
+}
+
+.title{
+  @extend %list;
+  @extend %title;
+}
+
+.button{
+  @extend %title;
+  @extend %button;
+}
+

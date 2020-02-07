@@ -1,0 +1,264 @@
+.title__text{
+  font-family: var(--ffks);
+  font-weight: 400;
+  line-height: var(--lh12);
+  text-align: center;
+}
+
+.creative__title--text{
+  font-size: var(--fs72);
+  color: var(--color_white);
+  text-transform: capitalize;
+}
+.creative__title{
+  font-size: var(--fs150);
+  color: var(--color_white);
+  padding-top: 40px;
+  min-height: 660px;
+}
+
+.main__title{
+  justify-content: flex-start;
+
+  font-size: var(--fs30);
+  color: var(--color_h2p);
+  min-height: 180px;
+}
+
+.main__title::after{
+  content: "";
+  display:block;
+  margin: 0 auto;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  width: 60px;
+  height: var(--w);
+  background-color:var(--color_hover);
+}
+
+.main__title--text{
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: var(--fs24);
+  color: var(--color_h2p);
+  margin-bottom: 16px;
+}
+
+.main__title--text::first-letter{
+  text-transform: uppercase;
+}
+
+/*amazing sevices*/
+.amazing{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient:	vertical;
+  -webkit-box-direction:	normal;
+          flex-direction:	column;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+.amazing-content{
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  min-height: 330px;
+}
+.amazing-content .amazing__card{
+  -webkit-box-flex: 0;
+          flex: 0 0 380px;
+
+}
+.amazing__card {
+  min-height: 70px;
+  margin-bottom: 94px;
+}
+.amazing__title{
+  display: block;
+  margin-left: 82px;
+  font-size: var(--fs14);
+  font-family: var(--ffmr);
+  color:var(--color_h2p);
+  text-transform: uppercase;
+  line-height: var(--lh12);
+  margin-bottom: 12px;
+}
+
+.amazing__text{
+  margin-left: 82px;
+  font-size: var(--fs15);
+  line-height:var(--lh16);
+  font-family: var(--ffrr);
+  color: var(--color_p);
+
+}
+.amazing__icon{
+  display: block;
+  float: left;
+  height: var(--h_labe);
+  width: var(--w_labe);
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+
+  fill: var(--color_main);
+}
+.amazing__icon:hover{
+  fill: var(--color_lg);
+}
+                      /*meet our team*/
+
+.about-ous{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack:center;
+          justify-content:center;
+  font-size: var(--fs15);
+  font-family: var(--ffrr);
+  color: var(--color_p);
+  line-height: var(--lh16);
+  text-align: center;
+  margin: 0 auto;
+  width: 980px;
+  margin-bottom: 60px;
+}
+
+
+.team-list{
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align:	start;
+          align-items:	flex-start;
+  min-height: 625px;
+}
+
+.team-list__card{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+  -webkit-box-pack:	center;
+          justify-content:	center;
+  -webkit-box-align:	center;
+          align-items:	center;
+  min-height: var(--h_img);
+  background:linear-gradient(to bottom ,var(--color_main) 470px, var(--color_white) 0);
+}
+
+.team__wrapper{
+  margin-bottom: 30px;
+  -webkit-transition:-webkit-transform  var(--hover_time) linear 0ms;
+  transition:-webkit-transform  var(--hover_time) linear 0ms;
+  transition:transform  var(--hover_time) linear 0ms;
+  transition:transform  var(--hover_time) linear 0ms, -webkit-transform  var(--hover_time) linear 0ms; /* Получаеться это можно и указывать в класе не обезательно в hover*/
+}
+
+.team__wrapper:hover{
+  -webkit-transform: translate(-10px , -10px);
+  -ms-transform: translate(-10px , -10px);
+      transform: translate(-10px , -10px);
+}
+
+.picture__source,
+.team__picture{
+  position: absolute;
+  min-width: var(--w_img);
+  max-width: 760px;
+  min-height: var(--h_img);
+  max-height: 940px;
+}
+
+.team__img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.team__wrapper:hover .team__img{
+  -webkit-transition: opacity  var(--hover_time) linear 0ms;
+  transition: opacity  var(--hover_time) linear 0ms;
+  opacity: 0.1;
+}
+
+.soc__wrapper{
+  width: var(--w_img);
+  height: var(--h_img);
+  background:-webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(var(--color_lg)),
+      to(var(--color_hover)));
+  background:linear-gradient(
+      to top,
+      var(--color_lg),
+      var(--color_hover));
+}
+/* подняли сылки над всеми картинками */
+.team__wrapper:hover .soc__link{
+  -webkit-transition: z-index  var(--hover_time) linear 200ms;
+  transition: z-index  var(--hover_time) linear 200ms;
+  z-index: 11;
+}
+
+/* Блок социальных иконок */
+.soc-list{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.soc__link{
+  display: block;
+  background-color: var(--color_lg);
+
+  width: var(--w_icon);
+  height: var(--h_icon);
+}
+
+.soc__icon:hover{
+  background-color: var(--color_hover);
+
+  fill: var(--color_white);
+}
+
+.soc__icon{
+  width: var(--w_icon);
+  height: var(--h_icon);
+  padding-top: 15px;
+  padding-left: 15px;
+  fill:var(--color_hover);
+  cursor: pointer;
+}
+.pl--20{
+  padding-left: 20px;
+}
+
+
+/* --------------- */
+.team__name{
+      font-size: var(--fs14);
+      font-family: var(--ffmr);
+      color: var(--color_h2p);
+      text-transform: uppercase;
+
+      line-height: var(--lh12);
+      margin-bottom: 10px;
+}
+.team__profile{
+  font-size: var(--fs15);
+  font-family: var(--ffrli);
+  color: var(--color_p);
+  font-style: italic;
+  line-height: var(--lh16);
+}
+.team__profile::first-letter{
+  text-transform: uppercase;
+}

@@ -424,7 +424,7 @@ body{
     -webkit-box-align:	center;
             align-items:	center;
     min-height: var(--h_img);
-    background:linear-gradient(to bottom ,var(--color_main) 470px, #fff 0);
+    background:linear-gradient(to bottom ,var(--color_main) 470px, var(--color_white) 0);
 }
 
 .team__wrapper{
@@ -548,7 +548,7 @@ footer{
     -webkit-box-align: center;
             align-items: center;
     min-height: 62px;
-    border-top: 1px solid rgb(204, 204, 204);
+    border-top: 1px solid var(--color_email);
 }
 
   
@@ -632,7 +632,7 @@ footer{
     border: 1px solid var(--color_main);
     background-color: var(--color_main);
 
-    color: rgb(255, 255, 255);
+    color: var(--color_white);
     
 }
 
