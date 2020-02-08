@@ -49,15 +49,13 @@ footer{
  -webkit-box-flex: 3;
          flex-grow: 3;
 
-  @extend .footer_email;
+  @extend %footer-input;
 
  border: 1px solid $color_email;
  border-right: none;
  color: $color_p;
  padding-left: 12px;
 }
-
-
 
 .footer-form input[type="email"]::-webkit-input-placeholder{
   @extend %footer-input;
