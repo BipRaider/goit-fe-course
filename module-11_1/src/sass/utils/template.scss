@@ -15,6 +15,14 @@
 display: block;
 }
 
+%container{
+  width: $con_widht;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+// This teplate list pages
 %list{
   display: -webkit-box;
   display: flex;
@@ -49,7 +57,7 @@ display: block;
   cursor: pointer;
 }
 
- .title--text{
+ .title__text{
   @extend %text;
  }
 

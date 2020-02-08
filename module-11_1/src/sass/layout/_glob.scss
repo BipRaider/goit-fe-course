@@ -1,6 +1,9 @@
 
 
-@import 'header.scss';
-@import 'main.scss';
-@import 'footer.scss';
-@import 'madia.scss'
+@import 'header/glob';
+
+@import 'main/glob';
+
+@import 'footer/glob';
+
+

@@ -1,0 +1,49 @@
+.nav-page{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end; /* отцентрировалаи по второстепеной оси*/
+  -webkit-box-pack:justify;
+          justify-content:space-between; /*растянули по сторона*/
+  min-height: 66px
+}
+
+.nav-page__list{
+display: -webkit-box;
+display: flex;
+-webkit-box-pack:	justify;
+        justify-content:	space-between;
+min-width: 620px;
+
+}
+
+.nav-page__link{
+  display: block;
+  font-size: $fs14;
+  font-family: $ffmr;
+  color: $color_white;
+  line-height: $lh12;
+  text-transform: uppercase;
+}
+.nav-page__item{
+  @extend %zero;
+}
+
+@include hover-color(".nav-page__link" , $color_lg);
+// $opacity0: 0 ;
+// $opacity1: 1 ;
+@include line-below(".nav-page__link",$opacity0);
+@include load-time-hover(".nav-page__link",$opacity1);
+
+
+.nav-page__icon{
+  width: 16px;
+  height:16px;
+  fill: $color_white;
+
+    &:hover{
+      -webkit-transition: fill $hover_time linear 0ms;
+    transition: fill $hover_time linear 0ms;
+    fill: $color_lg;
+    }
+}

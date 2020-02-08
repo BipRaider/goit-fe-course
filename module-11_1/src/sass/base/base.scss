@@ -18,13 +18,12 @@ body {
 body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,form,input,aside,span{
   @extend %zero;
 }
+.container{
+  @extend %container;
+}
+
 
 a,img,main,input,::after ,::before{
   @extend %disb;
 }
 
-.container{
-  width: $con_widht;
-  margin: 0 auto;
-  padding: 0;
-}

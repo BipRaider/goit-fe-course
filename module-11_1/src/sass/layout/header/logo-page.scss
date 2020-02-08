@@ -1,0 +1,14 @@
+
+//the logo page
+.nav-page__logo{
+  display: block;
+  font-size: $fs30;
+  font-family: $ffmb ;
+  color:$color_white;
+  line-height: $lh16;
+  font-weight: bold;
+
+  &--letter{
+   text-transform:uppercase;
+  }
+}
