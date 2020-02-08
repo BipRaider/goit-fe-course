@@ -82,6 +82,9 @@ footer{
 
 
 .footer__button{
+  @extend %title;
+  @extend %button;
+
   -webkit-box-flex: 2;
           flex-grow: 2;
   height: $h_input;

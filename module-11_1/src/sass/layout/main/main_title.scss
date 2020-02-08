@@ -1,0 +1,34 @@
+.main__title{
+  @extend %list;
+  @extend %title;
+
+  justify-content: flex-start;
+
+  font-size: $fs30;
+  color: $color_h2p;
+  min-height: 180px;
+    &--text{
+      @extend %text;
+
+      text-transform: lowercase;
+      font-weight: 400;
+      font-size: $fs24;
+      color: $color_h2p;
+      margin-bottom: 16px;
+
+        &::first-letter{
+          text-transform: uppercase;
+        }
+    }
+
+    &::after{
+    content: "";
+    display:block;
+    margin: 0 auto;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    width: 60px;
+    height: $w;
+    background-color:$color_hover;
+   }
+}

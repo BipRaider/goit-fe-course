@@ -33,9 +33,11 @@ $h_labe: 34px;//height labe
 
 $h_input:40px;//height  input
 
-$w_icon: 54px;//widht  icons
-$h_icon: 54px;//height icons
+$w_icon: 56px;//widht  icons-block
+$h_icon: 56px;//height icons-block
 
+$icon-width: 25px;//widht  icons
+$icon-height: 25px;//height  icons
 
 $con_widht: 1200px; //widht container
 
@@ -43,6 +45,6 @@ $con_widht: 1200px; //widht container
 $opacity1:1;
 $opacity0:0;
 
-
+//this wrapper image
 $wrapper:url(../../images/bird.png);
 $wrapper2x:url(../img/x2/bird@2x.png);

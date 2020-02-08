@@ -1,5 +1,5 @@
 
-// @extend %list;
+// @extend %zero;
 // template  for list  - aligns the elements in the center and direction from top to bottom
 %zero {
   padding: 0;
@@ -11,10 +11,12 @@
   outline: none;
 }
 //it makes block elements
+//@extend %disb;
 %disb {
 display: block;
 }
 
+//@extend %container;
 %container{
   width: $con_widht;
   margin: 0 auto;
@@ -23,6 +25,7 @@ display: block;
 
 
 // This teplate list pages
+//@extend %list;
 %list{
   display: -webkit-box;
   display: flex;
@@ -35,8 +38,9 @@ display: block;
           align-items: center;
 
 }
-// template for title text
 
+// template for title text
+//@extend %title;
 %title{
   font-family: $ffmb;
   font-weight: bold;
@@ -45,6 +49,7 @@ display: block;
   text-align: center;
 }
 
+//@extend %text;
 %text{
   font-family: $ffks;
   font-weight: 400;
@@ -52,10 +57,12 @@ display: block;
   text-align: center;
 }
 
+//@extend %button;
 %button{
   font-size:$fs14;
   cursor: pointer;
 }
+
 // @extend %footer-input;
 %footer-input{
   font-size: $fs15;
@@ -65,21 +72,10 @@ display: block;
  text-align: left;
  }
 
- .title__text{
-  @extend %text;
- }
 
-.list{
-  @extend %list;
-}
 
-.title{
-  @extend %list;
-  @extend %title;
-}
 
-.button{
-  @extend %title;
-  @extend %button;
-}
+
+
+
 

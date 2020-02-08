@@ -1,0 +1,59 @@
+.team__wrapper{
+    /* подняли сылки над всеми картинками */
+    &:hover .soc__link{
+      -webkit-transition: z-index  $hover_time linear 200ms;
+      transition: z-index  $hover_time linear 200ms;
+      z-index: 11;
+    }
+}
+
+
+.soc__wrapper{
+  width: $w_img;
+  height: $h_img;
+  background:-webkit-gradient(
+      linear,
+      left bottom, left top,
+      from($color_lg),
+      to($color_hover));
+  background:linear-gradient(
+      to top,
+      $color_lg,
+      $color_hover);
+}
+
+.soc-list{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.soc__link{
+  display: block;
+  background-color: $color_lg;
+
+  width: $w_icon;
+  height: $h_icon;
+    &:hover{
+    background-color: $color_hover;
+
+  }
+  &:hover .soc__icon{
+    fill: $color_white;
+  }
+}
+
+$icon-width: 25px;
+$icon-height: 25px;
+
+.soc__icon{
+  width: $icon-width;
+  height:$icon-height;
+  margin-top: 15px;
+  margin-left: 15px;
+  fill:$color_hover;
+  cursor: pointer;
+}
