@@ -56,6 +56,14 @@ display: block;
   font-size:$fs14;
   cursor: pointer;
 }
+// @extend %footer-input;
+%footer-input{
+  font-size: $fs15;
+ font-family:  $ffrli;
+ font-style: italic;
+ line-height: $lh16;
+ text-align: left;
+ }
 
  .title__text{
   @extend %text;
