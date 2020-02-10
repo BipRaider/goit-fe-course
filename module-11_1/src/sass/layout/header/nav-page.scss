@@ -2,9 +2,10 @@
   display: -webkit-box;
   display: flex;
   -webkit-box-align: end;
-          align-items: flex-end; /* отцентрировалаи по второстепеной оси*/
+          align-items: flex-end;
   -webkit-box-pack:justify;
-          justify-content:space-between; /*растянули по сторона*/
+          justify-content:space-between;
+  min-width: 1200px;
   min-height: 66px
 }
 

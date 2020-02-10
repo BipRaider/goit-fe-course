@@ -11,7 +11,7 @@
   line-height: $lh16;
   text-align: center;
   margin: 0 auto;
-  width: 980px;
+  max-width: 980px;
   margin-bottom: 60px;
 }
 
@@ -73,7 +73,6 @@
 }
 
 .team__img{
-  position: absolute;
   width: 100%;
   height: auto;
 }

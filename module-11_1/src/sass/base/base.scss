@@ -18,10 +18,6 @@ body {
 body,div,header,main,footer,section,article,h1,h2,h3,p,a,ul,ol,li,address,img,form,input,aside,span{
   @extend %zero;
 }
-.container{
-  @extend %container;
-}
-
 
 a,img,main,input,::after ,::before{
   @extend %disb;

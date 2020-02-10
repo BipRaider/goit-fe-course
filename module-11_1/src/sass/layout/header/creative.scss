@@ -1,8 +1,6 @@
 .creative{
   @extend %list;
-
   width: 900px;
-  margin: 0 auto;
 }
 
 .creative__title{
@@ -28,8 +26,12 @@
   @extend %button;
 
   background-color: transparent;
-  border: 4px solid $color_white;
+  border: 3px solid $color_white;
   min-width: 155px;
-  height: 34px;
+  height: 40px;
+  padding-top: 10px;
+  margin-bottom: 230px;
+
   color: $color_white;
 }
+
