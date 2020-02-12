@@ -21,15 +21,8 @@
 
 .container-header{
   @extend %container;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-          align-items: center;
+  @include list-flex();
+
   min-height: 1000px;
 }
 

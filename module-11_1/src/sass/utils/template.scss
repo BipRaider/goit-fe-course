@@ -26,18 +26,7 @@ display: block;
 
 // This teplate list pages
 //@extend %list;
-%list{
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
 
-}
 
 // template for title text
 //@extend %title;

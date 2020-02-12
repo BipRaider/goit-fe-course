@@ -1,12 +1,6 @@
 /*footer*/
 footer{
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-          align-items: center;
-
+  @include list-flex("fsbc");
   @extend %container;
 
   min-height: 62px;
@@ -36,12 +30,8 @@ footer{
 
 
 .footer-form{
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align:	stretch;
-          align-items:	stretch;
+  @include list-flex("ffe");
+
   width: $w_img;
   min-height: $h_input;
 }

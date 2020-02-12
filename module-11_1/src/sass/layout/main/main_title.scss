@@ -1,8 +1,7 @@
 .main__title{
-  @extend %list;
+  @include list-flex("fcfsc");
   @extend %title;
 
-  justify-content: flex-start;
 
   font-size: $fs30;
   color: $color_h2p;

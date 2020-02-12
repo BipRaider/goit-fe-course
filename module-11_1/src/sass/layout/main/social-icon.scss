@@ -19,12 +19,7 @@
 }
 
 .soc-list{
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
+  @include list-flex("fcc");
 
   position: absolute;
   top:0;

@@ -1,20 +1,10 @@
 /*amazing sevices*/
 .amazing{
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient:	vertical;
-  -webkit-box-direction:	normal;
-          flex-direction:	column;
-  -webkit-box-pack: end;
-          justify-content: flex-end;
+  @include list-flex("fcfe");
 }
 
 .amazing-content{
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  @include list-flex("fwsb");
   min-height: 330px;
 
     .amazing__card{

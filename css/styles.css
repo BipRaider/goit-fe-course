@@ -252,11 +252,16 @@ https://developer.mozilla.org/ru/docs/Web/CSS/clip-path
 
 /* animacia */
 .transition{
+
     transition-property: all;/* Задаётся название СSS-свойств к которым будет применяться эфект перехода Может содержать список свойств через запятую */
     transition-duration: 3s; /* время для аннимцией*/
     transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);/*https://cubic-bezier.com*/
     transition-timing-function:steps(60, end);/*Свойство задаёт временную функцию, которая описывает скорость перехода объекта от одного значения к другому. Задается функцией Безье.*/
     transition-delay: 0ms;/*задержка перед началом анимаций*/
+
+    transition:transform  200ms linear 0ms;/*к чему применять анимацию,время анимаций,принцеп скорости анимацый, старт анимаций  */
+   
+    transition: tras;
 }
 
 /*Animation  https://webref.ru/css/keyframes*/

@@ -7,16 +7,20 @@
     content: "";
     -webkit-transform: translateY(13px);
             transform: translateY(13px);
-    height: $w;
-    background-color:$color_lg;
     opacity: $opacity;
+    height: $w;
+
+    -webkit-transition: background-color $hover_time linear 0ms;
+    transition: background-color $hover_time linear 0ms;
+    background-color:$color_lg;
   }
 }
 
 
 //add load time to item on hover and item transparency
 @mixin load-time-hover($selector, $opacity) {
-  #{$selector}:hover::after{
+  #{$selector}:hover::after,
+  #{$selector}:focus::after{
     opacity: $opacity;
     -webkit-transition: opacity $hover_time linear 0ms;
     transition: opacity $hover_time linear 0ms;
@@ -25,11 +29,12 @@
 }
 //add color to hover
 @mixin hover-color($selector, $color) {
-  #{$selector}:hover {
+  #{$selector}:hover,
+  #{$selector}:focus {
     -webkit-transition: color $hover_time linear 0ms;
     transition: color $hover_time linear 0ms;
    color:$color;
-   
+
  }
 }
 // $opacity0: 0 ;
@@ -38,3 +43,98 @@
 // @include line-below(".nav-page__link",$opacity0);
 // @include load-time-hover(".nav-page__link",$opacity1);
 // @include hover-color(".nav-page__link" , $color_lg);
+// @include list-flex(""); -по умолчанию стоит list
+@mixin list-flex($name:"list") {
+  display: -webkit-box;
+  display: flex;
+
+    @if $name== "list"{
+    -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+              align-items: center;
+
+    } @else if $name== "fccc"{
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+            flex-direction: column;
+      -webkit-box-pack: center;
+            justify-content: center;
+      -webkit-box-align: center;
+            align-items: center;
+
+    }@else if $name== "fsbfe"{
+      -webkit-box-pack:justify;
+            justify-content:space-between;
+       -webkit-box-align: end;
+            align-items: flex-end;
+
+    }@else if $name== "fsb"{
+      -webkit-box-pack:	justify;
+          justify-content:	space-between;
+
+    }@else if $name== "ffe"{
+      -webkit-box-pack: end;
+          justify-content: flex-end;
+      -webkit-box-align:	stretch;
+          align-items:	stretch;
+
+    }@else if $name== "fsbc"{
+      -webkit-box-pack: justify;
+                justify-content: space-between;
+      -webkit-box-align: center;
+                align-items: center;
+
+    }@else if $name== "fwsb"{
+      flex-wrap: wrap;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+
+    }@else if $name== "fsbfs"{
+      -webkit-box-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align:	start;
+                align-items:	flex-start;
+
+    }@else if $name== "fc"{
+      -webkit-box-pack:center;
+                justify-content:center;
+
+    }@else if $name== "fcc"{
+      -webkit-box-pack: center;
+          justify-content: center;
+      -webkit-box-align: center;
+          align-items: center;
+
+    }@else if $name== "fcfe" {
+      -webkit-box-orient:	vertical;
+      -webkit-box-direction:	normal;
+              flex-direction:	column;
+      -webkit-box-pack: end;
+              justify-content: flex-end;
+
+    }@else if $name== "fcfsc"{
+      -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: start;
+              justify-content: flex-start;
+        -webkit-box-align: center;
+                align-items: center;
+
+    }@else if $name== "fwcsbc"{
+         flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+                align-items: center;
+
+    }
+
+}

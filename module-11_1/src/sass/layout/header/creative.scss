@@ -1,10 +1,10 @@
 .creative{
-  @extend %list;
+  @include list-flex();
   width: 900px;
 }
 
 .creative__title{
-  @extend %list;
+  @include list-flex("fccc");
   @extend %title;
 
   font-size: $fs150;
@@ -33,5 +33,10 @@
   margin-bottom: 230px;
 
   color: $color_white;
+  &:hover,
+  &:focus{
+    border: 3px solid $color_lg;
+    color: $color_lg;
+  }
 }
 

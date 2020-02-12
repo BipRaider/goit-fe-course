@@ -1,21 +1,14 @@
 .nav-page{
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: end;
-          align-items: flex-end;
-  -webkit-box-pack:justify;
-          justify-content:space-between;
+  @include list-flex("fsbfe");
+
   min-width: 1200px;
   min-height: 66px
 }
 
 .nav-page__list{
-display: -webkit-box;
-display: flex;
--webkit-box-pack:	justify;
-        justify-content:	space-between;
-min-width: 620px;
+  @include list-flex("fsb");
 
+  min-width: 620px;
 }
 
 .nav-page__link{
@@ -42,8 +35,9 @@ min-width: 620px;
   height:16px;
   fill: $color_white;
 
-    &:hover{
-      -webkit-transition: fill $hover_time linear 0ms;
+    &:hover,
+    &:focus{
+    -webkit-transition: fill $hover_time linear 0ms;
     transition: fill $hover_time linear 0ms;
     fill: $color_lg;
     }

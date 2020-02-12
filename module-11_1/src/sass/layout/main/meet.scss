@@ -1,10 +1,8 @@
 /*meet our team*/
 
 .about-ous{
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack:center;
-          justify-content:center;
+  @include list-flex("fc");
+
   font-size: $fs15;
   font-family: $ffrr;
   color: $color_p;
@@ -17,20 +15,12 @@
 
 
 .team-list{
-  display: -webkit-box;
-  display: flex;
-  position: relative;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align:	start;
-          align-items:	flex-start;
-
+  @include list-flex("fsbfs");
   margin-bottom: 80px;
 }
 
 .team-list__card{
-  @extend %list;
-  flex-wrap: wrap;
+  @include list-flex("fwcsbc");
 
   min-width: $w_img;
   background:linear-gradient(to bottom ,$color_main 470px, $color_white 0);
@@ -38,12 +28,13 @@
 
 .team__wrapper{
   margin-bottom: 30px;
-  -webkit-transition:-webkit-transform  $hover_time linear 0ms;
-  transition:-webkit-transform  $hover_time linear 0ms;
-  transition:transform  $hover_time linear 0ms;
-  transition:transform  $hover_time linear 0ms, -webkit-transform  $hover_time linear 0ms;
 
     &:hover{
+      -webkit-transition:-webkit-transform  $hover_time linear 0ms;
+      transition:-webkit-transform  $hover_time linear 0ms;
+      transition:transform  $hover_time linear 0ms;
+      transition:transform  $hover_time linear 0ms, -webkit-transform  $hover_time linear 0ms;
+
       -webkit-transform: translate(-10px , -10px);
           transform: translate(-10px , -10px);
     }
