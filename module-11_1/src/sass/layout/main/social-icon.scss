@@ -1,12 +1,8 @@
 .team__wrapper{
-    /* подняли сылки над всеми картинками */
-    &:hover .soc__link{
-      -webkit-transition: z-index  $hover_time linear 200ms;
-      transition: z-index  $hover_time linear 200ms;
+    &:hover .soc-list{
       z-index: 11;
     }
 }
-
 
 .soc__wrapper{
   width: $w_img;
@@ -14,12 +10,12 @@
   background:-webkit-gradient(
       linear,
       left bottom, left top,
-      from($color_lg),
-      to($color_hover));
+      from($color_wb),
+      to($color_wt));
   background:linear-gradient(
       to top,
-      $color_lg,
-      $color_hover);
+      $color_wb,
+      $color_wt);
 }
 
 .soc-list{
@@ -29,14 +25,19 @@
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
+
+  position: absolute;
+  top:0;
+  z-index: -1;
 }
 
 .soc__link{
   display: block;
   background-color: $color_lg;
-
+  opacity: inherit;
   width: $w_icon;
   height: $h_icon;
+  border-right: 1px solid $color_wt;
     &:hover{
     background-color: $color_hover;
 
@@ -44,8 +45,13 @@
   &:hover .soc__icon{
     fill: $color_white;
   }
+
+  &:last-child{
+    border: none;
+  }
 }
 
+//#fce08a
 
 
 .soc__icon{
@@ -55,4 +61,5 @@
   margin-left: 15px;
   fill:$color_hover;
   cursor: pointer;
+
 }

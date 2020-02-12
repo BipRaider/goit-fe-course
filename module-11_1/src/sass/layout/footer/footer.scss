@@ -19,6 +19,7 @@ footer{
       font-family: $ffmr;
       color: $color_h2p;
       line-height: $lh12;
+      font-style: normal;
         &--color{
           @extend .footer__text;
 
@@ -48,7 +49,6 @@ footer{
 .footer__email{
  -webkit-box-flex: 3;
          flex-grow: 3;
-
   @extend %footer-input;
 
  border: 1px solid $color_email;
@@ -59,23 +59,28 @@ footer{
 
 .footer-form input[type="email"]::-webkit-input-placeholder{
   @extend %footer-input;
+  font-style: italic;
   color: $color_email;
 }
 .footer-form input[type="email"]::-moz-placeholder{
   @extend %footer-input;
+  font-style: italic;
  color: $color_email;
 
 }
 .footer-form input[type="email"]:-ms-input-placeholder{
   @extend %footer-input;
+  font-style: italic;
   color: $color_email;
 }
 .footer-form input[type="email"]::-ms-input-placeholder{
   @extend %footer-input;
+  font-style: italic;
   color: $color_email;
 }
 .footer-form input[type="email"]::placeholder{
   @extend %footer-input;
+  font-style: italic;
   color: $color_email;
  }
 

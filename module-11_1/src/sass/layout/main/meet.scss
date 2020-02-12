@@ -24,14 +24,15 @@
           justify-content: space-between;
   -webkit-box-align:	start;
           align-items:	flex-start;
-  min-height: 625px;
+
+  margin-bottom: 80px;
 }
 
 .team-list__card{
   @extend %list;
   flex-wrap: wrap;
 
-  min-height: $h_img;
+  min-width: $w_img;
   background:linear-gradient(to bottom ,$color_main 470px, $color_white 0);
 }
 
@@ -45,38 +46,13 @@
     &:hover{
       -webkit-transform: translate(-10px , -10px);
           transform: translate(-10px , -10px);
-
-          .team__img{
-                -webkit-transition: opacity  $hover_time linear 0ms;
-                -webkit-transition: opacity $hover_time linear 0ms;
-                transition: opacity $hover_time linear 0ms;
-                opacity: 0.1;
-       }
     }
-    /* подняли сылки над всеми картинками */
-    &:hover .soc__link{
-      -webkit-transition: z-index  $hover_time linear 200ms;
-      transition: z-index  $hover_time linear 200ms;
-      z-index: 11;
-    }
-}
-
-
-
-.picture__source,
-.team__picture{
-  position: absolute;
-  min-width: $w_img;
-  max-width: 760px;
-  min-height: $h_img;
-  max-height: 940px;
 }
 
 .team__img{
   width: 100%;
   height: auto;
 }
-
 
 /* --------------- */
 .team__name{
