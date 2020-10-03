@@ -445,44 +445,7 @@ a.text-danger:hover,
 a.text-danger:focus {
 	color: #843534;
 }
-.bg-primary {
-	color: #fff;
-}
-.bg-primary {
-	background-color: #3596f3;
-}
-a.bg-primary:hover,
-a.bg-primary:focus {
-	background-color: #0e7de7;
-}
-.bg-success {
-	background-color: #dff0d8;
-}
-a.bg-success:hover,
-a.bg-success:focus {
-	background-color: #c1e2b3;
-}
-.bg-info {
-	background-color: #d9edf7;
-}
-a.bg-info:hover,
-a.bg-info:focus {
-	background-color: #afd9ee;
-}
-.bg-warning {
-	background-color: #fcf8e3;
-}
-a.bg-warning:hover,
-a.bg-warning:focus {
-	background-color: #f7ecb5;
-}
-.bg-danger {
-	background-color: #f2dede;
-}
-a.bg-danger:hover,
-a.bg-danger:focus {
-	background-color: #e4b9b9;
-}
+
 .page-header {
 	padding-bottom: 9px;
 	margin: 40px 0 20px;
@@ -1847,506 +1810,7 @@ label {
 	left: auto !important;
 	top: auto !important;
 }
-.nav-opener {
-	width: 50px;
-	height: 44px;
-	transition: background-color 0.2s ease-in-out;
-	position: absolute;
-	left: 7px;
-	top: 15px;
-}
-@media (min-width: 1024px) {
-	.nav-opener {
-		display: none;
-	}
-}
-.nav-opener:hover span,
-.nav-opener:hover:before,
-.nav-opener:hover:after {
-	background-color: #000;
-}
-.nav-active .nav-opener span {
-	opacity: 0;
-}
-.nav-active .nav-opener:before,
-.nav-active .nav-opener:after {
-	transform: rotate(45deg);
-	top: 50%;
-}
-.nav-active .nav-opener:after {
-	transform: rotate(-45deg);
-}
-.nav-opener span,
-.nav-opener:before,
-.nav-opener:after {
-	transition: background-color 0.2s ease-in-out;
-	background-color: #535353;
-	border-radius: 4px;
-	position: absolute;
-	top: 50%;
-	left: 28%;
-	right: 28%;
-	height: 2px;
-	margin-top: -1px;
-	border-radius: 2px;
-	transition: all .3s linear;
-}
-.nav-opener:before,
-.nav-opener:after {
-	content: '';
-	top: 38%;
-}
-.nav-opener:after {
-	top: 62%;
-}
-.subscription-container,
-.subscription-dialog {
-	position: fixed;
-	width: 100%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 9999;
-}
-.subscription-container .col-frame,
-.subscription-dialog .col-frame {
-	width: 100%;
-}
-@media (min-width: 768px) {
-	.subscription-container .col-frame,
-	.subscription-dialog .col-frame {
-		display: flex;
-		justify-content: center;
-		align-items: stretch;
-	}
-}
-.subscription-container .col-frame .col,
-.subscription-dialog .col-frame .col {
-	padding: 0 15px;
-	margin: 0 auto 20px;
-	width: 264px;
-}
-@media (min-width: 768px) {
-	.subscription-container .col-frame .col,
-	.subscription-dialog .col-frame .col {
-		margin: 0 0 20px;
-	}
-}
-.subscription-container .slide,
-.subscription-dialog .slide {
-	position: absolute;
-	bottom: 100%;
-	left: 0;
-	right: 0;
-	width: 100%;
-	z-index: 999;
-	background: url(https://d18jg6w55vcmy1.cloudfront.net/images/bg-subscription.jpg) no-repeat;
-	background-size: cover;
-	box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.17);
-	max-height: 100vh;
-	overflow-y: auto;
-}
-.subscription-container h2,
-.subscription-dialog h2 {
-	font-size: 22px;
-	line-height: 1.3;
-	margin: 0 0 39px;
-}
-.subscription-container h2 strong,
-.subscription-dialog h2 strong {
-	font-weight: 600;
-}
-.subscription-container h4,
-.subscription-dialog h4 {
-	font-size: 15px;
-	line-height: 1.1;
-	margin: -25px 0 45px;
-	color: #a3a3a3;
-}
-.subscription-container .btn-close,
-.subscription-dialog .btn-close {
-	transition: color 0.2s ease-in-out;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	color: #010101;
-	font-size: 13px;
-	line-height: 18px;
-	text-decoration: none;
-	white-space: nowrap;
-	font-weight: normal;
-}
-@media (min-width: 768px) {
-	.subscription-container .btn-close,
-	.subscription-dialog .btn-close {
-		top: 27px;
-	}
-}
-@media (min-width: 1200px) {
-	.subscription-container .btn-close,
-	.subscription-dialog .btn-close {
-		right: 0;
-		top: 44px;
-	}
-}
-.subscription-container .btn-close:hover,
-.subscription-dialog .btn-close:hover {
-	color: #3596f3;
-}
-.subscription-container .btn-close i,
-.subscription-dialog .btn-close i {
-	font-size: 18px;
-	display: inline-block;
-	vertical-align: top;
-	margin: 1px 4px 0 0;
-}
-.subscription-container .btn-back,
-.subscription-dialog .btn-back {
-	transition: color 0.2s ease-in-out;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	color: #010101;
-	font-size: 13px;
-	line-height: 18px;
-	text-decoration: none;
-	white-space: nowrap;
-	font-weight: normal;
-}
-@media (min-width: 768px) {
-	.subscription-container .btn-back,
-	.subscription-dialog .btn-back {
-		top: 27px;
-	}
-}
-@media (min-width: 1200px) {
-	.subscription-container .btn-back,
-	.subscription-dialog .btn-back {
-		left: 0;
-		top: 44px;
-	}
-}
-.subscription-container .btn-back:hover,
-.subscription-dialog .btn-back:hover {
-	color: #3596f3;
-}
-.subscription-container .btn-back i,
-.subscription-dialog .btn-back i {
-	font-size: 16px;
-	display: inline-block;
-	vertical-align: top;
-	margin: 1px 7px 0 0;
-}
-.subscription-container .btn-custom,
-.subscription-dialog .btn-custom {
-	padding-left: 15px;
-	padding-right: 15px;
-	min-width: 0;
-}
-@media (min-width: 768px) {
-	.subscription-container .box-wrapp,
-	.subscription-dialog .box-wrapp {
-		display: flex;
-		justify-content: space-between;
-	}
-}
-.subscription-container .box-wrapp .box,
-.subscription-dialog .box-wrapp .box {
-	padding: 20px;
-	background-color: #fff;
-	box-shadow: 0 0 9px rgba(0, 0, 0, 0.19);
-	border-radius: 13px;
-	margin: 0 0 10px;
-	position: relative;
-}
-@media (min-width: 768px) {
-	.subscription-container .box-wrapp .box,
-	.subscription-dialog .box-wrapp .box {
-		width: calc(100% - 346px);
-		margin: 0 14px 10px;
-		padding: 28px 32px 90px;
-	}
-}
-@media (min-width: 768px) {
-	.subscription-container .box-wrapp .box:first-child,
-	.subscription-dialog .box-wrapp .box:first-child {
-		width: 290px;
-		padding-bottom: 28px;
-	}
-}
-.subscription-container .box-wrapp .step-count,
-.subscription-dialog .box-wrapp .step-count {
-	color: #b2b2b2;
-	font-size: 13px;
-	line-height: 1;
-	display: block;
-	padding: 0 0 12px;
-}
-.subscription-container .box-wrapp h3,
-.subscription-dialog .box-wrapp h3 {
-	margin: 0 0 16px;
-	color: #333;
-	font-size: 20px;
-	line-height: 1;
-	font-weight: bold;
-}
-.subscription-container .confirm,
-.subscription-dialog .confirm {
-	text-align: center;
-}
-.subscription-container .confirm .btn-wrapp,
-.subscription-dialog .confirm .btn-wrapp {
-	position: relative;
-}
-@media (min-width: 768px) {
-	.subscription-container .confirm .btn-wrapp,
-	.subscription-dialog .confirm .btn-wrapp {
-		left: 32px;
-		bottom: 36px;
-		position: absolute;
-	}
-}
-.subscription-container .confirm .btn-custom,
-.subscription-dialog .confirm .btn-custom {
-	border: none;
-}
-.subscription-container {
-	padding-top: 45px;
-	padding-bottom: 25px;
-	padding-left: 20px;
-	padding-right: 20px;
-	position: relative;
-	width: 1064px;
-	max-width: 100%;
-	margin: 0 auto;
-	z-index: 10;
-}
-@media (min-width: 768px) {
-	.subscription-container {
-		padding-left: 45px;
-		padding-right: 45px;
-	}
-}
-.description-step.hidden {
-	display: none;
-}
-.subscription-form {
-	padding: 66px 0 10px;
-}
-.subscription-form .error {
-	font-size: 14px;
-	line-height: 1.2;
-	color: #eb1c26;
-	padding: 0 0 20px;
-}
-.subscription-form .spinner {
-	width: 45px;
-	height: 45px;
-}
-.subscription-form .form-row {
-	margin: 0 -5px 8px;
-}
-@media (min-width: 768px) {
-	.subscription-form .form-row {
-		display: flex;
-		align-items: flex-start;
-		flex-wrap: wrap;
-	}
-}
-@media (min-width: 1024px) {
-	.subscription-form .form-row {
-		flex-wrap: nowrap;
-	}
-}
-.subscription-form .form-row.zip-code {
-	align-items: center;
-	margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-	.subscription-form .form-row.zip-code .col {
-		width: 145px !important;
-	}
-}
-.subscription-form .form-row .col {
-	padding: 0 5px;
-	margin: 0 0 5px !important;
-	width: 100%;
-	position: relative;
-}
-@media (min-width: 768px) {
-	.subscription-form .form-row .col {
-		width: 50%;
-	}
-}
-@media (min-width: 1024px) {
-	.subscription-form .form-row .col {
-		width: 24%;
-	}
-}
-@media (min-width: 768px) {
-	.subscription-form .form-row .col:first-child {
-		width: 100%;
-	}
-}
-@media (min-width: 1024px) {
-	.subscription-form .form-row .col:first-child {
-		width: 49%;
-	}
-}
-@media (min-width: 1024px) {
-	.subscription-form .form-row .col:last-child {
-		width: 26%;
-	}
-}
 
-.subscription-form .form-row .cvv {
-	width: 40px;
-	height: 26px;
-	position: absolute;
-	bottom: 13px;
-	right: 15px;
-	pointer-events: none;
-}
-.subscription-form .description {
-	font-size: 14px;
-	line-height: 1.5;
-	color: #333;
-	display: block;
-	padding: 15px 5px;
-}
-@media (min-width: 768px) {
-	.subscription-form .description {
-		padding: 15px 0 0 20px;
-	}
-}
-.subscription-form .btn-custom {
-	font-size: 12px;
-	line-height: 17px;
-	padding: 0 15px;
-	height: 45px;
-	width: 100%;
-}
-@media (min-width: 768px) {
-	.subscription-form .btn-custom {
-		width: 268px;
-	}
-}
-.subscription-form label {
-	color: #333;
-	font-size: 13px;
-	font-weight: 600;
-	margin: 0 0 6px;
-}
-
-.subscribe-box {
-	position: relative;
-	border-radius: 5px;
-	box-shadow: 0 0 9px rgba(0, 0, 0, 0.19);
-	background: #fff;
-	border-radius: 12px;
-	width: 100%;
-	overflow: hidden;
-}
-@media (min-width: 768px) {
-	.subscribe-box {
-		height: 100%;
-	}
-}
-.subscribe-box.pro {
-	border-bottom-right-radius: 46px;
-}
-.subscribe-box.pro .title-box {
-	background: #e3efff;
-}
-.subscribe-box .title-box {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px 15px;
-	background: #ebe4e3;
-}
-.subscribe-box .title-box .label {
-	padding: 2px 9px 3px;
-	border: 1px solid #979797;
-	border-radius: 2em;
-	color: #868686;
-	min-width: 0;
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 14px;
-	margin: 1px 0 0 6px;
-}
-.subscribe-box h3 {
-	font-size: 22px;
-	line-height: 1.4;
-	margin: 0;
-	font-weight: 600;
-	color: #4b4b4b;
-	text-transform: uppercase;
-}
-.subscribe-box .text-frame {
-	padding: 72px 17px 28px;
-	color: #666;
-	font-size: 13px;
-	line-height: 1.85;
-}
-.subscribe-box .sub-title {
-	display: block;
-	color: #4b4b4b;
-	text-align: center;
-	font-size: 14px;
-	line-height: 1;
-	font-weight: 600;
-	padding: 10px 0 0;
-}
-.subscribe-box .sub-title span {
-	font-size: 10px;
-	line-height: 10px;
-	font-weight: normal;
-	display: block;
-	text-align: left;
-	padding: 0 0 2px 37px;
-	margin-top: -12px;
-}
-.subscribe-box .sub-title em {
-	font-style: normal;
-}
-.subscribe-box .sub-title sup {
-	font-size: 12px;
-	line-height: 1;
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 11px;
-}
-.subscribe-box .label,
-.subscribe-box .btn,
-.subscribe-box .btn-custom {
-	text-transform: none;
-	font-size: 12px;
-	line-height: 17px;
-	font-weight: 600;
-	width: 100%;
-	display: block;
-	padding: 13px 10px 14px;
-	margin: 0;
-}
-.subscribe-box .btn {
-	padding: 12px 10px;
-}
-.subscribe-box .label {
-	font-size: 12px;
-	width: auto;
-	color: #bdaca9;
-	font-weight: 400;
-}
-.subscribe-box ul {
-	margin-bottom: 60px;
-	color: #666;
-}
-.subscribe-box ul li {
-	margin-bottom: 1px;
-	text-align: center;
-}
 
 html {
 	font-size: 16px;
@@ -2432,7 +1896,7 @@ h2 {
 }
 .btn.btn-default:focus,
 .btn.btn-default:active {
-	border-color: #124ebc;
+	border-color: #11642a;
 	color: #0c70cf;
 	background: none;
 	box-shadow: none;
@@ -2504,7 +1968,7 @@ h2 {
 	box-shadow: none;
 }
 .btn.btn-back:hover {
-	color: #3596f3;
+	color: #11642a;
 }
 .btn.btn-back i {
 	font-weight: normal;
@@ -2793,7 +2257,7 @@ h2 {
 }
 .main-content .alert.alert-success {
 	background: #e5faf9;
-	color: #484848;
+	color: #a82626;
 }
 @media (min-width: 1025px) {
 	.main-content .alert.alert-success {
@@ -12590,7 +12054,7 @@ body {
 
 
   </style>
-  <title>Yevdokymov Mykhailo - Cv2You</title>
+  <title>Yevdokymov Mykhailo</title>
 </head>
 <body class="public-page">
 <main id="main">
@@ -12598,13 +12062,10 @@ body {
         <div class="main-content">
           <div class="page-container" >
             <div class="content-box" ><div class="template template--simple" >
-    <span class="edit-overlay"></span>
-    <span class="add-background"></span>
-<div class="zone--header"><div class="cvc-wrapp cvc-section block--headinfo">
+    
+<div class="zone--header"><div class="cvc-wrapp cvc-section ">
 
-    <a class="btn-add-photo" data-item-hidden="photo" href="https://cv2you.com/resume/b3B5/#">
-        <i class="icon-photo" data-item-hidden="photo"></i>
-    </a>
+    
 
     <div class="cvc-head-section cvc-content">
         <div class="cropper"><div class="cropper-container">
@@ -12626,7 +12087,7 @@ body {
 			</g>
 		</svg>
 		
-		<span class="upload-image">Upload photo</span>
+		
 	</div>
 	
 </div>
@@ -12635,17 +12096,14 @@ body {
         <div class="text-holder">
             <h2 class="h1 cvc-element cvc-text-elem cvc-data js-fullname editor cvc-placeholder -realdata-">
                 <span class="realdata ql-container ql-disabled" data-max-lines="2" style="display: inline;"><div class="ql-editor" data-gramm="false" contenteditable="false"><p>Yevdokymov Mykhailo</p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></span>
-                <span class="placeholder" style="display: none;">Your name</span>
+                
             </h2>
             <div class="cvc-head-item">
-                <a class="btn-del" href="https://cv2you.com/resume/b3B5/#"></a>
-                <a class="btn-add" href="https://cv2you.com/resume/b3B5/#" >
-                    <i class="fa fa-plus-circle"></i>
-                    Add…
-                </a>
+                
+                
                 <h2 class="h2 cvc-element cvc-text-elem cvc-data js-position editor cvc-placeholder -realdata-">
                     <span class="realdata ql-container ql-disabled" data-max-lines="2" style="display: inline;"><div class="ql-editor" data-gramm="false" contenteditable="false"><p>Golang developer</p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></span>
-                    <span class="placeholder" style="display: none;">Desired role</span>
+               
                 </h2>
             </div>
         </div>
@@ -12654,7 +12112,7 @@ body {
 </div>
 <div class="col-wrapp">
 	<div class="sep-line">
-		<span class="top-point"></span>
+	<span class="top-point"></span>
 		<span class="bottom-point"></span>
 		<svg class="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 246" preserveAspectRatio="none" width="4px">
 			<style type="text/css">
@@ -12675,7 +12133,7 @@ body {
         <span class="contact-name item-email">Email:</span>
         <span class="cvc-text-elem cvc-email-new editor cvc-placeholder -realdata-">
             <span class="realdata ql-container ql-disabled" style="display: inline;"><div class="ql-editor" data-gramm="false" contenteditable="false"><p>bipusgo@gmail.com</p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></span>
-            <span class="placeholder" style="display: none;">Contact details</span>
+          
         </span>
         <span class="divider"></span>
     </div>
@@ -12686,7 +12144,7 @@ body {
         <span class="contact-name item-phone">Email:</span>
         <span class="cvc-text-elem cvc-phone-new editor cvc-placeholder -realdata-">
             <span class="realdata ql-container ql-disabled" style="display: inline;"><div class="ql-editor" data-gramm="false" contenteditable="false"><p>+380682476855</p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></span>
-            <span class="placeholder" style="display: none;">Contact details</span>
+            
         </span>
         <span class="divider"></span>
     </div>
@@ -12704,7 +12162,7 @@ body {
 
               </div>
             </span>
-            <span class="placeholder" style="display: none;">Contact details</span>
+            
         </span>
         <span class="divider"></span>
     </div>
@@ -12726,7 +12184,7 @@ body {
 		<div class="cvc-element">
 			<h2 class="h3 cvc-text-elem editor cvc-placeholder -placeholder-">
 				<span class="realdata ql-container ql-disabled" style="display: none;"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="false"><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></span>
-				<span class="placeholder" style="display: inline;">Languages</span>
+				
 			</h2>
 		</div>
 	</div>
@@ -12738,7 +12196,7 @@ body {
 	<div class="cvc-head-block">
 		<div class="cvc-text-elem cvc-name cvc-placeholder editor -realdata-">
 			<span class="realdata ql-container ql-disabled" style="display: inline;"><div class="ql-editor" data-gramm="false" contenteditable="false"><p>English</p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></span>
-			<span class="placeholder" style="display: none;">Language</span>
+			
 		</div>
 
 		<div class="lang-skill"><span>A2</span></div>
@@ -12799,9 +12257,7 @@ body {
     <div class="info">
         <div class="cvc-text-elem data-description editor cvc-placeholder -realdata-">
             <span class="realdata ql-container ql-disabled" style="display: inline;"><div class="ql-editor" data-gramm="false" contenteditable="false"><p>Golang development</p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></span>
-            <span class="placeholder" style="display: none;">
-                Degree and field of study
-            </span>
+           
         </div>
         <div class="period-box"><strong class="period">
   <span>2018 - 2019</span>
@@ -12820,20 +12276,13 @@ body {
     <div class="info">
         <div class="cvc-text-elem data-description editor cvc-placeholder -realdata-">
             <span class="realdata ql-container ql-disabled" style="display: inline;"><div class="ql-editor" data-gramm="false" contenteditable="false"><p>Golang development</p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></span>
-            <span class="placeholder" style="display: none;">
-                Degree and field of study
-            </span>
+           
         </div>
         <div class="period-box"><strong class="period">
   <span>2018 - 2019</span>
 </strong></div>
     </div>
-</div><div class="cvc-group-add">
-	        <a class="btn-add" >
-	            <i class="fa fa-plus-circle"></i>
-	           	Add
-	        </a>
-	    </div>
+</div>
 	</div>
 </div>
         </div></div>
@@ -12871,12 +12320,7 @@ body {
             </div>
         </div>
     </div>
-</div><div class="cvc-group-add">
-	        <a class="btn-add" >
-	            <i class="fa fa-plus-circle"></i>
-	            Add
-	        </a>
-	    </div>
+</div>
 	</div>
 </div>
         </div></div>
@@ -13043,12 +12487,7 @@ body {
 	<li><i></i></li>
 	<li><i></i></li>
 </ul></div>
-</div><div class="cvc-group-add">
-						<a class="btn-add" href="https://cv2you.com/resume/b3B5/#" >
-							<i class="fa fa-plus-circle"></i>
-							Add
-						</a>
-					</div>
+</div>
 				</div>
 			</div>
 
@@ -13100,12 +12539,7 @@ body {
           </div>
         </div>
     </div>
-</div><div class="cvc-group-add">
-            <a class="btn-add" href="https://cv2you.com/resume/b3B5/#" >
-                <i class="fa fa-plus-circle"></i>
-                Add
-            </a>
-        </div>
+</div>
     </div>
 </div>
         </div></div>
@@ -13177,18 +12611,36 @@ body {
   <span>10/2019 - 10/2020</span>
 </strong></div>
           <div class="cvc-text-elem cvc-data data-description editor cvc-placeholder -realdata-">
-            <span class="realdata ql-container ql-disabled" style="display: inline;"><div class="ql-editor" data-gramm="false" contenteditable="false"><p><br></p><p>Прошел курсы по :</p><p><br></p><p>Html,Css/Scss- <a href="https://github.com/BipRaider/goit-fe-course" target="_blank" contenteditable="false">https://github.com/BipRaider/goit-fe-course</a></p><p><br></p><p>JavaScript: -<a href="https://github.com/BipRaider/goit-js-homeworkes" target="_blank" contenteditable="false">https://github.com/BipRaider/goit-js-homeworkes</a></p><p><br></p><p>Изучали: </p><p>Переменные, Типы, Ветвления, Циклы, Массивы, Функции, Объекты,</p><p>Стрелочные функции, Callback-функции, Замыкания, </p><p>Контекст, Конструкторы, Прототипы , Классы,</p><p>Перебирающие методы массива, DOM, События ,</p><p>Всплытие событий, Chatty event,Intersection, Observer, </p><p>Библиотеки, Шаблонизация , JSON , WevStorage, Таймеры, </p><p>Promise, API , AJAX , Fetch API , CRUD,</p><p>Синтаксис async/await , Event Emitter , Wevsocket API</p><p><br></p><p><br></p><p>React - в процессе изучения.</p><p><br></p><p>Работаю с :</p><p>Git</p><p>NPM</p><p>Webpack</p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></span>
+			<span class="realdata ql-container ql-disabled" style="display: inline;"><div class="ql-editor" data-gramm="false" contenteditable="false"><p><br></p><p>Прошел курсы по :</p><p><br></p><h2>Html,Css/Scss- <a href="https://github.com/BipRaider/goit-fe-course" target="_blank" contenteditable="false">https://github.com/BipRaider/goit-fe-course</a></h2>
+				<h2>JavaScript: -<a href="https://github.com/BipRaider/goit-js-homeworkes" target="_blank" contenteditable="false">https://github.com/BipRaider/goit-js-homeworkes</a></h2><p><br></p><p>Изучали: </p>
+				<p>Переменные, Типы, Ветвления, Циклы, Массивы, Функции, Объекты,</p>
+				<p>Стрелочные функции, Callback-функции, Замыкания, </p>
+				<p>Контекст, Конструкторы, Прототипы , Классы,</p>
+				<p>Перебирающие методы массива, DOM, События ,</p>
+				<p>Всплытие событий, Chatty event,Intersection, Observer, </p>
+				<p>Библиотеки, Шаблонизация , JSON , WevStorage, Таймеры, </p>
+				<p>Promise, API , AJAX , Fetch API , CRUD,</p>
+				<p>Синтаксис async/await , Event Emitter , Wevsocket API</p>
+
+				<h2>React</h2>
+				<p>События и состояния </p>
+				<p>Жизненный цикл компонента</p>		
+				<p>Работа с REST API ,axios , fetch,async/await</p>
+				<p>React Router</p>
+				<p>Code splitting ,Route-based and Component-based splitting,React Loadable,React.lazy</p>
+				<p>Higher-Order Component(HOC),Render Prop</p>
+				<p>Анимация,React Transition Group  </p>
+				<p>Основные принципы Redux,Redux Toolkit,Redux middleware,Асинхронность в Redux</p>
+				<p>Селектор</p>
+				<p>JWT</p>
+				<p><br></p>
+				<p>Работаю с :</p><p>Git</p><p>NPM</p><p>Webpack</p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></span>
            
           </div>
         </div>
     </div>
 </div>
-        <div class="cvc-group-add">
-            <a class="btn-add" href="https://cv2you.com/resume/b3B5/#" >
-                <i class="fa fa-plus-circle"></i>
-                Add
-            </a>
-        </div>
+        
     </div>
 </div>
         </div></div>
